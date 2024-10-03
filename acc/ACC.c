@@ -1,17 +1,8 @@
 #include<stdio.h>
 
+#include "ACC.h"
+
 //Globals
-typedef struct pidParams {
-    float integralError;
-    float prevError;
-    float differentialError;
-    float proportiabalError;
-} pidParams;
-
-struct accParams {
-    pidParams speedPid;
-};
-
 float hostVel;
 float hostVelPrev; //Host velocity in the previous time step
 float integral = 0; //Needs to be global as it is used in the calculation of next step
@@ -19,10 +10,6 @@ float errorPrev = -999.0; //Previous value of PID error
 float leadDistPrev = 0;
 float overshoot = 0;
 float leadTime = 0;
-
-//Calibratables
-float timeStep = 0.1; //Time step of system
-float simTime = 20.0; //Simulation time in seconds
 
 void vehDynamics(float torque){
     //torque will be a value from -1 to 1, where negative values represent braking torque and positive values represent acceleration
@@ -51,12 +38,13 @@ void vehDynamics(float torque){
     }
 }
 
-enum Mode {
-    CRUISE,
-    FOLLOW
-};
+void initACC(float* errorPrev, float* derivative){
+    if (*errorPrev == -999.0){ //AKA first time step
+        *derivative = 0;
+    }
+}
 
-float accAlgo(float hostVelInit, float leadVel, float setSpeed, float leadDist){
+float accAlgo(float* hostVelInit, float leadVel, float setSpeed, float leadDist){
     //Decide between cruise and follow modes
     enum Mode mode; //0 = cruise, 1 = follow
     if (leadVel > setSpeed || leadDist > 500){ //Future additions: safety critical mode, failure mode
@@ -74,20 +62,20 @@ float accAlgo(float hostVelInit, float leadVel, float setSpeed, float leadDist){
     float derivative = (error - errorPrev)/timeStep; //D
 
     //Set PID parameters
-    float kP = 3;
-    float kI = 0.05;
-    float kD = 0.04;
+
+    pidParams pid;
+    pid.P = 3;
+    pid.I = 0.05;
+    pid.D = 0.04;
 
     //Remove derivative from first time step
-    if (errorPrev == -999.0){ //AKA first time step
-        derivative = 0;
-    }
+    initACC(&errorPrev, &derivative);
 
     //Set previous values for next time step
     errorPrev = error;
 
     //Implement PID controller
-    float torque = kP * error + kI * integral + kD * derivative;
+    float torque = pid.P * error + pid.I * integral + pid.D * derivative;
 
     //Saturate torque value
     if (torque >= 1.00){
@@ -98,10 +86,10 @@ float accAlgo(float hostVelInit, float leadVel, float setSpeed, float leadDist){
     }
 
     //Calculate overshoot, lead time, and steady state error
-    if (((hostVelInit < setSpeed) && (error < overshoot)) || ((hostVelInit > setSpeed) && (error > overshoot))){
+    if (((*hostVelInit < setSpeed) && (error < overshoot)) || ((*hostVelInit > setSpeed) && (error > overshoot))){
         overshoot = error;
     }
-    if (((hostVelInit < setSpeed) && error > 0) || ((hostVelInit > setSpeed) && error < 0)){
+    if (((*hostVelInit < setSpeed) && error > 0) || ((*hostVelInit > setSpeed) && error < 0)){
         leadTime += timeStep;
     }
 
@@ -114,15 +102,9 @@ float accAlgo(float hostVelInit, float leadVel, float setSpeed, float leadDist){
     return torque;
 }
 
-enum Function {
-    CONSTANT,
-    LINEAR,
-    STEPWISE,
-    PARABOLIC,
-    SINUSOIDAL
-};
 
-float leadDynamics(float* dynamics, float timeStamp, float leadDistInit, float leadVelInit, enum Function mode){
+
+void leadDynamics(float* dynamics, float timeStamp, float leadDistInit, float leadVelInit, enum Function mode){
     //0 = Constant, 1 = Linear, 2 = Stepwise, 3 = Parabolic, 4 = Sinusoidal
     
     if (timeStamp == 0.0){
@@ -148,6 +130,7 @@ float leadDynamics(float* dynamics, float timeStamp, float leadDistInit, float l
     dynamics[0] = leadVel;
     dynamics[1] = leadDist;
 }
+
 int main (){
     //Define Calibrations
     float setSpeed = 50/3.6;
@@ -167,7 +150,7 @@ int main (){
         leadDynamics(leadDyn, i*timeStep, leadDistInit, leadVelInit, mode);
 
         //Initial Speed, Lead Velocity, Set Speed, Lead Distance
-        accAlgo(hostVelInit, leadDyn[0], setSpeed, leadDyn[1]);
+        accAlgo(&hostVelInit, leadDyn[0], setSpeed, leadDyn[1]);
         
     }
 
