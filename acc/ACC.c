@@ -1,6 +1,17 @@
 #include<stdio.h>
 
 //Globals
+typedef struct pidParams {
+    float integralError;
+    float prevError;
+    float differentialError;
+    float proportiabalError;
+} pidParams;
+
+struct accParams {
+    pidParams speedPid;
+};
+
 float hostVel;
 float hostVelPrev; //Host velocity in the previous time step
 float integral = 0; //Needs to be global as it is used in the calculation of next step
@@ -40,15 +51,20 @@ void vehDynamics(float torque){
     }
 }
 
+enum Mode {
+    CRUISE,
+    FOLLOW
+};
+
 float accAlgo(float hostVelInit, float leadVel, float setSpeed, float leadDist){
     //Decide between cruise and follow modes
-    int mode; //0 = cruise, 1 = follow
+    enum Mode mode; //0 = cruise, 1 = follow
     if (leadVel > setSpeed || leadDist > 500){ //Future additions: safety critical mode, failure mode
-        mode = 0;
+        mode = CRUISE;
         //Do nothing, this algorithm defaults in cruise mode
     }
     else{
-        mode = 1;
+        mode = FOLLOW;
         setSpeed = leadVel;
     }
     
@@ -98,7 +114,15 @@ float accAlgo(float hostVelInit, float leadVel, float setSpeed, float leadDist){
     return torque;
 }
 
-float leadDynamics(float* dynamics, float timeStamp, float leadDistInit, float leadVelInit, int mode){
+enum Function {
+    CONSTANT,
+    LINEAR,
+    STEPWISE,
+    PARABOLIC,
+    SINUSOIDAL
+};
+
+float leadDynamics(float* dynamics, float timeStamp, float leadDistInit, float leadVelInit, enum Function mode){
     //0 = Constant, 1 = Linear, 2 = Stepwise, 3 = Parabolic, 4 = Sinusoidal
     
     if (timeStamp == 0.0){
@@ -108,11 +132,11 @@ float leadDynamics(float* dynamics, float timeStamp, float leadDistInit, float l
     float leadVel;
     float leadDist;
 
-    if (mode == 0){ //Constant
+    if (mode == CONSTANT){ //Constant
         leadVel = leadVelInit;
     }
 
-    if (mode == 1){ //Linear
+    if (mode == LINEAR){ //Linear
         float slope = -1; //CAL
         leadVel = leadVelInit + slope*timeStamp;
     }
@@ -130,7 +154,7 @@ int main (){
     float hostVelInit = 50/3.6;
     float leadVelInit = 50/3.6;
     float leadDistInit = 1000;
-    int mode = 1; //0 = Constant, 1 = Linear, 2 = Stepwise, 3 = Parabolic, 4 = Sinusoidal
+    int mode = LINEAR; //0 = Constant, 1 = Linear, 2 = Stepwise, 3 = Parabolic, 4 = Sinusoidal
     hostVel = hostVelInit;
 
     printf("Time| Error   | Torque  | HostVel | LeadDist| LeadVel|Mode\n");
