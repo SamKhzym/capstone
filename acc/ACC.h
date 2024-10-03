@@ -1,4 +1,11 @@
-//Structs
+/** ACC algorithm header file
+ * 
+ * Modified By: Pesara A.
+ * Description: Implements structs, enums, consts, and function headers to 
+ * be used by ACC.c
+ * */
+
+//structs
 typedef struct pidParams {
     float P;
     float I;
@@ -9,6 +16,7 @@ struct accParams {
     pidParams speedPid;
 };
 
+//enums
 enum Mode {
     CRUISE,
     FOLLOW

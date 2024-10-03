@@ -1,3 +1,9 @@
+/** ACC algorithm
+ * 
+ * By: Nicholas P
+ * Modified By: Pesara A.
+ * Description: Implements and ACC control algorithm
+ * */
 #include<stdio.h>
 
 #include "ACC.h"
