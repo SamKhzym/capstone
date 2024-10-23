@@ -1,7 +1,8 @@
 # Project Name
 
 (TODO We should fill this out with what we have, and update overtime)
-Developer Names: 
+
+Developer Names: Alexander Antohe, Daniel Lupas, Nicholas Petrunti, Pesara Amarasekera, Samuel Khzym
 
 Date of project start: 2020/09/03
 
