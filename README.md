@@ -1,10 +1,11 @@
 # Project Name
 
-Developer Names:
+(TODO We should fill this out with what we have, and update overtime)
+Developer Names: 
 
-Date of project start:
+Date of project start: 2020/09/03
 
-This project is ...
+This project is a Real Time Simulator for ACC Algorithms
 
 The folders and files for this project are as follows:
 
