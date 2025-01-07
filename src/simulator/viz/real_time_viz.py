@@ -66,9 +66,12 @@ class RealTimeViz:
 
     def init_window(self):
         pg.init()
+        pg.font.init()
         pg.display.set_caption("Real-Time Visualizer")
         self.clock = pg.time.Clock()
         self.surface = pg.display.set_mode((self.WINDOW_WIDTH, self.WINDOW_HEIGHT))
+        self.screen = pg.display.set_mode((self.WINDOW_WIDTH, self.WINDOW_HEIGHT))
+        self.font = pg.font.SysFont('Comic Sans MS', 30)
 
     def pct_to_h_px(self, pct: float) -> int:
         '''Converts a percentage of the screen height into a number of pixels'''
@@ -166,6 +169,14 @@ class RealTimeViz:
             self.draw_offset_center_polygon(self.LINE_WIDTH_M, line_start, self.LINE_LENGTH_M, self.LANE_WIDTH_M / 2, WHITE)
             self.draw_offset_center_polygon(self.LINE_WIDTH_M, line_start, self.LINE_LENGTH_M, -self.LANE_WIDTH_M / 2, WHITE)
 
+    def display_stats(self):
+        ego_speed_text = self.font.render(f'Ego Vehicle Speed: {self.ego_vehicle.speed_mps} m/s', False, (0, 0, 0))
+        lead_speed_text = self.font.render(f'Lead Vehicle Speed: {self.lead_vehicle.speed_mps} m/s', False, (0, 0, 0))
+        lead_dist_text = self.font.render(f'Lead Vehicle Distance: {(self.lead_vehicle.pos_m - self.ego_vehicle.pos_m):.2f} m', False, (0, 0, 0))
+        self.screen.blit(ego_speed_text, (0,0))
+        self.screen.blit(lead_speed_text, (0,30))
+        self.screen.blit(lead_dist_text, (0,60))
+
     def draw(self):
 
         # draw background (grass and sky)
@@ -179,6 +190,8 @@ class RealTimeViz:
 
         # draw lead vehicle
         self.draw_lead_vehicle(RED)
+
+        self.display_stats()
 
         pg.event.get()
         pg.display.update()
