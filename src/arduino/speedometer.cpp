@@ -1,7 +1,20 @@
 #include "speedometer.h"
 
-Speedometer::Speedometer(float dutyCycleThreshold_pct, float radius_m, float minSpeed_mps) {
+Speedometer::Speedometer() {
 
+    this->dutyCycleThreshold_pct = 0;
+    this->prevDutyCycle_pct = 0.5;
+    this->lastTimestep_s = 0;
+    this->lastSpeed_mps = 0;
+    this->wheelRadius_m = 0;
+    this->minSpeed_mps = 0;
+    this->timeout = 0;
+
+}
+
+Speedometer::Speedometer(int pinNum, float dutyCycleThreshold_pct, float radius_m, float minSpeed_mps) {
+
+    this->pinNum = pinNum;
     this->dutyCycleThreshold_pct = dutyCycleThreshold_pct;
     this->prevDutyCycle_pct = 0.5;
     this->lastTimestep_s = 0;
@@ -12,7 +25,24 @@ Speedometer::Speedometer(float dutyCycleThreshold_pct, float radius_m, float min
 
 }
 
-float Speedometer::getSpeed(float currDutyCycle_pct, float ts_s) {
+float Speedometer::pwmToDutyCycle() {
+
+    unsigned long highTime = pulseIn(this->pinNum, HIGH); // Measure HIGH pulse width
+    unsigned long lowTime = pulseIn(this->pinNum, LOW);  // Measure LOW pulse width
+
+    float dutyCycle = 0;
+
+    if (highTime > 0 && lowTime > 0) {
+        dutyCycle = (highTime * 100.0) / (highTime + lowTime);
+    }
+
+    return dutyCycle;
+
+}
+
+float Speedometer::getSpeed(float ts_s) {
+
+    float currDutyCycle_pct = pwmToDutyCycle();
 
     // if duty cycle crossed max threshold this timestep, determine speed
     if (currDutyCycle_pct >= this->dutyCycleThreshold_pct && this->prevDutyCycle_pct < this->dutyCycleThreshold_pct) {
