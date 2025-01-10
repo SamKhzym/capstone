@@ -1,5 +1,4 @@
 #include "speedometer.h"
-#include <math.h>
 
 Speedometer::Speedometer(float dutyCycleThreshold_pct, float radius_m, float minSpeed_mps) {
 
