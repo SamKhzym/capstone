@@ -30,7 +30,7 @@ class RealTimeViz:
         
         # parameter that dictates distortion of screen as a function of long distance from ego veh
         # higher parameter has more distortion, 1 has no distortion
-        self.MAX_DISTORTION: float = 1.1
+        self.MAX_DISTORTION: float = 5.0
 
         # max length, height, depth of visualizer (m)
         self.VIZ_LENGTH_M: float = 0.5
@@ -85,8 +85,8 @@ class RealTimeViz:
         '''Converts a longitudinal distance from ego vehicle to a percentage of distortion'''
         
         # 1 distortion at 0 distance, max distortion at max distance
-        slope = (1 / self.MAX_DISTORTION) / self.MAX_DEPTH_M
-        return 1 - (slope * distance_m)
+        slope = (1 / self.MAX_DISTORTION - 1) / self.MAX_DEPTH_M
+        return 1 + (slope * distance_m)
 
     def height_to_px(self, length_m: float, distance_m: float = 0) -> int:
         '''Converts a longitudinal length to a number of pixels based on distance from lead vehicle'''
