@@ -1,6 +1,10 @@
+#pragma once
+
 #define _USE_MATH_DEFINES
 #include <math.h>
 #include <Arduino.h>
+
+#define DEBUG 0 // if DEBUG flag defined, will send debug messages over serial console. need to turn off for production testing.
 
 class Speedometer {
 
@@ -13,7 +17,7 @@ public:
 private:
     int pinNum;
     float lastTimestep_s;
-    float prevDutyCycle_pct;
+    bool prevMagFieldHigh;
     float dutyCycleThreshold_pct;
     float lastSpeed_mps;
     float wheelRadius_m;

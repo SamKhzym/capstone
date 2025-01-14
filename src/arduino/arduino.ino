@@ -1,5 +1,6 @@
 #include <SoftwareSerial.h>
 #include "speedometer.h"
+#include "uart_comm_layer.h"
 
 // Motor A (connected to AO1 and AO2)
 // Motor A is Right-Hand Drive
@@ -18,7 +19,7 @@
 #define T1_PWM_PIN 7 // Pin connected to t1 sensor
 #define T2_PWM_PIN 8 // Pin connected to t2 sensor
 
-#define THRESHOLD_DUTY_CYCLE_PCT 0.7
+#define THRESHOLD_DUTY_CYCLE_DIFF_PCT 10
 #define MIN_SPEED_MPS 0.05
 #define CAR_WHEEL_RAD_M 0.05
 
@@ -64,13 +65,13 @@ void setup() {
     pinMode(PWMB, OUTPUT);
 
     // Start the hardware serial port for communication with MCU
-    Serial.begin(9600);
+    Serial.begin(2000000);
 
     // Initialize motors to be stopped
     stopMotors();
 
     // setup speedometers
-    w1 = new Speedometer(W1_PWM_PIN, THRESHOLD_DUTY_CYCLE_PCT, CAR_WHEEL_RAD_M, MIN_SPEED_MPS);
+    w1 = new Speedometer(W1_PWM_PIN, THRESHOLD_DUTY_CYCLE_DIFF_PCT, CAR_WHEEL_RAD_M, MIN_SPEED_MPS);
     // w2 = new Speedometer(W2_PWM_PIN, THRESHOLD_DUTY_CYCLE_PCT, CAR_WHEEL_RAD_M, MIN_SPEED_MPS);
     // t1 = new Speedometer(T1_PWM_PIN, THRESHOLD_DUTY_CYCLE_PCT, CAR_WHEEL_RAD_M, MIN_SPEED_MPS);
     // t2 = new Speedometer(T2_PWM_PIN, THRESHOLD_DUTY_CYCLE_PCT, CAR_WHEEL_RAD_M, MIN_SPEED_MPS);
@@ -115,35 +116,53 @@ float millisToSec(unsigned long milliseconds) {
     return (float)milliseconds / 1000.0;
 }
 
-void sendFloatUart(float value) {
-
-    FLOATUNION_t valueUnion = value;
-    for (int i = 0; i < sizeof(float); i++) {
-        Serial.print(valueUnion.bytes[i]);
-    }
-
+float generateSineCommand(float currTime, float minVal, float maxVal, float freq) {
+    float amplitude = (maxVal - minVal) / 2;
+    float bias = (maxVal + minVal) / 2;
+    return amplitude * sinf(2 * M_PI * freq * currTime) + bias;
 }
 
 void loop() {
 
     // loop around until enough time has passed (sample time from last execution)
-    while (elapsedTime_ms > 0 && (millis() - elapsedTime_ms) < SAMPLE_TIME_MS) {}
-    elapsedTime_ms += SAMPLE_TIME_MS;
+    while (elapsedTime_ms > 0 && (millis() - elapsedTime_ms) < SAMPLE_TIME_MS) { }
+    elapsedTime_ms = millis();
 
-    // check for new speed command, send command to motors
-    if (Serial.available() > 0) {
+    SpeedCommandPayload speedCommand = rxSpeedCommandPayload();
+    // int speed = speedCommand.speedCommand_pwm; // uncomment when receiving from mcu
 
-        // Read the speed value from the Microcontroller UART
-        int speed = Serial.parseInt();
+    int speed = (int)generateSineCommand(millisToSec(elapsedTime_ms), 100, 255, 0.25);
 
-        // Check if the speed value is valid
-        if (speed >= 0 && speed <= 255) {
-            forward(speed);
-        }
-
+    // Check if the speed value is valid
+    if (speed >= 0 && speed <= 255) {
+        forward(speed);
     }
 
+    // get vehicle speed from w1 speedometer
     float vehicleSpeed = w1->getSpeed(millisToSec(elapsedTime_ms));
-    sendFloatUart(vehicleSpeed);
+
+    // construct vehicle speed payload struct, serialize, and transmit payload
+    VehicleSpeedPayload vehicleSpeedPayload = {
+        .egoSpeed_mps = vehicleSpeed,
+        .speedFaultActive = 0,
+        .rc = 0,
+        .crc = 0
+    };
+    txVehicleSpeedPayload(&vehicleSpeedPayload);
+
+#if DEBUG
+    Serial.print("Elapsed Time: ");
+    Serial.println(elapsedTime_ms);
+
+    Serial.print("Vehicle_Speed: ");
+    Serial.println(vehicleSpeed);
+    
+    Serial.print("PWM_Speed: ");
+    Serial.println(speed);
+    
+    Serial.print("Millis: ");
+    Serial.println(millis());
+    Serial.println("=====================");
+#endif
 
 }
