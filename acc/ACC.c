@@ -50,7 +50,7 @@ void initACC(float* errorPrev, float* derivative){
     }
 }
 
-float accAlgo(float* hostVelInit, float leadVel, float setSpeed, float leadDist){
+float accAlgo(float hostVel, float leadVel, float setSpeed, float leadDist){
     //Decide between cruise and follow modes
     enum Mode mode; //0 = cruise, 1 = follow
     if (leadVel > setSpeed || leadDist > 500){ //Future additions: safety critical mode, failure mode
@@ -81,31 +81,32 @@ float accAlgo(float* hostVelInit, float leadVel, float setSpeed, float leadDist)
     errorPrev = error;
 
     //Implement PID controller
-    float torque = pid.P * error + pid.I * integral + pid.D * derivative;
+    uint8_t actReq = pid.P * error + pid.I * integral + pid.D * derivative;
 
-    //Saturate torque value
-    if (torque >= 1.00){
-        torque = 1.0;
+    //Saturate actuation request value
+    
+    if (actReq < 50){
+        actReq = 0;
     }
-    else if (torque <= -1.00){
-        torque = -1.0;
-    }
-
-    //Calculate overshoot, lead time, and steady state error
-    if (((*hostVelInit < setSpeed) && (error < overshoot)) || ((*hostVelInit > setSpeed) && (error > overshoot))){
-        overshoot = error;
-    }
-    if (((*hostVelInit < setSpeed) && error > 0) || ((*hostVelInit > setSpeed) && error < 0)){
-        leadTime += timeStep;
+    else if (actReq < 100){
+        actReq = 100;
     }
 
+    // //Calculate overshoot, lead time, and steady state error
+    // if (((*hostVelInit < setSpeed) && (error < overshoot)) || ((*hostVelInit > setSpeed) && (error > overshoot))){
+    //     overshoot = error;
+    // }
+    // if (((*hostVelInit < setSpeed) && error > 0) || ((*hostVelInit > setSpeed) && error < 0)){
+    //     leadTime += timeStep;
+    // }
 
-    vehDynamics(torque); //Recalculate vehicle speed
+
+    // vehDynamics(actReq); //Recalculate vehicle speed
 
     //printf("%07.3f | %07.3f | %07.3f | %07.3f | %07.3f| %d\n", error, integral, derivative, torque, hostVel, mode);
-    printf("%07.3f | %07.3f | %07.3f | %07.3f | %07.3f| %d\n", error, torque, hostVel*3.6, leadDist, leadVel*3.6, mode);
+    // printf("%07.3f | %07.3f | %07.3f | %07.3f | %07.3f| %d\n", error, torque, hostVel*3.6, leadDist, leadVel*3.6, mode);
 
-    return torque;
+    return actReq;
 }
 
 
