@@ -7,7 +7,7 @@ set(VCPKG_DIR $ENV{VCPKG_DIR})
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_C_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(BUILD_TESTS ON CACHE BOOL "Build Tests")
+set(BUILD_TESTS OFF CACHE BOOL "Build Tests")
 # ================== #
 
 # Configure vcpkg location
@@ -21,7 +21,7 @@ file(GLOB_RECURSE sources
 # Target definitions
 add_library(${PROJECT_NAME} STATIC ${sources})
 if (MSVC)
-    target_compile_options(${PROJECT_NAME} PUBLIC /O2)
+#    target_compile_options(${PROJECT_NAME} PUBLIC /O2)
 else()
     target_compile_options(${PROJECT_NAME} PUBLIC -O3)
     #target_compile_options(${PROJECT_NAME} PUBLIC -O0 -g) # uncomment for debugging purposes
