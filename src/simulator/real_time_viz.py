@@ -11,18 +11,11 @@ YELLOW = (255, 255, 0)
 GRAY = (100, 100, 100)
 WHITE = (255, 255, 255)
 
-class Vehicle:
-
-    def __init__(self, pos_m = 0, speed_mps = 0):
-        self.speed_mps = speed_mps
-        self.pos_m = pos_m
-
-    def update(self, dt):
-        self.pos_m += self.speed_mps * dt
+DT_VIZ = 0.02
 
 class RealTimeViz:
 
-    def __init__(self, dt = 0.02):
+    def __init__(self, dt: float = DT_VIZ):
         
         # window height and length (pixels)
         self.WINDOW_WIDTH: int = 800
@@ -56,15 +49,11 @@ class RealTimeViz:
         self.LEAD_VEH_HEIGHT_M = 0.1
 
         # sample time and vehicle parameters
-        self.dt = dt
-        self.ego_vehicle = Vehicle(pos_m=0, speed_mps=0.5)
-        self.lead_vehicle = Vehicle(pos_m=2.0, speed_mps=0.2)
+        self.dt = DT_VIZ
 
-    def update(self):
-        self.ego_vehicle.update(self.dt)
-        self.lead_vehicle.update(self.dt)
+        self.init_window()
 
-    def init_window(self):
+    def init_window(self) -> None:
         pg.init()
         pg.font.init()
         pg.display.set_caption("Real-Time Visualizer")
@@ -140,11 +129,7 @@ class RealTimeViz:
 
         pg.draw.polygon(self.surface, color, points)
 
-    def draw_lead_vehicle(self, color: Tuple[float, float, float]) -> None:
-
-        # determine lead vehicle distance
-        lead_dist = self.lead_vehicle.pos_m - self.ego_vehicle.pos_m
-        print(lead_dist)
+    def draw_lead_vehicle(self, lead_dist: float, color: Tuple[float, float, float]) -> None:
 
         lead_width_px = self.width_to_px(self.LEAD_VEH_WIDTH_M, lead_dist)
         lead_height_px = self.height_to_px(self.LEAD_VEH_HEIGHT_M, lead_dist)
@@ -158,40 +143,40 @@ class RealTimeViz:
         pg.draw.rect(self.surface, color, (left_x, top_y, lead_width_px, lead_height_px))
         # self.draw_offset_center_polygon(self.LEAD_VEH_WIDTH_M, lead_dist, self.LEAD_VEH_LENGTH_M, 0, YELLOW)
 
-    def draw_road(self):
+    def draw_road(self, ego_position: float) -> None:
 
         # draw road
         self.draw_offset_center_polygon(self.LANE_WIDTH_M * self.NUM_LANES, 0, self.MAX_DEPTH_M, 0, GRAY)
 
         # draw lane lines
-        lane_line_offset = -self.ego_vehicle.pos_m % (self.LINE_LENGTH_M + self.LINE_SPACING_M)
+        lane_line_offset = -ego_position % (self.LINE_LENGTH_M + self.LINE_SPACING_M)
         for line_start in np.arange(lane_line_offset, self.MAX_DEPTH_M , self.LINE_LENGTH_M + self.LINE_SPACING_M):
             self.draw_offset_center_polygon(self.LINE_WIDTH_M, line_start, self.LINE_LENGTH_M, self.LANE_WIDTH_M / 2, WHITE)
             self.draw_offset_center_polygon(self.LINE_WIDTH_M, line_start, self.LINE_LENGTH_M, -self.LANE_WIDTH_M / 2, WHITE)
 
-    def display_stats(self):
-        ego_speed_text = self.font.render(f'Ego Vehicle Speed: {self.ego_vehicle.speed_mps} m/s', False, (0, 0, 0))
-        lead_speed_text = self.font.render(f'Lead Vehicle Speed: {self.lead_vehicle.speed_mps} m/s', False, (0, 0, 0))
-        lead_dist_text = self.font.render(f'Lead Vehicle Distance: {(self.lead_vehicle.pos_m - self.ego_vehicle.pos_m):.2f} m', False, (0, 0, 0))
+    def display_stats(self, ego_speed: float, lead_speed: float, lead_dist: float) -> None:
+        ego_speed_text = self.font.render(f'Ego Vehicle Speed: {ego_speed} m/s', False, (0, 0, 0))
+        lead_speed_text = self.font.render(f'Lead Vehicle Speed: {lead_speed} m/s', False, (0, 0, 0))
+        lead_dist_text = self.font.render(f'Lead Vehicle Distance: {lead_dist:.2f} m', False, (0, 0, 0))
         self.screen.blit(ego_speed_text, (0,0))
         self.screen.blit(lead_speed_text, (0,30))
         self.screen.blit(lead_dist_text, (0,60))
 
-    def draw(self):
+    def draw(self, ego_position: float, ego_speed: float, lead_speed: float, lead_dist: float) -> None:
 
         # draw background (grass and sky)
         self.surface.fill(GREEN)
 
         # draw road (grey polygon and white lines)
-        self.draw_road()
+        self.draw_road(ego_position)
 
         # draw sky
         pg.draw.rect(self.surface, BLUE, (0, 0, self.WINDOW_WIDTH, self.WINDOW_HEIGHT - self.HORIZON_HEIGHT_PX))
 
         # draw lead vehicle
-        self.draw_lead_vehicle(RED)
+        self.draw_lead_vehicle(lead_dist, RED)
 
-        self.display_stats()
+        self.display_stats(ego_speed, lead_speed, lead_dist)
 
         pg.event.get()
         pg.display.update()
@@ -211,6 +196,6 @@ class RealTimeViz:
 
             sleep(wait_time)
         
-rt = RealTimeViz(dt=0.01)
-rt.init_window()
-rt.animate()
+# rt = RealTimeViz(dt=0.01)
+# rt.init_window()
+# rt.animate()
