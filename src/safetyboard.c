@@ -35,3 +35,33 @@ uint8_t checksum(uint8_t* message, int len){
 bool checkCRC(uint8_t CRC, uint8_t* payload, int len){
     return (checksum(payload, len) == CRC);
 }
+
+bool checkRC(uint8_t currRC, uint8_t prevRC, uint8_t RCMax){
+    return (currRC == (prevRC + 1)) % RCMax;
+}
+
+bool checkCommandRange(uint8_t actReq){
+    return (actReq == 0 || (actReq >= 100 && actReq <= 255));
+}
+
+uint8_t saturateOutputCommand(uint8_t actReq, uint8_t actReqPrev){
+    if (actReq-actReqPrev > actReqMax){
+        actReq = actReq-actReqMax;
+    }else if (actReqPrev - actReq > actReqMax){
+        actReq = actReq + actReqMax;
+    }
+
+    if (actReq > 255){
+        actReq = 255;
+    }else if (actReq < 100 && actReq > 0){
+        actReq = 100;
+    }else if (actReq < 0){
+        actReq = 0;
+    }
+
+    return actReq;
+}
+
+bool determineState(bool crcFaultActive, bool rcFaultActive, bool wheelSpeedFaultActive, bool outOFRangeFaultActive){
+    return (crcFaultActive && rcFaultActive && wheelSpeedFaultActive && outOFRangeFaultActive);
+}
