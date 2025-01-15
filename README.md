@@ -1,10 +1,12 @@
-# Project Name
+# Birds Eye-view Simulator Environment and Engine (BESEE)
 
-Developer Names:
+(TODO We should fill this out with what we have, and update overtime)
 
-Date of project start:
+Developer Names: Alexander Antohe, Daniel Lupas, Nicholas Petrunti, Pesara Amarasekera, Samuel Khzym
 
-This project is ...
+Date of project start: 2020/09/03
+
+The project aims to develop a comprehensive testing environment for an adaptive cruise control algorithm that integrates Software-in-the-Loop (SIL), Hardware-in-the-Loop (HIL), and a real-time visualizer, using an RC (radio-controlled) vehicle as the platform.
 
 The folders and files for this project are as follows:
 
