@@ -39,3 +39,10 @@ void vehDynamics(float torque);
 void initACC(float* errorPrev, float* derivative);
 float accAlgo(float* hostVelInit, float leadVel, float setSpeed, float leadDist);
 void leadDynamics(float* dynamics, float timeStamp, float leadDistInit, float leadVelInit, enum Function mode);
+
+bool determineLeadVehicleExists(float leadDistance, float leadSpeed, float setSpeed);
+void initPidParams(struct PidParams* params, float P, float I, float D);
+float pidStep(struct PidParams* params, float err);
+void initACC();
+uint8_t accController(float leadSpeed, float leadDistance, float egoSpeed, float setSpeed);
+uint8_t saturateOutputCommand(uint8_t actReq, uint8_t actReqPrev);
