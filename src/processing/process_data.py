@@ -45,5 +45,5 @@ class SerialData:
 
         plt.show()
 
-s = SerialData("data/sine_command.txt")
+s = SerialData("data/putty.txt")
 s.plotMetrics()

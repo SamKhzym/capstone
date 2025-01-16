@@ -57,7 +57,7 @@ float Speedometer::getSpeed(float ts_s) {
     // if duty cycle crossed max threshold this timestep, determine speed
     if (magFieldHigh && !this->prevMagFieldHigh) {
         float dt = ts_s - this->lastTimestep_s;
-        float distanceTravelled = 2 * M_PI * this->wheelRadius_m;
+        float distanceTravelled = 2 * M_PI * this->wheelRadius_m / 5;
         this->lastSpeed_mps = distanceTravelled / dt;
         this->lastTimestep_s = ts_s;
     }

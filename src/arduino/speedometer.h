@@ -4,7 +4,7 @@
 #include <math.h>
 #include <Arduino.h>
 
-#define DEBUG 0 // if DEBUG flag defined, will send debug messages over serial console. need to turn off for production testing.
+#define DEBUG 1 // if DEBUG flag defined, will send debug messages over serial console. need to turn off for production testing.
 
 class Speedometer {
 

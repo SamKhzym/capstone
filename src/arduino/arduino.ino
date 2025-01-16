@@ -19,7 +19,7 @@
 #define T1_PWM_PIN 7 // Pin connected to t1 sensor
 #define T2_PWM_PIN 8 // Pin connected to t2 sensor
 
-#define THRESHOLD_DUTY_CYCLE_DIFF_PCT 10
+#define THRESHOLD_DUTY_CYCLE_DIFF_PCT 8
 #define MIN_SPEED_MPS 0.05
 #define CAR_WHEEL_RAD_M 0.05
 
@@ -128,7 +128,7 @@ void loop() {
     while (elapsedTime_ms > 0 && (millis() - elapsedTime_ms) < SAMPLE_TIME_MS) { }
     elapsedTime_ms = millis();
 
-    SpeedCommandPayload speedCommand = rxSpeedCommandPayload();
+    // SpeedCommandPayload speedCommand = rxSpeedCommandPayload();
     // int speed = speedCommand.speedCommand_pwm; // uncomment when receiving from mcu
 
     int speed = (int)generateSineCommand(millisToSec(elapsedTime_ms), 100, 255, 0.25);
@@ -142,13 +142,13 @@ void loop() {
     float vehicleSpeed = w1->getSpeed(millisToSec(elapsedTime_ms));
 
     // construct vehicle speed payload struct, serialize, and transmit payload
-    VehicleSpeedPayload vehicleSpeedPayload = {
-        .egoSpeed_mps = vehicleSpeed,
-        .speedFaultActive = 0,
-        .rc = 0,
-        .crc = 0
-    };
-    txVehicleSpeedPayload(&vehicleSpeedPayload);
+    // VehicleSpeedPayload vehicleSpeedPayload = {
+    //     .egoSpeed_mps = vehicleSpeed,
+    //     .speedFaultActive = 0,
+    //     .rc = 0,
+    //     .crc = 0
+    // };
+    // txVehicleSpeedPayload(&vehicleSpeedPayload);
 
 #if DEBUG
     Serial.print("Elapsed Time: ");
