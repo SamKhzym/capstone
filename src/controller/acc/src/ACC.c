@@ -9,7 +9,6 @@
 
 //Globals and parameters
 struct AccParams accParams;
-
 bool leadVehicleExists(float leadDist, float leadSpeed, float setSpeed) {
     return leadSpeed < setSpeed && leadDist < accParams.maxLeadDist;
 }
@@ -40,7 +39,7 @@ float pidStep(PidParams* params, float err) {
 void initAcc() {
 
     float speedKp = 3.0f;
-    float speedKi = 0.05f;
+    float speedKi = 1.0f;
     float speedKd = 0.04f;
 
     initPidParams(&accParams.speedPid, speedKp, speedKi, speedKd);
@@ -48,9 +47,9 @@ void initAcc() {
 
 }
 
-uint8_t saturateActReq(uint8_t actReq) {
+uint8_t saturateActReq(float actReq) {
 
-    uint8_t saturated = actReq;
+    uint8_t saturated = 0;
 
     if (actReq < 50){
         saturated = 0;
@@ -58,12 +57,18 @@ uint8_t saturateActReq(uint8_t actReq) {
     else if (actReq < 100){
         saturated = 100;
     }
+    else if (actReq > 255) {
+        saturated = 255;
+    }
+    else {
+        saturated = (uint8_t)actReq;
+    }
 
     return saturated;
 
 }
 
-float stepAcc(float hostVel, float leadVel, float setSpeed, float leadDist){
+uint8_t stepAcc(float hostVel, float leadVel, float setSpeed, float leadDist){
 
     // Decide between cruise and follow modes
     enum Mode mode = CRUISE; // defaults in cruise state
@@ -75,11 +80,11 @@ float stepAcc(float hostVel, float leadVel, float setSpeed, float leadDist){
     
     //Calculate PID terms
     float error = setSpeed - hostVel;
-    uint8_t actReq = (uint8_t)pidStep(&accParams.speedPid, error);
+    float actReq = pidStep(&accParams.speedPid, error);
 
     // pseudo-saturation
-    saturateActReq(actReq);
+    uint8_t saturatedActReq = saturateActReq(actReq);
 
-    return actReq;
+    return saturatedActReq;
 
 }

@@ -1,12 +1,14 @@
 from env_simulator import EnvironmentalSimulator, DT_SIM
 from real_time_viz import RealTimeViz, DT_VIZ
 from plant_model import PlantModel
+from acc_wrapper import AccWrapper
 from pathlib import Path
 from time import time
 
 # pathing stuff
 PROJECT_BASE = Path(__file__).parents[1]
 DRIVE_CYCLE_DIR = PROJECT_BASE / 'simulator' / 'drive_cycle'
+ACC_DLL_PATH = PROJECT_BASE / 'controller' / 'acc' / 'bin' / 'controller_shared.dll'
 
 # simulation parameters
 DRIVE_CYCLE_NAME = 'hwfet.csv'
@@ -29,6 +31,10 @@ def main():
     simulator = EnvironmentalSimulator(drive_cycle_path, SET_SPEED_MPS, INIT_LEAD_DIST_M)
     plant = PlantModel(GAIN, ZETA, OMEGA_N)
     viz = RealTimeViz()
+    acc = AccWrapper(str(ACC_DLL_PATH))
+
+    # initialize acc controller
+    acc.init_acc()
 
     doViz = True
     while True:
@@ -38,7 +44,12 @@ def main():
         elapsed_time = time() - start_time
 
         # TODO: function binding to ACC controller in C (DLL)
-        act_req = 255
+        act_req = acc.step_acc(
+            ego_speed,
+            simulator.get_current_lead_speed(),
+            simulator.get_set_speed(),
+            simulator.get_rel_lead_distance()
+        )
 
         # update plant model and get ego speed
         ego_speed = plant.step_plant(act_req)

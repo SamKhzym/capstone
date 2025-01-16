@@ -8,33 +8,33 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_C_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(BUILD_TESTS OFF CACHE BOOL "Build Tests")
+
+set(PROJECT_BASE "${CMAKE_CURRENT_LIST_DIR}")
+
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BASE}/bin)
 # ================== #
 
 # Configure vcpkg location
 include(${VCPKG_DIR}/scripts/buildsystems/vcpkg.cmake)
 set(CMAKE_TOOLCHAIN_FILE ${VCPKG_DIR}/scripts/buildsystems/vcpkg.cmake)
 # glob to find all files that need to be included
-file(GLOB_RECURSE sources
-    src/**.c
-)
+file(GLOB_RECURSE sources src/**.c)
 
 # Target definitions
-add_library(${PROJECT_NAME} STATIC ${sources})
+add_library(${PROJECT_NAME}_static STATIC ${sources})
+add_library(${PROJECT_NAME}_shared SHARED ${sources})
 if (MSVC)
-#    target_compile_options(${PROJECT_NAME} PUBLIC /O2)
+    add_compile_options(/O2)
 else()
-    target_compile_options(${PROJECT_NAME} PUBLIC -O3)
+    add_compile_options(-O3)
     #target_compile_options(${PROJECT_NAME} PUBLIC -O0 -g) # uncomment for debugging purposes
 endif()
 
 # Include directories.
-target_include_directories(${PROJECT_NAME} PUBLIC
-    include
-)
+include_directories(${PROJECT_NAME} PUBLIC include)
 
 # Linking phase
-target_link_libraries(${PROJECT_NAME} PRIVATE
-)
+link_libraries(${PROJECT_NAME} PRIVATE)
 
 # == GOOGLETEST BUILD == #
 if(BUILD_TESTS) 
