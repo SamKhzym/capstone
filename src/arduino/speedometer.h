@@ -17,8 +17,10 @@ public:
 private:
     int pinNum;
     float lastTimestep_s;
+    float lastLastTimestep_s;
     bool prevMagFieldHigh;
     float dutyCycleThreshold_pct;
+    float lastDutyCycle_pct;
     float lastSpeed_mps;
     float wheelRadius_m;
     float minSpeed_mps;

@@ -1,4 +1,7 @@
 import matplotlib.pyplot as plt
+from pathlib import Path
+
+PROJECT_BASE = Path(__file__).parents[2]
 
 class SerialData:
 
@@ -18,7 +21,7 @@ class SerialData:
 
             if '====' in lines[i]: continue
 
-            print(lines[i])
+            # print(lines[i])
 
             fields = lines[i].split(":")
             name = fields[0]
@@ -29,14 +32,15 @@ class SerialData:
             if name == "Duty_Cycle": self.dutyCycles.append(value)
             if name == "Vehicle_Speed": self.speeds.append(value)
 
-        print(len(self.times))
-        print(self.times)
+        # print(len(self.times))
+        # print(self.times)
 
     def plotMetrics(self):
 
-        fig, ax = plt.subplots(3, 1)
+        fig, ax = plt.subplots(3, 1, sharex=True)
 
         ax[0].plot(s.times, s.dutyCycles, label="Duty Cycle (%)")
+        ax[0].axhline(y = 47, color = 'r', linestyle = '-', label='Threshold (%)') 
         ax[0].legend()
         ax[1].plot(s.times, s.pwmSpeeds, label="PWM Output Commands (0-255)")
         ax[1].legend()
@@ -45,5 +49,8 @@ class SerialData:
 
         plt.show()
 
-s = SerialData("data/putty.txt")
-s.plotMetrics()
+if __name__ == '__main__':
+    file = PROJECT_BASE / 'src' / 'processing' / 'data' / 'putty.txt'
+
+    s = SerialData(str(file))
+    s.plotMetrics()

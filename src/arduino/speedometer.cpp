@@ -7,6 +7,7 @@ Speedometer::Speedometer() {
     this->dutyCycleThreshold_pct = 0;
     this->prevMagFieldHigh = false;
     this->lastTimestep_s = 0;
+    this->lastLastTimestep_s = 0;
     this->lastSpeed_mps = 0;
     this->wheelRadius_m = 0;
     this->minSpeed_mps = 0;
@@ -20,6 +21,7 @@ Speedometer::Speedometer(int pinNum, float dutyCycleThreshold_pct, float radius_
     this->dutyCycleThreshold_pct = dutyCycleThreshold_pct;
     this->prevMagFieldHigh = false;
     this->lastTimestep_s = 0;
+    this->lastLastTimestep_s = 0;
     this->lastSpeed_mps = 0;
     this->wheelRadius_m = radius_m;
     this->minSpeed_mps = minSpeed_mps;
@@ -51,14 +53,17 @@ float Speedometer::getSpeed(float ts_s) {
     Serial.println(currDutyCycle_pct);
 #endif
 
+    float currDutyCycleFilt_pct = (currDutyCycle_pct + this->lastDutyCycle_pct) / 2;
+
     // second clause only necessary if magnets are mounted in opposite directions, resulting in spikes in different directions
-    bool magFieldHigh = (fabs(NO_FIELD_DC - currDutyCycle_pct) >= this->dutyCycleThreshold_pct) && (currDutyCycle_pct > NO_FIELD_DC);
+    bool magFieldHigh = (fabs(NO_FIELD_DC - currDutyCycleFilt_pct) >= this->dutyCycleThreshold_pct);
 
     // if duty cycle crossed max threshold this timestep, determine speed
     if (magFieldHigh && !this->prevMagFieldHigh) {
-        float dt = ts_s - this->lastTimestep_s;
-        float distanceTravelled = 2 * M_PI * this->wheelRadius_m / 5;
+        float dt = ts_s - this->lastLastTimestep_s;
+        float distanceTravelled = 2 * M_PI * this->wheelRadius_m * (2.0f / 5.0f);
         this->lastSpeed_mps = distanceTravelled / dt;
+        this->lastLastTimestep_s = this->lastTimestep_s;
         this->lastTimestep_s = ts_s;
     }
     
@@ -69,6 +74,7 @@ float Speedometer::getSpeed(float ts_s) {
 
     // set prev magnetic field high flag
     this->prevMagFieldHigh = magFieldHigh;
+    this->lastDutyCycle_pct = currDutyCycle_pct;
         
     // return speed
     return this->lastSpeed_mps;

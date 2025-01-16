@@ -19,7 +19,7 @@
 #define T1_PWM_PIN 7 // Pin connected to t1 sensor
 #define T2_PWM_PIN 8 // Pin connected to t2 sensor
 
-#define THRESHOLD_DUTY_CYCLE_DIFF_PCT 8
+#define THRESHOLD_DUTY_CYCLE_DIFF_PCT 3
 #define MIN_SPEED_MPS 0.05
 #define CAR_WHEEL_RAD_M 0.05
 
@@ -122,6 +122,13 @@ float generateSineCommand(float currTime, float minVal, float maxVal, float freq
     return amplitude * sinf(2 * M_PI * freq * currTime) + bias;
 }
 
+float generateSweptSineCommand(float currTime, float minVal, float maxVal, float freq, float freqRise) {
+    if (currTime > 60) { return 0; }
+    float amplitude = (maxVal - minVal) / 2;
+    float bias = (maxVal + minVal) / 2;
+    return amplitude * sinf(2 * M_PI * freq * freqRise * currTime * currTime) + bias;
+}
+
 void loop() {
 
     // loop around until enough time has passed (sample time from last execution)
@@ -131,7 +138,7 @@ void loop() {
     // SpeedCommandPayload speedCommand = rxSpeedCommandPayload();
     // int speed = speedCommand.speedCommand_pwm; // uncomment when receiving from mcu
 
-    int speed = (int)generateSineCommand(millisToSec(elapsedTime_ms), 100, 255, 0.25);
+    int speed = (int)generateSweptSineCommand(millisToSec(elapsedTime_ms), 100, 255, 0.25, 0.15);
 
     // Check if the speed value is valid
     if (speed >= 0 && speed <= 255) {
