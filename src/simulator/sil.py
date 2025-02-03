@@ -8,7 +8,7 @@ from time import time
 # pathing stuff
 PROJECT_BASE = Path(__file__).parents[1]
 DRIVE_CYCLE_DIR = PROJECT_BASE / 'simulator' / 'drive_cycle'
-ACC_DLL_PATH = PROJECT_BASE / 'controller' / 'acc' / 'bin' / 'controller_shared.dll'
+ACC_DLL_PATH = PROJECT_BASE / 'controller' / 'bin' / 'controller_shared.dll'
 
 # simulation parameters
 DRIVE_CYCLE_NAME = 'hwfet.csv'
