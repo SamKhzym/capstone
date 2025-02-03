@@ -50,7 +50,7 @@ class SerialData:
         plt.show()
 
 if __name__ == '__main__':
-    file = PROJECT_BASE / 'src' / 'processing' / 'data' / 'putty.txt'
+    file = PROJECT_BASE / 'src' / 'processing' / 'data' / 'swept_sine_0_9.txt'
 
     s = SerialData(str(file))
     s.plotMetrics()

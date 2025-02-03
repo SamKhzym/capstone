@@ -9,20 +9,20 @@ set(CMAKE_C_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(BUILD_TESTS OFF CACHE BOOL "Build Tests")
 
-set(PROJECT_BASE "${CMAKE_CURRENT_LIST_DIR}")
-
+set(PROJECT_BASE "${CMAKE_CURRENT_LIST_DIR}/../..")
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BASE}/bin)
+
+add_compile_definitions(EXPORT_DLL) # build to dll target
 # ================== #
 
-# Configure vcpkg location
-include(${VCPKG_DIR}/scripts/buildsystems/vcpkg.cmake)
-set(CMAKE_TOOLCHAIN_FILE ${VCPKG_DIR}/scripts/buildsystems/vcpkg.cmake)
+message(${PROJECT_BASE})
+
 # glob to find all files that need to be included
-file(GLOB_RECURSE sources src/**.c)
+set(acc_sources ${PROJECT_BASE}/src/acc.c)
 
 # Target definitions
-add_library(${PROJECT_NAME}_static STATIC ${sources})
-add_library(${PROJECT_NAME}_shared SHARED ${sources})
+add_library(${PROJECT_NAME}_static STATIC ${acc_sources})
+add_library(${PROJECT_NAME}_shared SHARED ${acc_sources})
 if (MSVC)
     add_compile_options(/O2)
 else()
@@ -31,7 +31,7 @@ else()
 endif()
 
 # Include directories.
-include_directories(${PROJECT_NAME} PUBLIC include)
+include_directories(${PROJECT_NAME} PUBLIC ${PROJECT_BASE}/include)
 
 # Linking phase
 link_libraries(${PROJECT_NAME} PRIVATE)

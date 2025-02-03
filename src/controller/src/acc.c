@@ -5,7 +5,7 @@
  * Description: Implements and ACC control algorithm
  * */
 
-#include "ACC.h"
+#include "acc.h"
 
 //Globals and parameters
 struct AccParams accParams;
