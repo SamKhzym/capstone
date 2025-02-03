@@ -3,3 +3,4 @@ pandas
 control
 scipy
 pygame
+pytest
