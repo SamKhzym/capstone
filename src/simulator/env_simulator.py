@@ -10,8 +10,8 @@ class EnvironmentalSimulator:
 
         drive_cycle = pd.read_csv(lead_drive_cycle_path)
 
-        self.times = drive_cycle.iloc[:,0].values
-        self.lead_speeds = drive_cycle.iloc[:,1].values
+        self.times = drive_cycle.iloc[:,0].values.astype(np.float32)
+        self.lead_speeds = drive_cycle.iloc[:,1].values.astype(np.float32)
         self.set_speed = set_speed
 
         self.ego_position = 0
