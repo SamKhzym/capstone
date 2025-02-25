@@ -2,27 +2,14 @@
 
 #define NO_FIELD_DC 50.0
 
-Speedometer::Speedometer() {
+Speedometer::Speedometer() {}
 
-    this->dutyCycleThreshold_pct = 0;
-    this->prevMagFieldHigh = false;
-    this->lastTimestep_s = 0;
-    this->lastLastTimestep_s = 0;
-    this->lastSpeed_mps = 0;
-    this->wheelRadius_m = 0;
-    this->minSpeed_mps = 0;
-    this->timeout = 0;
+Speedometer::Speedometer(String name, int pinNum, float dutyCycleLowerThreshold_pct, float dutyCycleUpperThreshold_pct, float radius_m, float minSpeed_mps) {
 
-}
-
-Speedometer::Speedometer(int pinNum, float dutyCycleThreshold_pct, float radius_m, float minSpeed_mps) {
-
+    this->name = name;
     this->pinNum = pinNum;
-    this->dutyCycleThreshold_pct = dutyCycleThreshold_pct;
-    this->prevMagFieldHigh = false;
-    this->lastTimestep_s = 0;
-    this->lastLastTimestep_s = 0;
-    this->lastSpeed_mps = 0;
+    this->dutyCycleLowerThreshold_pct = dutyCycleLowerThreshold_pct;
+    this->dutyCycleUpperThreshold_pct = dutyCycleUpperThreshold_pct;
     this->wheelRadius_m = radius_m;
     this->minSpeed_mps = minSpeed_mps;
     this->timeout = 1.2 * (2 * M_PI * this->wheelRadius_m) / this->minSpeed_mps;
@@ -49,19 +36,19 @@ float Speedometer::getSpeed(float ts_s) {
     float currDutyCycle_pct = pwmToDutyCycle();
 
 #if DEBUG
-    Serial.print("Duty_Cycle: ");
+    Serial.print("Duty_Cycle_" + this->name + ": ");
     Serial.println(currDutyCycle_pct);
 #endif
 
     float currDutyCycleFilt_pct = (currDutyCycle_pct + this->lastDutyCycle_pct) / 2;
 
-    // second clause only necessary if magnets are mounted in opposite directions, resulting in spikes in different directions
-    bool magFieldHigh = (fabs(NO_FIELD_DC - currDutyCycleFilt_pct) >= this->dutyCycleThreshold_pct);
+    // if we've passed the upper threshold, mark an event
+    bool magFieldHigh = (currDutyCycleFilt_pct >= this->dutyCycleUpperThreshold_pct);
 
     // if duty cycle crossed max threshold this timestep, determine speed
     if (magFieldHigh && !this->prevMagFieldHigh) {
-        float dt = ts_s - this->lastLastTimestep_s;
-        float distanceTravelled = 2 * M_PI * this->wheelRadius_m * (2.0f / 5.0f);
+        float dt = ts_s - this->lastTimestep_s;
+        float distanceTravelled = M_PI * this->wheelRadius_m * (1.0f / 5.0f);
         this->lastSpeed_mps = distanceTravelled / dt;
         this->lastLastTimestep_s = this->lastTimestep_s;
         this->lastTimestep_s = ts_s;
