@@ -1,6 +1,7 @@
 #include <SoftwareSerial.h>
 #include "speedometer.h"
 #include "uart_comm_layer.h"
+#include "schemas.h"
 
 // Motor A (connected to AO1 and AO2)
 // Motor A is Right-Hand Drive
@@ -155,14 +156,17 @@ void loop() {
     float wheel1Speed = w1->getSpeed(millisToSec(elapsedTime_ms));
     float wheel2Speed = w2->getSpeed(millisToSec(elapsedTime_ms));
 
+    // average out wheel speeds
+    float vehicleSpeed = (wheel1Speed + wheel2Speed) / 2;
+
     // construct vehicle speed payload struct, serialize, and transmit payload
-    // VehicleSpeedPayload vehicleSpeedPayload = {
-    //     .egoSpeed_mps = vehicleSpeed,
-    //     .speedFaultActive = 0,
-    //     .rc = 0,
-    //     .crc = 0
-    // };
-    // txVehicleSpeedPayload(&vehicleSpeedPayload);
+    VehicleSpeedPayload vehicleSpeedPayload = {
+        .egoSpeed_mps = vehicleSpeed,
+        .speedFaultActive = 0,
+        .rc = 0,
+        .crc = 0
+    };
+    txVehicleSpeedPayload(&vehicleSpeedPayload);
 
 #if DEBUG
     Serial.print("Elapsed Time: ");

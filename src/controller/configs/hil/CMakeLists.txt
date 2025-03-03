@@ -15,15 +15,16 @@ set(PROJECT_BASE "${CMAKE_CURRENT_LIST_DIR}/../..")
 
 # glob to find all files that need to be included
 file(GLOB_RECURSE acc_sources ${PROJECT_BASE}/src/**.c)
-file(GLOB_RECURSE interfaces_sources ${PROJECT_BASE}/src/**.c)
+file(GLOB_RECURSE arduino_sources ${PROJECT_BASE}/../arduino/**.c)
 
 set(BOARD stm32h735g_disco)
+set(includes ${PROJECT_BASE}/include ${PROJECT_BASE}/../arduino)
 
 find_package(Zephyr REQUIRED HINTS $ENV{ZEPHYR_BASE})
 
 project(safety_board)
 
-target_include_directories(app PUBLIC ${PROJECT_BASE}/include)
-target_sources(app PRIVATE ${acc_sources} ${interfaces_sources})
+target_include_directories(app PUBLIC ${includes})
+target_sources(app PRIVATE ${acc_sources} ${arduino_sources})
 
 include(${ZEPHYR_BASE}/samples/net/common/common.cmake)
