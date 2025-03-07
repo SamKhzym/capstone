@@ -18,7 +18,7 @@
 #define W1_PWM_PIN 4 // Pin connected to w1 sensor
 #define W2_PWM_PIN 12 // Pin connected to w2 sensor
 #define T1_PWM_PIN 10 // Pin connected to t1 sensor - NEED TO CHECK IF THIS WORKS
-#define T2_PWM_PIN 12 // Pin connected to t2 sensor - NEED TO CHECK IF THIS WORKS
+#define T2_PWM_PIN 2 // Pin connected to t2 sensor - NEED TO CHECK IF THIS WORKS
 
 #define W1_LOWER_THRESHOLD_PCT 45
 #define W1_UPPER_THRESHOLD_PCT 90
@@ -26,9 +26,17 @@
 #define W2_LOWER_THRESHOLD_PCT 10
 #define W2_UPPER_THRESHOLD_PCT 50
 
+#define T1_LOWER_THRESHOLD_PCT 10
+#define T1_UPPER_THRESHOLD_PCT 50
+
+#define T2_LOWER_THRESHOLD_PCT 10
+#define T2_UPPER_THRESHOLD_PCT 50
+
 #define MIN_SPEED_MPS 0.05
 
 #define CAR_WHEEL_RAD_M 0.05
+
+#define DYNO_WHEEL_RAD_M 0.0635
 
 #define SAMPLE_TIME_MS 5
 
@@ -78,10 +86,10 @@ void setup() {
     stopMotors();
 
     // setup speedometers
-    w1 = new Speedometer("W1", W1_PWM_PIN, W1_LOWER_THRESHOLD_PCT, W1_UPPER_THRESHOLD_PCT, CAR_WHEEL_RAD_M, MIN_SPEED_MPS);
-    w2 = new Speedometer("W2", W2_PWM_PIN, W2_LOWER_THRESHOLD_PCT, W2_UPPER_THRESHOLD_PCT, CAR_WHEEL_RAD_M, MIN_SPEED_MPS);
-    // t1 = new Speedometer(T1_PWM_PIN, THRESHOLD_DUTY_CYCLE_PCT, CAR_WHEEL_RAD_M, MIN_SPEED_MPS);
-    // t2 = new Speedometer(T2_PWM_PIN, THRESHOLD_DUTY_CYCLE_PCT, CAR_WHEEL_RAD_M, MIN_SPEED_MPS);
+    w1 = new Speedometer("W1", W1_PWM_PIN, W1_LOWER_THRESHOLD_PCT, W1_UPPER_THRESHOLD_PCT, CAR_WHEEL_RAD_M, 5.0, MIN_SPEED_MPS);
+    w2 = new Speedometer("W2", W2_PWM_PIN, W2_LOWER_THRESHOLD_PCT, W2_UPPER_THRESHOLD_PCT, CAR_WHEEL_RAD_M, 5.0, MIN_SPEED_MPS);
+    t1 = new Speedometer("T1", T1_PWM_PIN, T1_LOWER_THRESHOLD_PCT, T1_UPPER_THRESHOLD_PCT,CAR_WHEEL_RAD_M,  4.0, MIN_SPEED_MPS);
+    t2 = new Speedometer("T2", T2_PWM_PIN, T2_LOWER_THRESHOLD_PCT, T2_UPPER_THRESHOLD_PCT, CAR_WHEEL_RAD_M, 4.0, MIN_SPEED_MPS);
 
 }
 
@@ -155,9 +163,11 @@ void loop() {
     // get vehicle speed from w1 speedometer
     float wheel1Speed = w1->getSpeed(millisToSec(elapsedTime_ms));
     float wheel2Speed = w2->getSpeed(millisToSec(elapsedTime_ms));
+    float dyno1Speed = t1->getSpeed(millisToSec(elapsedTime_ms));
+    float dyno2Speed = t2->getSpeed(millisToSec(elapsedTime_ms));
 
     // average out wheel speeds
-    float vehicleSpeed = (wheel1Speed + wheel2Speed) / 2;
+    float vehicleSpeed = (wheel1Speed + wheel2Speed + dyno1Speed + dyno2Speed) / 4;
 
     // construct vehicle speed payload struct, serialize, and transmit payload
     VehicleSpeedPayload vehicleSpeedPayload = {

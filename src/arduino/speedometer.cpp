@@ -4,7 +4,8 @@
 
 Speedometer::Speedometer() {}
 
-Speedometer::Speedometer(String name, int pinNum, float dutyCycleLowerThreshold_pct, float dutyCycleUpperThreshold_pct, float radius_m, float minSpeed_mps) {
+//Added new parameter
+Speedometer::Speedometer(String name, int pinNum, float dutyCycleLowerThreshold_pct, float dutyCycleUpperThreshold_pct, float radius_m, float num_mags, float minSpeed_mps) {
 
     this->name = name;
     this->pinNum = pinNum;
@@ -12,6 +13,8 @@ Speedometer::Speedometer(String name, int pinNum, float dutyCycleLowerThreshold_
     this->dutyCycleUpperThreshold_pct = dutyCycleUpperThreshold_pct;
     this->wheelRadius_m = radius_m;
     this->minSpeed_mps = minSpeed_mps;
+    //NEW PARAMETER
+    this->num_mags = num_mags;
     this->timeout = 1.2 * (2 * M_PI * this->wheelRadius_m) / this->minSpeed_mps;
 
 }
@@ -48,7 +51,7 @@ float Speedometer::getSpeed(float ts_s) {
     // if duty cycle crossed max threshold this timestep, determine speed
     if (magFieldHigh && !this->prevMagFieldHigh) {
         float dt = ts_s - this->lastTimestep_s;
-        float distanceTravelled = M_PI * this->wheelRadius_m * (1.0f / 5.0f);
+        float distanceTravelled = M_PI * this->wheelRadius_m * (1.0f / this->num_mags);
         this->lastSpeed_mps = distanceTravelled / dt;
         this->lastLastTimestep_s = this->lastTimestep_s;
         this->lastTimestep_s = ts_s;
