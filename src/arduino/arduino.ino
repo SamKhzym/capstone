@@ -1,7 +1,8 @@
 #include <SoftwareSerial.h>
 #include "speedometer.h"
-#include "uart_comm_layer.h"
-#include "schemas.h"
+#include "comm_layer.h"
+//#include "uart_comm_layer.h"
+//#include "schemas.h"
 
 // Motor A (connected to AO1 and AO2)
 // Motor A is Right-Hand Drive
@@ -42,7 +43,7 @@
 
 unsigned long elapsedTime_ms = 0;
 
-Speedometer *w1, *w2; /*, t1, t2*/
+Speedometer *w1, *w2, *t1, *t2;
 
 typedef union
 {
@@ -171,12 +172,12 @@ void loop() {
 
     // construct vehicle speed payload struct, serialize, and transmit payload
     VehicleSpeedPayload vehicleSpeedPayload = {
-        .egoSpeed_mps = vehicleSpeed,
-        .speedFaultActive = 0,
-        .rc = 0,
-        .crc = 0
+        .vehicleSpeed_mps = vehicleSpeed
+        //.speedFaultActive = 0,
+        //.rc = 0,
+        //.crc = 0
     };
-    txVehicleSpeedPayload(&vehicleSpeedPayload);
+    //txVehicleSpeedPayload(&vehicleSpeedPayload);
 
 #if DEBUG
     Serial.print("Elapsed Time: ");
