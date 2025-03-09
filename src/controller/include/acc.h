@@ -17,7 +17,7 @@ typedef struct PidParams {
     float lastError;
 } PidParams;
 
-struct AccParams {
+typedef struct {
     float maxLeadDist;
     PidParams speedPid;
 } AccParams;
@@ -28,7 +28,8 @@ enum Mode {
     FOLLOW
 };
 
-const float dt = 0.01f;
+extern const float dt;
+extern AccParams accParams;
 
 // function headers
 bool leadVehicleExists(float leadDist, float leadSpeed, float setSpeed);

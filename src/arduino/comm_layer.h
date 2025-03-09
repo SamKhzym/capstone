@@ -42,15 +42,13 @@ void packVehicleSpeedExtendedPayload(const struct VehicleSpeedExtendedPayload* p
 
 // <XX.XXX|XXX.XXX|XX.XXX|XX|XXX>
 #define ENVIRONMENT_INFO_PAYLOAD_LENGTH (30+1)
-struct EnvironmentInfoPayload {
+typedef struct {
     float leadSpeed_mps; // XX.XXX (6)
     float leadDistance_m; // XXX.XXX (7)
     float setSpeed_mps; // XX.XXX (6)
-    int rc; // XX (2)
-    int crc; // XXX (3)
-};
-void unpackEnvironmentInfoPayload(const char* payloadBuffer, struct EnvironmentInfoPayload* payload);
-void packEnvironmentInfoPayload(const struct EnvironmentInfoPayload* payload, char* payloadBuffer);
+} EnvironmentInfoPayload;
+void unpackEnvironmentInfoPayload(const char* payloadBuffer, EnvironmentInfoPayload* payload);
+void packEnvironmentInfoPayload(const EnvironmentInfoPayload* payload, char* payloadBuffer);
 
 #ifdef __cplusplus
 }

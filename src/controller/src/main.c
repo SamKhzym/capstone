@@ -1,189 +1,110 @@
-/*
- * Copyright (c) 2017 Linaro Limited
- *
- * SPDX-License-Identifier: Apache-2.0
- */
-
-#include <errno.h>
+#include <zephyr/kernel.h>
+#include <zephyr/device.h>
+#include <zephyr/drivers/uart.h>
+#include <zephyr/net/socket.h>
+#include <string.h>                                                                                    
 #include <stdio.h>
 #include <stdlib.h>
-#include "comm_layer.h"
-#include "acc.h"
+#include <errno.h>
 
-#ifndef __ZEPHYR__
+/* UART configuration */
+#define UART_DEVICE_NODE DT_NODELABEL(uart7)
+static const struct device *const uart_dev = DEVICE_DT_GET(UART_DEVICE_NODE);
 
-#include <arpa/inet.h>
-#include <netinet/in.h>
-#include <sys/socket.h>
-#include <unistd.h>
-
-#else
-
-#include <zephyr/kernel.h>
-#include <zephyr/net/socket.h>
-
-#endif
-
-#define BIND_PORT 4242
-
-// kill program if status variable is negative
-void checkKillCode(int code) {
-    if (code < 0) { exit(1); }
+void print_uart(const char *buf) {
+    int msg_len = strlen(buf);
+    for (int i = 0; i < msg_len; i++) {
+        uart_poll_out(uart_dev, buf[i]);
+    }
 }
 
-// Setup code for creating a TCP server on a specified port
-int setupTcpServer(int port) {
+/* TCP server configuration */
+#define BIND_PORT 4242
 
-    int ret, opt, server;
+int main(void) {
+    /* Check if UART device is ready */
+    if (!device_is_ready(uart_dev)) {
+        printk("UART device not found or not ready!\n");
+        return 1;
+    }
 
-    // create an ipv6 socket bound to any address and specified port
+    /* Socket setup for TCP server */
+    int serv;
     struct sockaddr_in6 bind_addr = {
         .sin6_family = AF_INET6,
         .sin6_addr = IN6ADDR_ANY_INIT,
-        .sin6_port = htons(port),
+        .sin6_port = htons(BIND_PORT),
     };
 
-    server = socket(AF_INET6, SOCK_STREAM, IPPROTO_TCP);
-    if (server < 0) {
-        printf("error: socket: %d\n", errno);
-        return -1; // error code
+    serv = socket(AF_INET6, SOCK_STREAM, IPPROTO_TCP);
+    if (serv < 0) {
+        printk("Socket creation failed: %d\n", errno);
+        return 1;
     }
 
-    // configure socket with proper options - IPv6 only?
-    socklen_t optlen = sizeof(int);
-    ret = getsockopt(server, IPPROTO_IPV6, IPV6_V6ONLY, &opt, &optlen);
+    if (bind(serv, (struct sockaddr *)&bind_addr, sizeof(bind_addr)) < 0) {
+        printk("Bind failed: %d\n", errno);
+        close(serv);
+        return 1;
+    }
 
-    if (ret == 0) {
-        if (opt) {
-            printf("IPV6_V6ONLY option is on, turning it off.\n");
+    if (listen(serv, 5) < 0) {
+        printk("Listen failed: %d\n", errno);
+        close(serv);
+        return 1;
+    }
 
-            opt = 0;
-            ret = setsockopt(server, IPPROTO_IPV6, IPV6_V6ONLY, &opt, optlen);
-            if (ret < 0) {
-                printf("Cannot turn off IPV6_V6ONLY option\n");
-            } else {
-                printf("Sharing same socket between IPv6 and IPv4\n");
+    printk("Server listening on port %d...\n", BIND_PORT);
+
+    /* Periodic UART message and TCP server loop */
+    while (1) {
+        struct sockaddr_in6 client_addr;
+        socklen_t client_addr_len = sizeof(client_addr);
+        char addr_str[32];
+        
+        /* Accept client connections */
+        int client = accept(serv, (struct sockaddr *)&client_addr, &client_addr_len);
+        if (client < 0) {
+            printk("Accept failed: %d\n", errno);
+            continue;
+        }
+
+        inet_ntop(client_addr.sin6_family, &client_addr.sin6_addr, addr_str, sizeof(addr_str));
+        printk("Connection from %s\n", addr_str);
+
+        /* Create a separate loop for handling the client connection */
+        while (1) {
+            /* Periodically send "180" over UART every 1 second */
+            //print_uart("180\r\n");
+            //k_sleep(K_MSEC(1000));  // 1-second delay
+
+            /* Receive data from TCP client */
+            char buf[128];
+            int len = recv(client, buf, sizeof(buf) - 1, 0);
+
+            if (len <= 0) {
+                if (len < 0) {
+                    printk("Recv failed: %d\n", errno);
+                }
+                break;  // Exit inner loop if client disconnects
             }
 
-        }
-    }
+            buf[len] = '\0';  // Null-terminate the received data
+            printk("Received string: %s\n", buf);
 
-    // bind server to address and port
-    if (bind(server, (struct sockaddr *)&bind_addr, sizeof(bind_addr)) < 0) {
-        printf("error: bind: %d\n", errno);
-        return -2; // error code
-    }
+            /* Send received TCP data over UART */
+            print_uart(buf);
+            print_uart("\r\n");  // Add newline for readability on UART output
 
-    // start listening for connections
-    if (listen(server, 5) < 0) {
-        printf("error: listen: %d\n", errno);
-        return -3; // error code
-    }
-    
-    printf("Single-threaded TCP echo server waits for a connection on port %d...\n", port);
-
-    // return server value
-    return server;
-
-}
-
-int acceptTcpConnection(int server) {
-
-    struct sockaddr_in6 client_addr;
-    socklen_t client_addr_len = sizeof(client_addr);
-    char addr_str[32];
-    int client = accept(server, (struct sockaddr *)&client_addr, &client_addr_len);
-
-    if (client < 0) {
-        printf("error: accept: %d\n", errno);
-        return -1;
-    }
-
-    inet_ntop(client_addr.sin6_family, &client_addr.sin6_addr, addr_str, sizeof(addr_str));
-    printf("Connection from %s\n", addr_str);
-
-    return client;
-
-}
-
-int rxEnvironmentInfo(int client, struct EnvironmentInfoPayload* payload) {
-
-    char buf[ENVIRONMENT_INFO_PAYLOAD_LENGTH];
-    int len = recv(client, buf, sizeof(buf), 0);
-
-    if (len < 0) {
-        printf("error: recv: %d\n", errno);
-    }
-
-    if (len > 0) {
-        unpackEnvironmentInfoPayload(buf, payload);
-    }
-    
-    return len;
-
-}
-
-int txVehicleSpeed(int client, const struct VehicleSpeedPayload* payload) {
-
-    // pack vehicle speed into bytes
-    char buf[VEHICLE_SPEED_PAYLOAD_LENGTH];
-    packVehicleSpeedPayload(payload, buf);
-
-    int outLen = send(client, buf, VEHICLE_SPEED_PAYLOAD_LENGTH, 0);
-    if (outLen < 0) {
-        printf("error: send: %d\n", errno);
-        return -1;
-    }
-
-    return outLen;
-
-}
-
-int main(void) {
-
-    int status; // temp status var
-
-    // setup tcp server
-    int server = setupTcpServer(BIND_PORT);
-    checkKillCode(server);
-
-    // wait for an incoming connection
-    while (1) {
-
-        // accept incoming client connection (sim pc)
-        int client = acceptTcpConnection(server);
-
-        // sim pc will transmit environmental info, so create a struct to contain info
-        struct EnvironmentInfoPayload simEnvInfo = {0};
-
-        // controller will transmit vehicle speed back to sim pc, so create struct
-        struct VehicleSpeedPayload vehSpeedInfo = {0};
-
-        // initialize acc controller
-        initAcc();
-
-        // main program loop
-        while (1) {
-
-            // rx environment info from simulator, 
-            status = rxEnvironmentInfo(client, &simEnvInfo);
-
-            // controller logic
-            uint8_t pwmCmd = stepAcc(
-                0,
-                simEnvInfo.leadSpeed_mps, 
-                simEnvInfo.setSpeed_mps, 
-                simEnvInfo.leadDistance_m
-            );
-            
-            status = txVehicleSpeed(client, &vehSpeedInfo);
-
-            sleep(1);
-            
+            /* Optional response back to the TCP client */
+            const char *response = "Received your message";
+            send(client, response, strlen(response), 0);
         }
 
+        close(client);
+        printk("Connection from %s closed\n", addr_str);
     }
 
+    close(serv); 
     return 0;
-
 }

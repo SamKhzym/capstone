@@ -8,7 +8,8 @@
 #include "acc.h"
 
 //Globals and parameters
-struct AccParams accParams;
+AccParams accParams;
+const float dt = 0.01f;
 bool leadVehicleExists(float leadDist, float leadSpeed, float setSpeed) {
     return leadSpeed < setSpeed && leadDist < accParams.maxLeadDist;
 }

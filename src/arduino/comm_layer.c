@@ -45,27 +45,23 @@ void unpackVehicleSpeedExtendedPayload(const char* payloadBuffer, struct Vehicle
     );
 }
 
-void packEnvironmentInfoPayload(const struct EnvironmentInfoPayload* payload, char* payloadBuffer) {
+void packEnvironmentInfoPayload(const EnvironmentInfoPayload* payload, char* payloadBuffer) {
     char leadSpeedString[6], leadDistanceString[7], setSpeedString[6];
     formatFloatString(leadSpeedString, payload->leadSpeed_mps, 6, 3);
     formatFloatString(leadDistanceString, payload->leadDistance_m, 7, 3);
     formatFloatString(setSpeedString, payload->setSpeed_mps, 6, 3);
 
-    sprintf(payloadBuffer, "<%s|%s|%s|%2d|%3d>", 
+    sprintf(payloadBuffer, "<%s|%s|%s>", 
         leadSpeedString, 
         leadDistanceString, 
-        setSpeedString, 
-        payload->rc, 
-        payload->crc
+        setSpeedString
     );
 }
 
-void unpackEnvironmentInfoPayload(const char* payloadBuffer, struct EnvironmentInfoPayload* payload) {
-    sscanf(payloadBuffer, "<%f|%f|%f|%d|%d>", 
+void unpackEnvironmentInfoPayload(const char* payloadBuffer, EnvironmentInfoPayload* payload) {
+    sscanf(payloadBuffer, "<%f|%f|%f>", 
         &payload->leadSpeed_mps,
         &payload->leadDistance_m,
-        &payload->setSpeed_mps,
-        &payload->rc,
-        &payload->crc
+        &payload->setSpeed_mps
     );
 }
