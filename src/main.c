@@ -6,7 +6,9 @@
 
 //test body
 int main(){
-    char* payload = "123456789";
-    printf("%d\n", checksum((uint8_t*)payload,9));
+    uint8_t message[] = {0x32,0x12};
+    uint8_t crc = crc8(message, sizeof(message));  // Poly: 0x07 (CRC-8 standard)
+    
+    printf("CRC-8: 0x%02X\n", crc);  // Print 8-bit CRC
     return 0;
 }

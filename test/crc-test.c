@@ -2,7 +2,8 @@
 #include <gtest/gtest.h>
 
 
-namespace capstone{
-    class safetyboardTest : public testing::Test
+TEST(CRC32Test, BasicCases){
+    uint8_t data1[] = {0x00, 0x00, 0x00, 0x00};
+    
 }
 
