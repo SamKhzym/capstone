@@ -9,7 +9,7 @@ from acc_wrapper import AccWrapper
 # pathing stuff
 PROJECT_BASE = Path(__file__).parents[1]
 DRIVE_CYCLE_DIR = PROJECT_BASE / 'simulator' / 'drive_cycle'
-# ACC_DLL_PATH = PROJECT_BASE / 'controller' / 'bin' / 'controller_shared.dll'
+ACC_DLL_PATH = PROJECT_BASE / 'controller' / 'bin' / 'controller_shared.dll'
 
 # simulation parameters
 DRIVE_CYCLE_NAME = 'hwfet.csv'
@@ -29,12 +29,12 @@ def main():
 
     drive_cycle_path = str(DRIVE_CYCLE_DIR / DRIVE_CYCLE_NAME)
     simulator = EnvironmentalSimulator(drive_cycle_path, SET_SPEED_MPS, INIT_LEAD_DIST_M)
-    # acc = AccWrapper(str(ACC_DLL_PATH))
-    # acc.init_acc()
+    acc = AccWrapper(str(ACC_DLL_PATH))
+    acc.init_acc()
     
     socket = Socket(HOST, PORT)
 
-    viz_enable = False
+    viz_enable = True
     if viz_enable:
         viz = RealTimeViz()
     doViz = True
@@ -47,13 +47,13 @@ def main():
             elapsed_time = time() - start_time
 
             # TODO: Remove acc from hil.py and add to board
-            # act_req = acc.step_acc(
-            #     ego_speed,
-            #     simulator.get_current_lead_speed(),
-            #     simulator.get_set_speed(),
-            #     simulator.get_rel_lead_distance()
-            # )
-            act_req = 150
+            act_req = acc.step_acc(
+                ego_speed,
+                simulator.get_current_lead_speed(),
+                simulator.get_set_speed(),
+                simulator.get_rel_lead_distance()
+            )
+            
             socket.send_speed_request(act_req)
             # print("Waiting on vehicle speed...")
             # ego_speed = socket.receive_vehicle_speed()

@@ -36,12 +36,12 @@ class Socket():
         payload = self.client_socket.recv(128)
         
         decoded_str = payload.decode('utf-8', errors='ignore')
-        print(decoded_str)
-        numbers = re.sub(r'\D', '', decoded_str) 
-        if numbers == "":
-            ego_speed = 0
-        else: 
-            ego_speed = float(numbers)
+        match = re.search(r'\d+\.\d+', decoded_str)  # Look for '0.xx' pattern
+        if match:
+            ego_speed = float(match.group())  # Convert to float
+        else:
+            print("No speed info avaliable.")
+            ego_speed = 0.0
 
         print(f"Ego Speed: {ego_speed}")
         return ego_speed

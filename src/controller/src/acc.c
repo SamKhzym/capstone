@@ -39,12 +39,12 @@ float pidStep(PidParams* params, float err) {
 
 void initAcc() {
 
-    float speedKp = 3.0f;
+    float speedKp = 5.0f;
     float speedKi = 1.0f;
     float speedKd = 0.04f;
 
     initPidParams(&accParams.speedPid, speedKp, speedKi, speedKd);
-    accParams.maxLeadDist = 5.0f;
+    accParams.maxLeadDist = 1.5f;
 
 }
 
