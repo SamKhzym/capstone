@@ -23,10 +23,11 @@ class Socket():
         
         self.client_socket.send(payload.encode('utf-8'))
 
-    def send_speed_request(self):
+    def send_speed_request(self, speed_req):
         
-        payload = "230"
+        payload = str(speed_req)
         
+        print(f"Sending payload: " + payload)
         self.client_socket.send(payload.encode('utf-8'))
     
     def receive_confirmation_message(self):
@@ -35,8 +36,15 @@ class Socket():
         payload = self.client_socket.recv(128)
         
         decoded_str = payload.decode('utf-8', errors='ignore')
-
         print(decoded_str)
+        numbers = re.sub(r'\D', '', decoded_str) 
+        if numbers == "":
+            ego_speed = 0
+        else: 
+            ego_speed = float(numbers)
+
+        print(f"Ego Speed: {ego_speed}")
+        return ego_speed
         
     def receive_vehicle_speed(self):
         

@@ -4,13 +4,13 @@
 #include <math.h>
 #include <Arduino.h>
 
-#define DEBUG 1 // if DEBUG flag defined, will send debug messages over serial console. need to turn off for production testing.
+#define DEBUG 0 // if DEBUG flag defined, will send debug messages over serial console. need to turn off for production testing.
 
 class Speedometer {
 
 public:
     Speedometer();
-    Speedometer(String name, int pinNum, float dutyCycleLowerThreshold_pct, float dutyCycleUpperThreshold_pct, float radius_m, float minSpeed_mps);
+    Speedometer(String name, int pinNum, float dutyCycleLowerThreshold_pct, float dutyCycleUpperThreshold_pct, float radius_m, float num_mags, float minSpeed_mps);
     ~Speedometer();
     float getSpeed(float ts_s);
 
@@ -26,6 +26,7 @@ private:
     float lastSpeed_mps = 0;
     float wheelRadius_m = 0;
     float minSpeed_mps = 0;
+    float num_mags = 0;
     float timeout = 0;
     float pwmToDutyCycle();
 

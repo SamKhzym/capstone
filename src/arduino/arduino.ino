@@ -1,7 +1,8 @@
 #include <SoftwareSerial.h>
 #include "speedometer.h"
-#include "uart_comm_layer.h"
-#include "schemas.h"
+#include "comm_layer.h"
+//#include "uart_comm_layer.h"
+//#include "schemas.h"
 
 // Motor A (connected to AO1 and AO2)
 // Motor A is Right-Hand Drive
@@ -18,7 +19,7 @@
 #define W1_PWM_PIN 4 // Pin connected to w1 sensor
 #define W2_PWM_PIN 12 // Pin connected to w2 sensor
 #define T1_PWM_PIN 10 // Pin connected to t1 sensor - NEED TO CHECK IF THIS WORKS
-#define T2_PWM_PIN 12 // Pin connected to t2 sensor - NEED TO CHECK IF THIS WORKS
+#define T2_PWM_PIN 2 // Pin connected to t2 sensor - NEED TO CHECK IF THIS WORKS
 
 #define W1_LOWER_THRESHOLD_PCT 45
 #define W1_UPPER_THRESHOLD_PCT 90
@@ -26,15 +27,26 @@
 #define W2_LOWER_THRESHOLD_PCT 10
 #define W2_UPPER_THRESHOLD_PCT 50
 
+#define T1_LOWER_THRESHOLD_PCT 10
+#define T1_UPPER_THRESHOLD_PCT 50
+
+#define T2_LOWER_THRESHOLD_PCT 10
+#define T2_UPPER_THRESHOLD_PCT 50
+
 #define MIN_SPEED_MPS 0.05
 
 #define CAR_WHEEL_RAD_M 0.05
+
+#define DYNO_WHEEL_RAD_M 0.0635
 
 #define SAMPLE_TIME_MS 5
 
 unsigned long elapsedTime_ms = 0;
 
-Speedometer *w1, *w2; /*, t1, t2*/
+Speedometer *w1, *w2, *t1, *t2;
+
+int speedCommand = 0;
+int prevSpeedCommand = 0;
 
 typedef union
 {
@@ -72,16 +84,16 @@ void setup() {
     pinMode(PWMB, OUTPUT);
 
     // Start the hardware serial port for communication with MCU
-    Serial.begin(2000000);
+    Serial.begin(115200);
 
     // Initialize motors to be stopped
     stopMotors();
 
     // setup speedometers
-    w1 = new Speedometer("W1", W1_PWM_PIN, W1_LOWER_THRESHOLD_PCT, W1_UPPER_THRESHOLD_PCT, CAR_WHEEL_RAD_M, MIN_SPEED_MPS);
-    w2 = new Speedometer("W2", W2_PWM_PIN, W2_LOWER_THRESHOLD_PCT, W2_UPPER_THRESHOLD_PCT, CAR_WHEEL_RAD_M, MIN_SPEED_MPS);
-    // t1 = new Speedometer(T1_PWM_PIN, THRESHOLD_DUTY_CYCLE_PCT, CAR_WHEEL_RAD_M, MIN_SPEED_MPS);
-    // t2 = new Speedometer(T2_PWM_PIN, THRESHOLD_DUTY_CYCLE_PCT, CAR_WHEEL_RAD_M, MIN_SPEED_MPS);
+    w1 = new Speedometer("W1", W1_PWM_PIN, W1_LOWER_THRESHOLD_PCT, W1_UPPER_THRESHOLD_PCT, CAR_WHEEL_RAD_M, 5.0, MIN_SPEED_MPS);
+    w2 = new Speedometer("W2", W2_PWM_PIN, W2_LOWER_THRESHOLD_PCT, W2_UPPER_THRESHOLD_PCT, CAR_WHEEL_RAD_M, 5.0, MIN_SPEED_MPS);
+    // t1 = new Speedometer("T1", T1_PWM_PIN, T1_LOWER_THRESHOLD_PCT, T1_UPPER_THRESHOLD_PCT,CAR_WHEEL_RAD_M,  4.0, MIN_SPEED_MPS);
+    // t2 = new Speedometer("T2", T2_PWM_PIN, T2_LOWER_THRESHOLD_PCT, T2_UPPER_THRESHOLD_PCT, CAR_WHEEL_RAD_M, 4.0, MIN_SPEED_MPS);
 
 }
 
@@ -137,36 +149,55 @@ float generateSweptSineCommand(float currTime, float minVal, float maxVal, float
 }
 
 void loop() {
-
+    
     // loop around until enough time has passed (sample time from last execution)
     while (elapsedTime_ms > 0 && (millis() - elapsedTime_ms) < SAMPLE_TIME_MS) { }
     elapsedTime_ms = millis();
 
+    if (Serial.available() > 0) {
+        // Read the speed value from the UART
+        prevSpeedCommand = speedCommand;
+        speedCommand = Serial.parseInt();
+        //Serial.println(speed);
+    }
+    else {
+      speedCommand = prevSpeedCommand;
+    }
+    
+    // Check if the speed value is valid
+    if (speedCommand >= 100 && speedCommand <= 255) {
+        // Example: Move forward with the received speed
+        forward(speedCommand);
+    } else {
+        forward(0);
+        //Serial.println("Invalid speed value received.");
+    }
+
     // SpeedCommandPayload speedCommand = rxSpeedCommandPayload();
     // int speed = speedCommand.speedCommand_pwm; // uncomment when receiving from mcu
 
-    int speedCommand = (int)generateSweptSineCommand(millisToSec(elapsedTime_ms), 100, 255, 0.25, 0.15);
-
-    // Check if the speed value is valid
-    if (speedCommand >= 0 && speedCommand <= 255) {
-        forward(speedCommand);
-    }
+    //int speedCommand = (int)generateSweptSineCommand(millisToSec(elapsedTime_ms), 100, 255, 0.25, 0.15);
 
     // get vehicle speed from w1 speedometer
     float wheel1Speed = w1->getSpeed(millisToSec(elapsedTime_ms));
     float wheel2Speed = w2->getSpeed(millisToSec(elapsedTime_ms));
+    // float dyno1Speed = t1->getSpeed(millisToSec(elapsedTime_ms));
+    // float dyno2Speed = t2->getSpeed(millisToSec(elapsedTime_ms));
 
     // average out wheel speeds
+    // float vehicleSpeed = (wheel1Speed + wheel2Speed + dyno1Speed + dyno2Speed) / 4;
     float vehicleSpeed = (wheel1Speed + wheel2Speed) / 2;
 
     // construct vehicle speed payload struct, serialize, and transmit payload
     VehicleSpeedPayload vehicleSpeedPayload = {
-        .egoSpeed_mps = vehicleSpeed,
-        .speedFaultActive = 0,
-        .rc = 0,
-        .crc = 0
+        .vehicleSpeed_mps = vehicleSpeed
+        //.speedFaultActive = 0,
+        //.rc = 0,
+        //.crc = 0
     };
-    txVehicleSpeedPayload(&vehicleSpeedPayload);
+    //txVehicleSpeedPayload(&vehicleSpeedPayload);
+    Serial.print("Vehicle Speed: ");
+    Serial.println(vehicleSpeed);
 
 #if DEBUG
     Serial.print("Elapsed Time: ");
