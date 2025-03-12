@@ -1,5 +1,6 @@
 #include "comm_layer.h"
 #include "stdio.h"
+#include <string.h>
 
 #ifdef ARDUINO
 #include <Arduino.h>
@@ -45,23 +46,44 @@ void unpackVehicleSpeedExtendedPayload(const char* payloadBuffer, struct Vehicle
     );
 }
 
-void packEnvironmentInfoPayload(const EnvironmentInfoPayload* payload, char* payloadBuffer) {
+void packEnvironmentInfoPayload(const struct EnvironmentInfoPayload* payload, char* payloadBuffer) {
     char leadSpeedString[6], leadDistanceString[7], setSpeedString[6];
     formatFloatString(leadSpeedString, payload->leadSpeed_mps, 6, 3);
     formatFloatString(leadDistanceString, payload->leadDistance_m, 7, 3);
     formatFloatString(setSpeedString, payload->setSpeed_mps, 6, 3);
 
-    sprintf(payloadBuffer, "<%s|%s|%s>", 
+    sprintf(payloadBuffer, "<%s|%s|%s|%2d|%3d>", 
         leadSpeedString, 
         leadDistanceString, 
-        setSpeedString
+        setSpeedString,
+        payload->rc, 
+        payload->crc
     );
 }
 
-void unpackEnvironmentInfoPayload(const char* payloadBuffer, EnvironmentInfoPayload* payload) {
-    sscanf(payloadBuffer, "<%f|%f|%f>", 
-        &payload->leadSpeed_mps,
-        &payload->leadDistance_m,
-        &payload->setSpeed_mps
-    );
+void unpackEnvironmentInfoPayload(char* payloadBuffer, struct EnvironmentInfoPayload* payload) {
+     if (payloadBuffer == NULL || payload == NULL) {
+        return;
+    }
+    // TODO: Causes crash when uncommented
+    // sscanf(payloadBuffer, "<%f|%f|%f|%d|%d>", 
+    //     &payload->leadSpeed_mps,
+    //     &payload->leadDistance_m,
+    //     &payload->setSpeed_mps,
+    //     &payload->rc,
+    //     &payload->crc
+    // );
+
+    // Remove the surrounding '<' and '>'
+    char *data = payloadBuffer + 1;  // Skip '<'
+    data[strlen(data) - 1] = '\0';  // Remove '>'
+
+    char *token = strtok(data, "|"); // First number
+    payload->leadSpeed_mps = strtof(token, NULL);
+
+    token = strtok(NULL, "|"); // Second number
+    payload->leadDistance_m = strtof(token, NULL);
+
+    token = strtok(NULL, "|"); // Third number
+    payload->setSpeed_mps = strtof(token, NULL);
 }

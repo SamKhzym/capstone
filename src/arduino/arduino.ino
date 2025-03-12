@@ -196,7 +196,9 @@ void loop() {
         //.crc = 0
     };
     //txVehicleSpeedPayload(&vehicleSpeedPayload);
+  #if DEBUG
     Serial.print("Vehicle Speed: ");
+  # endif
     Serial.println(vehicleSpeed);
 
 #if DEBUG

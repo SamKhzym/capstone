@@ -43,7 +43,6 @@ def main():
         while (elapsed_time > 0 and (time() - (start_time + elapsed_time)) < dt): pass
         elapsed_time = time() - start_time
 
-        # TODO: function binding to ACC controller in C (DLL)
         act_req = acc.step_acc(
             ego_speed,
             simulator.get_current_lead_speed(),

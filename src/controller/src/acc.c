@@ -39,7 +39,7 @@ float pidStep(PidParams* params, float err) {
 
 void initAcc() {
 
-    float speedKp = 5.0f;
+    float speedKp = 2.5f;
     float speedKi = 1.0f;
     float speedKd = 0.04f;
 
