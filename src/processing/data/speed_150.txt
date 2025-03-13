@@ -1,0 +1,7641 @@
+Elapsed Time: 2
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 157.08
+Millis: 5
+=====================
+Elapsed Time: 7
+PWM_Speed: 150
+Duty_Cycle: 47.78
+Vehicle_Speed: 62.83
+Millis: 9
+=====================
+Elapsed Time: 12
+PWM_Speed: 150
+Duty_Cycle: 47.24
+Vehicle_Speed: 62.83
+Millis: 14
+=====================
+Elapsed Time: 17
+PWM_Speed: 150
+Duty_Cycle: 47.88
+Vehicle_Speed: 62.83
+Millis: 19
+=====================
+Elapsed Time: 22
+PWM_Speed: 150
+Duty_Cycle: 47.77
+Vehicle_Speed: 62.83
+Millis: 24
+=====================
+Elapsed Time: 27
+PWM_Speed: 150
+Duty_Cycle: 47.35
+Vehicle_Speed: 62.83
+Millis: 29
+=====================
+Elapsed Time: 32
+PWM_Speed: 150
+Duty_Cycle: 47.98
+Vehicle_Speed: 62.83
+Millis: 34
+=====================
+Elapsed Time: 37
+PWM_Speed: 150
+Duty_Cycle: 47.98
+Vehicle_Speed: 62.83
+Millis: 39
+=====================
+Elapsed Time: 43
+PWM_Speed: 150
+Duty_Cycle: 47.14
+Vehicle_Speed: 52.36
+Millis: 45
+=====================
+Elapsed Time: 48
+PWM_Speed: 150
+Duty_Cycle: 47.68
+Vehicle_Speed: 62.83
+Millis: 50
+=====================
+Elapsed Time: 53
+PWM_Speed: 150
+Duty_Cycle: 47.03
+Vehicle_Speed: 62.83
+Millis: 56
+=====================
+Elapsed Time: 58
+PWM_Speed: 150
+Duty_Cycle: 46.73
+Vehicle_Speed: 62.83
+Millis: 60
+=====================
+Elapsed Time: 63
+PWM_Speed: 150
+Duty_Cycle: 47.38
+Vehicle_Speed: 62.83
+Millis: 65
+=====================
+Elapsed Time: 68
+PWM_Speed: 150
+Duty_Cycle: 46.73
+Vehicle_Speed: 62.83
+Millis: 70
+=====================
+Elapsed Time: 73
+PWM_Speed: 150
+Duty_Cycle: 47.27
+Vehicle_Speed: 62.83
+Millis: 75
+=====================
+Elapsed Time: 78
+PWM_Speed: 150
+Duty_Cycle: 47.07
+Vehicle_Speed: 62.83
+Millis: 80
+=====================
+Elapsed Time: 83
+PWM_Speed: 150
+Duty_Cycle: 46.22
+Vehicle_Speed: 62.83
+Millis: 86
+=====================
+Elapsed Time: 88
+PWM_Speed: 150
+Duty_Cycle: 46.77
+Vehicle_Speed: 62.83
+Millis: 90
+=====================
+Elapsed Time: 93
+PWM_Speed: 150
+Duty_Cycle: 46.46
+Vehicle_Speed: 62.83
+Millis: 95
+=====================
+Elapsed Time: 98
+PWM_Speed: 150
+Duty_Cycle: 45.60
+Vehicle_Speed: 62.83
+Millis: 100
+=====================
+Elapsed Time: 103
+PWM_Speed: 150
+Duty_Cycle: 46.08
+Vehicle_Speed: 62.83
+Millis: 105
+=====================
+Elapsed Time: 108
+PWM_Speed: 150
+Duty_Cycle: 45.77
+Vehicle_Speed: 62.83
+Millis: 110
+=====================
+Elapsed Time: 113
+PWM_Speed: 150
+Duty_Cycle: 44.79
+Vehicle_Speed: 62.83
+Millis: 115
+=====================
+Elapsed Time: 118
+PWM_Speed: 150
+Duty_Cycle: 45.05
+Vehicle_Speed: 62.83
+Millis: 120
+=====================
+Elapsed Time: 123
+PWM_Speed: 150
+Duty_Cycle: 44.44
+Vehicle_Speed: 62.83
+Millis: 126
+=====================
+Elapsed Time: 128
+PWM_Speed: 150
+Duty_Cycle: 43.35
+Vehicle_Speed: 62.83
+Millis: 130
+=====================
+Elapsed Time: 133
+PWM_Speed: 150
+Duty_Cycle: 43.35
+Vehicle_Speed: 62.83
+Millis: 135
+=====================
+Elapsed Time: 138
+PWM_Speed: 150
+Duty_Cycle: 42.54
+Vehicle_Speed: 62.83
+Millis: 141
+=====================
+Elapsed Time: 143
+PWM_Speed: 150
+Duty_Cycle: 41.10
+Vehicle_Speed: 62.83
+Millis: 145
+=====================
+Elapsed Time: 148
+PWM_Speed: 150
+Duty_Cycle: 40.93
+Vehicle_Speed: 62.83
+Millis: 150
+=====================
+Elapsed Time: 153
+PWM_Speed: 150
+Duty_Cycle: 39.18
+Vehicle_Speed: 62.83
+Millis: 156
+=====================
+Elapsed Time: 158
+PWM_Speed: 150
+Duty_Cycle: 38.91
+Vehicle_Speed: 62.83
+Millis: 160
+=====================
+Elapsed Time: 163
+PWM_Speed: 150
+Duty_Cycle: 37.63
+Vehicle_Speed: 62.83
+Millis: 165
+=====================
+Elapsed Time: 168
+PWM_Speed: 150
+Duty_Cycle: 35.58
+Vehicle_Speed: 62.83
+Millis: 172
+=====================
+Elapsed Time: 173
+PWM_Speed: 150
+Duty_Cycle: 35.61
+Vehicle_Speed: 62.83
+Millis: 175
+=====================
+Elapsed Time: 178
+PWM_Speed: 150
+Duty_Cycle: 34.55
+Vehicle_Speed: 62.83
+Millis: 180
+=====================
+Elapsed Time: 183
+PWM_Speed: 150
+Duty_Cycle: 32.72
+Vehicle_Speed: 62.83
+Millis: 186
+=====================
+Elapsed Time: 188
+PWM_Speed: 150
+Duty_Cycle: 33.06
+Vehicle_Speed: 62.83
+Millis: 190
+=====================
+Elapsed Time: 193
+PWM_Speed: 150
+Duty_Cycle: 32.73
+Vehicle_Speed: 62.83
+Millis: 195
+=====================
+Elapsed Time: 198
+PWM_Speed: 150
+Duty_Cycle: 32.17
+Vehicle_Speed: 62.83
+Millis: 200
+=====================
+Elapsed Time: 203
+PWM_Speed: 150
+Duty_Cycle: 33.60
+Vehicle_Speed: 62.83
+Millis: 205
+=====================
+Elapsed Time: 208
+PWM_Speed: 150
+Duty_Cycle: 34.75
+Vehicle_Speed: 62.83
+Millis: 210
+=====================
+Elapsed Time: 214
+PWM_Speed: 150
+Duty_Cycle: 35.45
+Vehicle_Speed: 52.36
+Millis: 216
+=====================
+Elapsed Time: 219
+PWM_Speed: 150
+Duty_Cycle: 37.78
+Vehicle_Speed: 62.83
+Millis: 221
+=====================
+Elapsed Time: 224
+PWM_Speed: 150
+Duty_Cycle: 39.39
+Vehicle_Speed: 62.83
+Millis: 226
+=====================
+Elapsed Time: 229
+PWM_Speed: 150
+Duty_Cycle: 40.49
+Vehicle_Speed: 62.83
+Millis: 231
+=====================
+Elapsed Time: 234
+PWM_Speed: 150
+Duty_Cycle: 42.63
+Vehicle_Speed: 62.83
+Millis: 236
+=====================
+Elapsed Time: 239
+PWM_Speed: 150
+Duty_Cycle: 43.35
+Vehicle_Speed: 62.83
+Millis: 242
+=====================
+Elapsed Time: 244
+PWM_Speed: 150
+Duty_Cycle: 44.38
+Vehicle_Speed: 62.83
+Millis: 246
+=====================
+Elapsed Time: 249
+PWM_Speed: 150
+Duty_Cycle: 45.86
+Vehicle_Speed: 62.83
+Millis: 251
+=====================
+Elapsed Time: 254
+PWM_Speed: 150
+Duty_Cycle: 46.01
+Vehicle_Speed: 62.83
+Millis: 258
+=====================
+Elapsed Time: 259
+PWM_Speed: 150
+Duty_Cycle: 46.31
+Vehicle_Speed: 62.83
+Millis: 261
+=====================
+Elapsed Time: 264
+PWM_Speed: 150
+Duty_Cycle: 47.47
+Vehicle_Speed: 62.83
+Millis: 266
+=====================
+Elapsed Time: 269
+PWM_Speed: 150
+Duty_Cycle: 47.14
+Vehicle_Speed: 62.83
+Millis: 272
+=====================
+Elapsed Time: 274
+PWM_Speed: 150
+Duty_Cycle: 47.35
+Vehicle_Speed: 62.83
+Millis: 276
+=====================
+Elapsed Time: 279
+PWM_Speed: 150
+Duty_Cycle: 48.28
+Vehicle_Speed: 62.83
+Millis: 281
+=====================
+Elapsed Time: 284
+PWM_Speed: 150
+Duty_Cycle: 47.65
+Vehicle_Speed: 62.83
+Millis: 287
+=====================
+Elapsed Time: 289
+PWM_Speed: 150
+Duty_Cycle: 48.27
+Vehicle_Speed: 62.83
+Millis: 291
+=====================
+Elapsed Time: 294
+PWM_Speed: 150
+Duty_Cycle: 48.69
+Vehicle_Speed: 62.83
+Millis: 296
+=====================
+Elapsed Time: 299
+PWM_Speed: 150
+Duty_Cycle: 48.06
+Vehicle_Speed: 62.83
+Millis: 301
+=====================
+Elapsed Time: 304
+PWM_Speed: 150
+Duty_Cycle: 48.16
+Vehicle_Speed: 62.83
+Millis: 306
+=====================
+Elapsed Time: 309
+PWM_Speed: 150
+Duty_Cycle: 48.79
+Vehicle_Speed: 62.83
+Millis: 311
+=====================
+Elapsed Time: 314
+PWM_Speed: 150
+Duty_Cycle: 48.37
+Vehicle_Speed: 62.83
+Millis: 316
+=====================
+Elapsed Time: 319
+PWM_Speed: 150
+Duty_Cycle: 48.99
+Vehicle_Speed: 62.83
+Millis: 321
+=====================
+Elapsed Time: 324
+PWM_Speed: 150
+Duty_Cycle: 48.99
+Vehicle_Speed: 62.83
+Millis: 326
+=====================
+Elapsed Time: 329
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 331
+=====================
+Elapsed Time: 334
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 336
+=====================
+Elapsed Time: 339
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 343
+=====================
+Elapsed Time: 344
+PWM_Speed: 150
+Duty_Cycle: 48.37
+Vehicle_Speed: 62.83
+Millis: 346
+=====================
+Elapsed Time: 349
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 351
+=====================
+Elapsed Time: 354
+PWM_Speed: 150
+Duty_Cycle: 48.99
+Vehicle_Speed: 62.83
+Millis: 357
+=====================
+Elapsed Time: 359
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 361
+=====================
+Elapsed Time: 364
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 366
+=====================
+Elapsed Time: 369
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 372
+=====================
+Elapsed Time: 374
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 376
+=====================
+Elapsed Time: 379
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 381
+=====================
+Elapsed Time: 384
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 387
+=====================
+Elapsed Time: 389
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 391
+=====================
+Elapsed Time: 394
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 396
+=====================
+Elapsed Time: 399
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 401
+=====================
+Elapsed Time: 404
+PWM_Speed: 150
+Duty_Cycle: 48.68
+Vehicle_Speed: 62.83
+Millis: 406
+=====================
+Elapsed Time: 409
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 411
+=====================
+Elapsed Time: 414
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 416
+=====================
+Elapsed Time: 419
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 421
+=====================
+Elapsed Time: 424
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 427
+=====================
+Elapsed Time: 429
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 431
+=====================
+Elapsed Time: 434
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 436
+=====================
+Elapsed Time: 439
+PWM_Speed: 150
+Duty_Cycle: 48.99
+Vehicle_Speed: 62.83
+Millis: 441
+=====================
+Elapsed Time: 444
+PWM_Speed: 150
+Duty_Cycle: 48.36
+Vehicle_Speed: 62.83
+Millis: 446
+=====================
+Elapsed Time: 449
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 451
+=====================
+Elapsed Time: 454
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 457
+=====================
+Elapsed Time: 459
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 461
+=====================
+Elapsed Time: 464
+PWM_Speed: 150
+Duty_Cycle: 48.99
+Vehicle_Speed: 62.83
+Millis: 466
+=====================
+Elapsed Time: 470
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 52.36
+Millis: 473
+=====================
+Elapsed Time: 475
+PWM_Speed: 150
+Duty_Cycle: 48.36
+Vehicle_Speed: 62.83
+Millis: 477
+=====================
+Elapsed Time: 480
+PWM_Speed: 150
+Duty_Cycle: 48.99
+Vehicle_Speed: 62.83
+Millis: 482
+=====================
+Elapsed Time: 485
+PWM_Speed: 150
+Duty_Cycle: 48.37
+Vehicle_Speed: 62.83
+Millis: 488
+=====================
+Elapsed Time: 490
+PWM_Speed: 150
+Duty_Cycle: 48.37
+Vehicle_Speed: 62.83
+Millis: 492
+=====================
+Elapsed Time: 495
+PWM_Speed: 150
+Duty_Cycle: 48.99
+Vehicle_Speed: 62.83
+Millis: 497
+=====================
+Elapsed Time: 500
+PWM_Speed: 150
+Duty_Cycle: 48.26
+Vehicle_Speed: 62.83
+Millis: 502
+=====================
+Elapsed Time: 505
+PWM_Speed: 150
+Duty_Cycle: 48.79
+Vehicle_Speed: 62.83
+Millis: 507
+=====================
+Elapsed Time: 510
+PWM_Speed: 150
+Duty_Cycle: 48.89
+Vehicle_Speed: 62.83
+Millis: 513
+=====================
+Elapsed Time: 515
+PWM_Speed: 150
+Duty_Cycle: 48.16
+Vehicle_Speed: 62.83
+Millis: 517
+=====================
+Elapsed Time: 520
+PWM_Speed: 150
+Duty_Cycle: 48.69
+Vehicle_Speed: 62.83
+Millis: 522
+=====================
+Elapsed Time: 525
+PWM_Speed: 150
+Duty_Cycle: 48.69
+Vehicle_Speed: 62.83
+Millis: 527
+=====================
+Elapsed Time: 530
+PWM_Speed: 150
+Duty_Cycle: 48.06
+Vehicle_Speed: 62.83
+Millis: 532
+=====================
+Elapsed Time: 535
+PWM_Speed: 150
+Duty_Cycle: 48.59
+Vehicle_Speed: 62.83
+Millis: 537
+=====================
+Elapsed Time: 540
+PWM_Speed: 150
+Duty_Cycle: 48.39
+Vehicle_Speed: 62.83
+Millis: 542
+=====================
+Elapsed Time: 545
+PWM_Speed: 150
+Duty_Cycle: 47.65
+Vehicle_Speed: 62.83
+Millis: 547
+=====================
+Elapsed Time: 550
+PWM_Speed: 150
+Duty_Cycle: 48.19
+Vehicle_Speed: 62.83
+Millis: 552
+=====================
+Elapsed Time: 555
+PWM_Speed: 150
+Duty_Cycle: 48.08
+Vehicle_Speed: 62.83
+Millis: 557
+=====================
+Elapsed Time: 560
+PWM_Speed: 150
+Duty_Cycle: 47.35
+Vehicle_Speed: 62.83
+Millis: 562
+=====================
+Elapsed Time: 565
+PWM_Speed: 150
+Duty_Cycle: 47.88
+Vehicle_Speed: 62.83
+Millis: 567
+=====================
+Elapsed Time: 570
+PWM_Speed: 150
+Duty_Cycle: 47.14
+Vehicle_Speed: 62.83
+Millis: 573
+=====================
+Elapsed Time: 575
+PWM_Speed: 150
+Duty_Cycle: 46.83
+Vehicle_Speed: 62.83
+Millis: 577
+=====================
+Elapsed Time: 580
+PWM_Speed: 150
+Duty_Cycle: 47.17
+Vehicle_Speed: 62.83
+Millis: 582
+=====================
+Elapsed Time: 585
+PWM_Speed: 150
+Duty_Cycle: 46.22
+Vehicle_Speed: 62.83
+Millis: 588
+=====================
+Elapsed Time: 590
+PWM_Speed: 150
+Duty_Cycle: 45.92
+Vehicle_Speed: 62.83
+Millis: 592
+=====================
+Elapsed Time: 595
+PWM_Speed: 150
+Duty_Cycle: 46.06
+Vehicle_Speed: 62.83
+Millis: 598
+=====================
+Elapsed Time: 600
+PWM_Speed: 150
+Duty_Cycle: 45.19
+Vehicle_Speed: 62.83
+Millis: 603
+=====================
+Elapsed Time: 605
+PWM_Speed: 150
+Duty_Cycle: 44.83
+Vehicle_Speed: 62.83
+Millis: 607
+=====================
+Elapsed Time: 610
+PWM_Speed: 150
+Duty_Cycle: 44.56
+Vehicle_Speed: 62.83
+Millis: 612
+=====================
+Elapsed Time: 615
+PWM_Speed: 150
+Duty_Cycle: 42.86
+Vehicle_Speed: 62.83
+Millis: 617
+=====================
+Elapsed Time: 620
+PWM_Speed: 150
+Duty_Cycle: 42.63
+Vehicle_Speed: 62.83
+Millis: 622
+=====================
+Elapsed Time: 625
+PWM_Speed: 150
+Duty_Cycle: 41.73
+Vehicle_Speed: 62.83
+Millis: 627
+=====================
+Elapsed Time: 630
+PWM_Speed: 150
+Duty_Cycle: 39.59
+Vehicle_Speed: 62.83
+Millis: 632
+=====================
+Elapsed Time: 635
+PWM_Speed: 150
+Duty_Cycle: 38.91
+Vehicle_Speed: 62.83
+Millis: 637
+=====================
+Elapsed Time: 640
+PWM_Speed: 150
+Duty_Cycle: 37.63
+Vehicle_Speed: 62.83
+Millis: 642
+=====================
+Elapsed Time: 645
+PWM_Speed: 150
+Duty_Cycle: 35.10
+Vehicle_Speed: 62.83
+Millis: 647
+=====================
+Elapsed Time: 650
+PWM_Speed: 150
+Duty_Cycle: 34.48
+Vehicle_Speed: 62.83
+Millis: 652
+=====================
+Elapsed Time: 655
+PWM_Speed: 150
+Duty_Cycle: 33.27
+Vehicle_Speed: 62.83
+Millis: 658
+=====================
+Elapsed Time: 660
+PWM_Speed: 150
+Duty_Cycle: 32.25
+Vehicle_Speed: 62.83
+Millis: 662
+=====================
+Elapsed Time: 665
+PWM_Speed: 150
+Duty_Cycle: 32.59
+Vehicle_Speed: 62.83
+Millis: 667
+=====================
+Elapsed Time: 670
+PWM_Speed: 150
+Duty_Cycle: 32.17
+Vehicle_Speed: 62.83
+Millis: 673
+=====================
+Elapsed Time: 675
+PWM_Speed: 150
+Duty_Cycle: 34.34
+Vehicle_Speed: 62.83
+Millis: 677
+=====================
+Elapsed Time: 680
+PWM_Speed: 150
+Duty_Cycle: 35.83
+Vehicle_Speed: 62.83
+Millis: 683
+=====================
+Elapsed Time: 685
+PWM_Speed: 150
+Duty_Cycle: 36.68
+Vehicle_Speed: 62.83
+Millis: 688
+=====================
+Elapsed Time: 690
+PWM_Speed: 150
+Duty_Cycle: 39.60
+Vehicle_Speed: 62.83
+Millis: 692
+=====================
+Elapsed Time: 695
+PWM_Speed: 150
+Duty_Cycle: 41.50
+Vehicle_Speed: 62.83
+Millis: 697
+=====================
+Elapsed Time: 700
+PWM_Speed: 150
+Duty_Cycle: 42.62
+Vehicle_Speed: 62.83
+Millis: 702
+=====================
+Elapsed Time: 705
+PWM_Speed: 150
+Duty_Cycle: 44.74
+Vehicle_Speed: 62.83
+Millis: 707
+=====================
+Elapsed Time: 710
+PWM_Speed: 150
+Duty_Cycle: 45.75
+Vehicle_Speed: 62.83
+Millis: 712
+=====================
+Elapsed Time: 715
+PWM_Speed: 150
+Duty_Cycle: 45.92
+Vehicle_Speed: 62.83
+Millis: 717
+=====================
+Elapsed Time: 720
+PWM_Speed: 150
+Duty_Cycle: 47.18
+Vehicle_Speed: 62.83
+Millis: 722
+=====================
+Elapsed Time: 726
+PWM_Speed: 150
+Duty_Cycle: 47.68
+Vehicle_Speed: 52.36
+Millis: 728
+=====================
+Elapsed Time: 731
+PWM_Speed: 150
+Duty_Cycle: 47.34
+Vehicle_Speed: 62.83
+Millis: 733
+=====================
+Elapsed Time: 736
+PWM_Speed: 150
+Duty_Cycle: 48.28
+Vehicle_Speed: 62.83
+Millis: 738
+=====================
+Elapsed Time: 741
+PWM_Speed: 150
+Duty_Cycle: 47.95
+Vehicle_Speed: 62.83
+Millis: 744
+=====================
+Elapsed Time: 746
+PWM_Speed: 150
+Duty_Cycle: 47.96
+Vehicle_Speed: 62.83
+Millis: 748
+=====================
+Elapsed Time: 751
+PWM_Speed: 150
+Duty_Cycle: 48.69
+Vehicle_Speed: 62.83
+Millis: 753
+=====================
+Elapsed Time: 756
+PWM_Speed: 150
+Duty_Cycle: 48.06
+Vehicle_Speed: 62.83
+Millis: 759
+=====================
+Elapsed Time: 761
+PWM_Speed: 150
+Duty_Cycle: 48.06
+Vehicle_Speed: 62.83
+Millis: 763
+=====================
+Elapsed Time: 766
+PWM_Speed: 150
+Duty_Cycle: 48.79
+Vehicle_Speed: 62.83
+Millis: 769
+=====================
+Elapsed Time: 771
+PWM_Speed: 150
+Duty_Cycle: 48.26
+Vehicle_Speed: 62.83
+Millis: 774
+=====================
+Elapsed Time: 776
+PWM_Speed: 150
+Duty_Cycle: 48.36
+Vehicle_Speed: 62.83
+Millis: 778
+=====================
+Elapsed Time: 781
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 783
+=====================
+Elapsed Time: 786
+PWM_Speed: 150
+Duty_Cycle: 48.26
+Vehicle_Speed: 62.83
+Millis: 788
+=====================
+Elapsed Time: 791
+PWM_Speed: 150
+Duty_Cycle: 48.99
+Vehicle_Speed: 62.83
+Millis: 793
+=====================
+Elapsed Time: 796
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 798
+=====================
+Elapsed Time: 801
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 803
+=====================
+Elapsed Time: 806
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 808
+=====================
+Elapsed Time: 811
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 813
+=====================
+Elapsed Time: 816
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 818
+=====================
+Elapsed Time: 821
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 823
+=====================
+Elapsed Time: 826
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 828
+=====================
+Elapsed Time: 831
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 833
+=====================
+Elapsed Time: 836
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 838
+=====================
+Elapsed Time: 841
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 844
+=====================
+Elapsed Time: 846
+PWM_Speed: 150
+Duty_Cycle: 48.67
+Vehicle_Speed: 62.83
+Millis: 848
+=====================
+Elapsed Time: 851
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 854
+=====================
+Elapsed Time: 856
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 859
+=====================
+Elapsed Time: 861
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 863
+=====================
+Elapsed Time: 866
+PWM_Speed: 150
+Duty_Cycle: 49.29
+Vehicle_Speed: 62.83
+Millis: 868
+=====================
+Elapsed Time: 871
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 874
+=====================
+Elapsed Time: 876
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 878
+=====================
+Elapsed Time: 881
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 883
+=====================
+Elapsed Time: 886
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 888
+=====================
+Elapsed Time: 891
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 893
+=====================
+Elapsed Time: 896
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 898
+=====================
+Elapsed Time: 901
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 903
+=====================
+Elapsed Time: 906
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 908
+=====================
+Elapsed Time: 911
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 913
+=====================
+Elapsed Time: 916
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 918
+=====================
+Elapsed Time: 921
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 923
+=====================
+Elapsed Time: 926
+PWM_Speed: 150
+Duty_Cycle: 48.89
+Vehicle_Speed: 62.83
+Millis: 929
+=====================
+Elapsed Time: 931
+PWM_Speed: 150
+Duty_Cycle: 48.36
+Vehicle_Speed: 62.83
+Millis: 933
+=====================
+Elapsed Time: 936
+PWM_Speed: 150
+Duty_Cycle: 48.99
+Vehicle_Speed: 62.83
+Millis: 939
+=====================
+Elapsed Time: 941
+PWM_Speed: 150
+Duty_Cycle: 48.89
+Vehicle_Speed: 62.83
+Millis: 944
+=====================
+Elapsed Time: 946
+PWM_Speed: 150
+Duty_Cycle: 48.16
+Vehicle_Speed: 62.83
+Millis: 948
+=====================
+Elapsed Time: 951
+PWM_Speed: 150
+Duty_Cycle: 48.89
+Vehicle_Speed: 62.83
+Millis: 953
+=====================
+Elapsed Time: 956
+PWM_Speed: 150
+Duty_Cycle: 48.16
+Vehicle_Speed: 62.83
+Millis: 959
+=====================
+Elapsed Time: 961
+PWM_Speed: 150
+Duty_Cycle: 48.16
+Vehicle_Speed: 62.83
+Millis: 963
+=====================
+Elapsed Time: 966
+PWM_Speed: 150
+Duty_Cycle: 48.79
+Vehicle_Speed: 62.83
+Millis: 968
+=====================
+Elapsed Time: 971
+PWM_Speed: 150
+Duty_Cycle: 48.05
+Vehicle_Speed: 62.83
+Millis: 974
+=====================
+Elapsed Time: 976
+PWM_Speed: 150
+Duty_Cycle: 48.06
+Vehicle_Speed: 62.83
+Millis: 978
+=====================
+Elapsed Time: 982
+PWM_Speed: 150
+Duty_Cycle: 48.48
+Vehicle_Speed: 52.36
+Millis: 984
+=====================
+Elapsed Time: 987
+PWM_Speed: 150
+Duty_Cycle: 47.85
+Vehicle_Speed: 62.83
+Millis: 989
+=====================
+Elapsed Time: 992
+PWM_Speed: 150
+Duty_Cycle: 48.48
+Vehicle_Speed: 62.83
+Millis: 994
+=====================
+Elapsed Time: 997
+PWM_Speed: 150
+Duty_Cycle: 48.28
+Vehicle_Speed: 62.83
+Millis: 999
+=====================
+Elapsed Time: 1002
+PWM_Speed: 150
+Duty_Cycle: 47.65
+Vehicle_Speed: 62.83
+Millis: 1004
+=====================
+Elapsed Time: 1007
+PWM_Speed: 150
+Duty_Cycle: 47.98
+Vehicle_Speed: 62.83
+Millis: 1009
+=====================
+Elapsed Time: 1012
+PWM_Speed: 150
+Duty_Cycle: 47.88
+Vehicle_Speed: 62.83
+Millis: 1015
+=====================
+Elapsed Time: 1017
+PWM_Speed: 150
+Duty_Cycle: 47.03
+Vehicle_Speed: 62.83
+Millis: 1019
+=====================
+Elapsed Time: 1022
+PWM_Speed: 150
+Duty_Cycle: 47.47
+Vehicle_Speed: 62.83
+Millis: 1025
+=====================
+Elapsed Time: 1027
+PWM_Speed: 150
+Duty_Cycle: 47.37
+Vehicle_Speed: 62.83
+Millis: 1030
+=====================
+Elapsed Time: 1032
+PWM_Speed: 150
+Duty_Cycle: 46.42
+Vehicle_Speed: 62.83
+Millis: 1034
+=====================
+Elapsed Time: 1037
+PWM_Speed: 150
+Duty_Cycle: 46.67
+Vehicle_Speed: 62.83
+Millis: 1039
+=====================
+Elapsed Time: 1042
+PWM_Speed: 150
+Duty_Cycle: 45.49
+Vehicle_Speed: 62.83
+Millis: 1045
+=====================
+Elapsed Time: 1047
+PWM_Speed: 150
+Duty_Cycle: 45.21
+Vehicle_Speed: 62.83
+Millis: 1049
+=====================
+Elapsed Time: 1052
+PWM_Speed: 150
+Duty_Cycle: 45.25
+Vehicle_Speed: 62.83
+Millis: 1054
+=====================
+Elapsed Time: 1057
+PWM_Speed: 150
+Duty_Cycle: 43.79
+Vehicle_Speed: 62.83
+Millis: 1060
+=====================
+Elapsed Time: 1062
+PWM_Speed: 150
+Duty_Cycle: 43.75
+Vehicle_Speed: 62.83
+Millis: 1064
+=====================
+Elapsed Time: 1067
+PWM_Speed: 150
+Duty_Cycle: 43.03
+Vehicle_Speed: 62.83
+Millis: 1069
+=====================
+Elapsed Time: 1072
+PWM_Speed: 150
+Duty_Cycle: 40.94
+Vehicle_Speed: 62.83
+Millis: 1075
+=====================
+Elapsed Time: 1077
+PWM_Speed: 150
+Duty_Cycle: 40.73
+Vehicle_Speed: 62.83
+Millis: 1079
+=====================
+Elapsed Time: 1082
+PWM_Speed: 150
+Duty_Cycle: 39.11
+Vehicle_Speed: 62.83
+Millis: 1084
+=====================
+Elapsed Time: 1087
+PWM_Speed: 150
+Duty_Cycle: 36.81
+Vehicle_Speed: 62.83
+Millis: 1089
+=====================
+Elapsed Time: 1092
+PWM_Speed: 150
+Duty_Cycle: 36.09
+Vehicle_Speed: 62.83
+Millis: 1094
+=====================
+Elapsed Time: 1097
+PWM_Speed: 150
+Duty_Cycle: 34.90
+Vehicle_Speed: 62.83
+Millis: 1100
+=====================
+Elapsed Time: 1102
+PWM_Speed: 150
+Duty_Cycle: 32.38
+Vehicle_Speed: 62.83
+Millis: 1104
+=====================
+Elapsed Time: 1107
+PWM_Speed: 150
+Duty_Cycle: 32.46
+Vehicle_Speed: 62.83
+Millis: 1110
+=====================
+Elapsed Time: 1112
+PWM_Speed: 150
+Duty_Cycle: 32.65
+Vehicle_Speed: 62.83
+Millis: 1115
+=====================
+Elapsed Time: 1117
+PWM_Speed: 150
+Duty_Cycle: 31.76
+Vehicle_Speed: 62.83
+Millis: 1119
+=====================
+Elapsed Time: 1122
+PWM_Speed: 150
+Duty_Cycle: 33.60
+Vehicle_Speed: 62.83
+Millis: 1124
+=====================
+Elapsed Time: 1127
+PWM_Speed: 150
+Duty_Cycle: 35.22
+Vehicle_Speed: 62.83
+Millis: 1130
+=====================
+Elapsed Time: 1132
+PWM_Speed: 150
+Duty_Cycle: 36.20
+Vehicle_Speed: 62.83
+Millis: 1134
+=====================
+Elapsed Time: 1137
+PWM_Speed: 150
+Duty_Cycle: 38.99
+Vehicle_Speed: 62.83
+Millis: 1139
+=====================
+Elapsed Time: 1142
+PWM_Speed: 150
+Duty_Cycle: 40.70
+Vehicle_Speed: 62.83
+Millis: 1145
+=====================
+Elapsed Time: 1147
+PWM_Speed: 150
+Duty_Cycle: 42.24
+Vehicle_Speed: 62.83
+Millis: 1149
+=====================
+Elapsed Time: 1152
+PWM_Speed: 150
+Duty_Cycle: 44.33
+Vehicle_Speed: 62.83
+Millis: 1154
+=====================
+Elapsed Time: 1157
+PWM_Speed: 150
+Duty_Cycle: 45.21
+Vehicle_Speed: 62.83
+Millis: 1160
+=====================
+Elapsed Time: 1162
+PWM_Speed: 150
+Duty_Cycle: 45.81
+Vehicle_Speed: 62.83
+Millis: 1164
+=====================
+Elapsed Time: 1167
+PWM_Speed: 150
+Duty_Cycle: 47.07
+Vehicle_Speed: 62.83
+Millis: 1169
+=====================
+Elapsed Time: 1172
+PWM_Speed: 150
+Duty_Cycle: 46.94
+Vehicle_Speed: 62.83
+Millis: 1175
+=====================
+Elapsed Time: 1177
+PWM_Speed: 150
+Duty_Cycle: 47.14
+Vehicle_Speed: 62.83
+Millis: 1179
+=====================
+Elapsed Time: 1182
+PWM_Speed: 150
+Duty_Cycle: 48.19
+Vehicle_Speed: 62.83
+Millis: 1184
+=====================
+Elapsed Time: 1187
+PWM_Speed: 150
+Duty_Cycle: 47.76
+Vehicle_Speed: 62.83
+Millis: 1190
+=====================
+Elapsed Time: 1192
+PWM_Speed: 150
+Duty_Cycle: 48.28
+Vehicle_Speed: 62.83
+Millis: 1195
+=====================
+Elapsed Time: 1197
+PWM_Speed: 150
+Duty_Cycle: 48.59
+Vehicle_Speed: 62.83
+Millis: 1199
+=====================
+Elapsed Time: 1202
+PWM_Speed: 150
+Duty_Cycle: 48.16
+Vehicle_Speed: 62.83
+Millis: 1205
+=====================
+Elapsed Time: 1207
+PWM_Speed: 150
+Duty_Cycle: 48.26
+Vehicle_Speed: 62.83
+Millis: 1209
+=====================
+Elapsed Time: 1212
+PWM_Speed: 150
+Duty_Cycle: 48.89
+Vehicle_Speed: 62.83
+Millis: 1214
+=====================
+Elapsed Time: 1217
+PWM_Speed: 150
+Duty_Cycle: 48.26
+Vehicle_Speed: 62.83
+Millis: 1219
+=====================
+Elapsed Time: 1222
+PWM_Speed: 150
+Duty_Cycle: 48.99
+Vehicle_Speed: 62.83
+Millis: 1224
+=====================
+Elapsed Time: 1227
+PWM_Speed: 150
+Duty_Cycle: 49.49
+Vehicle_Speed: 62.83
+Millis: 1230
+=====================
+Elapsed Time: 1232
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 1234
+=====================
+Elapsed Time: 1238
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 52.36
+Millis: 1240
+=====================
+Elapsed Time: 1243
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 1246
+=====================
+Elapsed Time: 1248
+PWM_Speed: 150
+Duty_Cycle: 48.37
+Vehicle_Speed: 62.83
+Millis: 1250
+=====================
+Elapsed Time: 1253
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 1255
+=====================
+Elapsed Time: 1258
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 1261
+=====================
+Elapsed Time: 1263
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 1265
+=====================
+Elapsed Time: 1268
+PWM_Speed: 150
+Duty_Cycle: 49.29
+Vehicle_Speed: 62.83
+Millis: 1270
+=====================
+Elapsed Time: 1273
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 1276
+=====================
+Elapsed Time: 1278
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 1281
+=====================
+Elapsed Time: 1283
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 1285
+=====================
+Elapsed Time: 1288
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 1291
+=====================
+Elapsed Time: 1293
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 1295
+=====================
+Elapsed Time: 1298
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 1300
+=====================
+Elapsed Time: 1303
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 1305
+=====================
+Elapsed Time: 1308
+PWM_Speed: 150
+Duty_Cycle: 49.29
+Vehicle_Speed: 62.83
+Millis: 1310
+=====================
+Elapsed Time: 1313
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 1315
+=====================
+Elapsed Time: 1318
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 1320
+=====================
+Elapsed Time: 1323
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 1325
+=====================
+Elapsed Time: 1328
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 1330
+=====================
+Elapsed Time: 1333
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 1335
+=====================
+Elapsed Time: 1338
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 1340
+=====================
+Elapsed Time: 1343
+PWM_Speed: 150
+Duty_Cycle: 49.80
+Vehicle_Speed: 62.83
+Millis: 1346
+=====================
+Elapsed Time: 1348
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 1350
+=====================
+Elapsed Time: 1353
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 1355
+=====================
+Elapsed Time: 1358
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 1361
+=====================
+Elapsed Time: 1363
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 1366
+=====================
+Elapsed Time: 1368
+PWM_Speed: 150
+Duty_Cycle: 48.99
+Vehicle_Speed: 62.83
+Millis: 1370
+=====================
+Elapsed Time: 1373
+PWM_Speed: 150
+Duty_Cycle: 48.89
+Vehicle_Speed: 62.83
+Millis: 1376
+=====================
+Elapsed Time: 1378
+PWM_Speed: 150
+Duty_Cycle: 48.36
+Vehicle_Speed: 62.83
+Millis: 1380
+=====================
+Elapsed Time: 1383
+PWM_Speed: 150
+Duty_Cycle: 48.99
+Vehicle_Speed: 62.83
+Millis: 1385
+=====================
+Elapsed Time: 1388
+PWM_Speed: 150
+Duty_Cycle: 48.26
+Vehicle_Speed: 62.83
+Millis: 1391
+=====================
+Elapsed Time: 1393
+PWM_Speed: 150
+Duty_Cycle: 48.26
+Vehicle_Speed: 62.83
+Millis: 1395
+=====================
+Elapsed Time: 1398
+PWM_Speed: 150
+Duty_Cycle: 48.89
+Vehicle_Speed: 62.83
+Millis: 1400
+=====================
+Elapsed Time: 1403
+PWM_Speed: 150
+Duty_Cycle: 48.16
+Vehicle_Speed: 62.83
+Millis: 1406
+=====================
+Elapsed Time: 1408
+PWM_Speed: 150
+Duty_Cycle: 48.16
+Vehicle_Speed: 62.83
+Millis: 1410
+=====================
+Elapsed Time: 1413
+PWM_Speed: 150
+Duty_Cycle: 48.79
+Vehicle_Speed: 62.83
+Millis: 1415
+=====================
+Elapsed Time: 1418
+PWM_Speed: 150
+Duty_Cycle: 48.06
+Vehicle_Speed: 62.83
+Millis: 1421
+=====================
+Elapsed Time: 1423
+PWM_Speed: 150
+Duty_Cycle: 47.95
+Vehicle_Speed: 62.83
+Millis: 1425
+=====================
+Elapsed Time: 1428
+PWM_Speed: 150
+Duty_Cycle: 48.59
+Vehicle_Speed: 62.83
+Millis: 1430
+=====================
+Elapsed Time: 1433
+PWM_Speed: 150
+Duty_Cycle: 47.85
+Vehicle_Speed: 62.83
+Millis: 1435
+=====================
+Elapsed Time: 1438
+PWM_Speed: 150
+Duty_Cycle: 48.39
+Vehicle_Speed: 62.83
+Millis: 1440
+=====================
+Elapsed Time: 1443
+PWM_Speed: 150
+Duty_Cycle: 48.28
+Vehicle_Speed: 62.83
+Millis: 1445
+=====================
+Elapsed Time: 1448
+PWM_Speed: 150
+Duty_Cycle: 47.55
+Vehicle_Speed: 62.83
+Millis: 1451
+=====================
+Elapsed Time: 1453
+PWM_Speed: 150
+Duty_Cycle: 48.08
+Vehicle_Speed: 62.83
+Millis: 1455
+=====================
+Elapsed Time: 1458
+PWM_Speed: 150
+Duty_Cycle: 47.98
+Vehicle_Speed: 62.83
+Millis: 1460
+=====================
+Elapsed Time: 1463
+PWM_Speed: 150
+Duty_Cycle: 47.03
+Vehicle_Speed: 62.83
+Millis: 1465
+=====================
+Elapsed Time: 1468
+PWM_Speed: 150
+Duty_Cycle: 47.58
+Vehicle_Speed: 62.83
+Millis: 1470
+=====================
+Elapsed Time: 1473
+PWM_Speed: 150
+Duty_Cycle: 47.66
+Vehicle_Speed: 62.83
+Millis: 1476
+=====================
+Elapsed Time: 1478
+PWM_Speed: 150
+Duty_Cycle: 46.42
+Vehicle_Speed: 62.83
+Millis: 1480
+=====================
+Elapsed Time: 1483
+PWM_Speed: 150
+Duty_Cycle: 46.77
+Vehicle_Speed: 62.83
+Millis: 1485
+=====================
+Elapsed Time: 1488
+PWM_Speed: 150
+Duty_Cycle: 46.26
+Vehicle_Speed: 62.83
+Millis: 1491
+=====================
+Elapsed Time: 1494
+PWM_Speed: 150
+Duty_Cycle: 45.19
+Vehicle_Speed: 52.36
+Millis: 1496
+=====================
+Elapsed Time: 1499
+PWM_Speed: 150
+Duty_Cycle: 45.36
+Vehicle_Speed: 62.83
+Millis: 1501
+=====================
+Elapsed Time: 1504
+PWM_Speed: 150
+Duty_Cycle: 43.88
+Vehicle_Speed: 62.83
+Millis: 1507
+=====================
+Elapsed Time: 1509
+PWM_Speed: 150
+Duty_Cycle: 43.06
+Vehicle_Speed: 62.83
+Millis: 1511
+=====================
+Elapsed Time: 1514
+PWM_Speed: 150
+Duty_Cycle: 42.94
+Vehicle_Speed: 62.83
+Millis: 1516
+=====================
+Elapsed Time: 1519
+PWM_Speed: 150
+Duty_Cycle: 41.02
+Vehicle_Speed: 62.83
+Millis: 1521
+=====================
+Elapsed Time: 1524
+PWM_Speed: 150
+Duty_Cycle: 40.44
+Vehicle_Speed: 62.83
+Millis: 1526
+=====================
+Elapsed Time: 1529
+PWM_Speed: 150
+Duty_Cycle: 39.11
+Vehicle_Speed: 62.83
+Millis: 1531
+=====================
+Elapsed Time: 1534
+PWM_Speed: 150
+Duty_Cycle: 36.46
+Vehicle_Speed: 62.83
+Millis: 1537
+=====================
+Elapsed Time: 1539
+PWM_Speed: 150
+Duty_Cycle: 36.09
+Vehicle_Speed: 62.83
+Millis: 1541
+=====================
+Elapsed Time: 1544
+PWM_Speed: 150
+Duty_Cycle: 34.48
+Vehicle_Speed: 62.83
+Millis: 1546
+=====================
+Elapsed Time: 1549
+PWM_Speed: 150
+Duty_Cycle: 32.17
+Vehicle_Speed: 62.83
+Millis: 1551
+=====================
+Elapsed Time: 1554
+PWM_Speed: 150
+Duty_Cycle: 32.32
+Vehicle_Speed: 62.83
+Millis: 1556
+=====================
+Elapsed Time: 1559
+PWM_Speed: 150
+Duty_Cycle: 32.52
+Vehicle_Speed: 62.83
+Millis: 1562
+=====================
+Elapsed Time: 1564
+PWM_Speed: 150
+Duty_Cycle: 31.90
+Vehicle_Speed: 62.83
+Millis: 1566
+=====================
+Elapsed Time: 1569
+PWM_Speed: 150
+Duty_Cycle: 34.01
+Vehicle_Speed: 62.83
+Millis: 1571
+=====================
+Elapsed Time: 1574
+PWM_Speed: 150
+Duty_Cycle: 35.76
+Vehicle_Speed: 62.83
+Millis: 1577
+=====================
+Elapsed Time: 1579
+PWM_Speed: 150
+Duty_Cycle: 36.48
+Vehicle_Speed: 62.83
+Millis: 1581
+=====================
+Elapsed Time: 1584
+PWM_Speed: 150
+Duty_Cycle: 39.52
+Vehicle_Speed: 62.83
+Millis: 1586
+=====================
+Elapsed Time: 1589
+PWM_Speed: 150
+Duty_Cycle: 41.62
+Vehicle_Speed: 62.83
+Millis: 1592
+=====================
+Elapsed Time: 1594
+PWM_Speed: 150
+Duty_Cycle: 42.62
+Vehicle_Speed: 62.83
+Millis: 1596
+=====================
+Elapsed Time: 1599
+PWM_Speed: 150
+Duty_Cycle: 44.85
+Vehicle_Speed: 62.83
+Millis: 1601
+=====================
+Elapsed Time: 1604
+PWM_Speed: 150
+Duty_Cycle: 45.29
+Vehicle_Speed: 62.83
+Millis: 1607
+=====================
+Elapsed Time: 1609
+PWM_Speed: 150
+Duty_Cycle: 46.11
+Vehicle_Speed: 62.83
+Millis: 1611
+=====================
+Elapsed Time: 1614
+PWM_Speed: 150
+Duty_Cycle: 47.27
+Vehicle_Speed: 62.83
+Millis: 1616
+=====================
+Elapsed Time: 1619
+PWM_Speed: 150
+Duty_Cycle: 47.13
+Vehicle_Speed: 62.83
+Millis: 1623
+=====================
+Elapsed Time: 1624
+PWM_Speed: 150
+Duty_Cycle: 47.35
+Vehicle_Speed: 62.83
+Millis: 1626
+=====================
+Elapsed Time: 1629
+PWM_Speed: 150
+Duty_Cycle: 48.38
+Vehicle_Speed: 62.83
+Millis: 1631
+=====================
+Elapsed Time: 1634
+PWM_Speed: 150
+Duty_Cycle: 47.85
+Vehicle_Speed: 62.83
+Millis: 1637
+=====================
+Elapsed Time: 1639
+PWM_Speed: 150
+Duty_Cycle: 48.06
+Vehicle_Speed: 62.83
+Millis: 1641
+=====================
+Elapsed Time: 1644
+PWM_Speed: 150
+Duty_Cycle: 48.69
+Vehicle_Speed: 62.83
+Millis: 1646
+=====================
+Elapsed Time: 1649
+PWM_Speed: 150
+Duty_Cycle: 48.26
+Vehicle_Speed: 62.83
+Millis: 1651
+=====================
+Elapsed Time: 1654
+PWM_Speed: 150
+Duty_Cycle: 48.89
+Vehicle_Speed: 62.83
+Millis: 1656
+=====================
+Elapsed Time: 1659
+PWM_Speed: 150
+Duty_Cycle: 49.59
+Vehicle_Speed: 62.83
+Millis: 1662
+=====================
+Elapsed Time: 1664
+PWM_Speed: 150
+Duty_Cycle: 48.36
+Vehicle_Speed: 62.83
+Millis: 1666
+=====================
+Elapsed Time: 1669
+PWM_Speed: 150
+Duty_Cycle: 48.89
+Vehicle_Speed: 62.83
+Millis: 1671
+=====================
+Elapsed Time: 1674
+PWM_Speed: 150
+Duty_Cycle: 49.59
+Vehicle_Speed: 62.83
+Millis: 1677
+=====================
+Elapsed Time: 1679
+PWM_Speed: 150
+Duty_Cycle: 48.37
+Vehicle_Speed: 62.83
+Millis: 1681
+=====================
+Elapsed Time: 1684
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 1686
+=====================
+Elapsed Time: 1689
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 1692
+=====================
+Elapsed Time: 1694
+PWM_Speed: 150
+Duty_Cycle: 48.36
+Vehicle_Speed: 62.83
+Millis: 1696
+=====================
+Elapsed Time: 1699
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 1701
+=====================
+Elapsed Time: 1704
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 1708
+=====================
+Elapsed Time: 1709
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 1711
+=====================
+Elapsed Time: 1714
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 1716
+=====================
+Elapsed Time: 1719
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 1722
+=====================
+Elapsed Time: 1724
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 1726
+=====================
+Elapsed Time: 1729
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 1731
+=====================
+Elapsed Time: 1734
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 1737
+=====================
+Elapsed Time: 1739
+PWM_Speed: 150
+Duty_Cycle: 48.67
+Vehicle_Speed: 62.83
+Millis: 1741
+=====================
+Elapsed Time: 1744
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 1746
+=====================
+Elapsed Time: 1750
+PWM_Speed: 150
+Duty_Cycle: 48.67
+Vehicle_Speed: 52.36
+Millis: 1752
+=====================
+Elapsed Time: 1755
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 1757
+=====================
+Elapsed Time: 1760
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 1762
+=====================
+Elapsed Time: 1765
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 1767
+=====================
+Elapsed Time: 1770
+PWM_Speed: 150
+Duty_Cycle: 48.99
+Vehicle_Speed: 62.83
+Millis: 1772
+=====================
+Elapsed Time: 1775
+PWM_Speed: 150
+Duty_Cycle: 49.69
+Vehicle_Speed: 62.83
+Millis: 1778
+=====================
+Elapsed Time: 1780
+PWM_Speed: 150
+Duty_Cycle: 48.37
+Vehicle_Speed: 62.83
+Millis: 1782
+=====================
+Elapsed Time: 1785
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 1787
+=====================
+Elapsed Time: 1790
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 1794
+=====================
+Elapsed Time: 1795
+PWM_Speed: 150
+Duty_Cycle: 48.37
+Vehicle_Speed: 62.83
+Millis: 1797
+=====================
+Elapsed Time: 1800
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 1802
+=====================
+Elapsed Time: 1805
+PWM_Speed: 150
+Duty_Cycle: 48.99
+Vehicle_Speed: 62.83
+Millis: 1808
+=====================
+Elapsed Time: 1810
+PWM_Speed: 150
+Duty_Cycle: 48.26
+Vehicle_Speed: 62.83
+Millis: 1812
+=====================
+Elapsed Time: 1815
+PWM_Speed: 150
+Duty_Cycle: 48.99
+Vehicle_Speed: 62.83
+Millis: 1817
+=====================
+Elapsed Time: 1820
+PWM_Speed: 150
+Duty_Cycle: 48.37
+Vehicle_Speed: 62.83
+Millis: 1823
+=====================
+Elapsed Time: 1825
+PWM_Speed: 150
+Duty_Cycle: 48.26
+Vehicle_Speed: 62.83
+Millis: 1827
+=====================
+Elapsed Time: 1830
+PWM_Speed: 150
+Duty_Cycle: 48.99
+Vehicle_Speed: 62.83
+Millis: 1832
+=====================
+Elapsed Time: 1835
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 1838
+=====================
+Elapsed Time: 1840
+PWM_Speed: 150
+Duty_Cycle: 48.26
+Vehicle_Speed: 62.83
+Millis: 1842
+=====================
+Elapsed Time: 1845
+PWM_Speed: 150
+Duty_Cycle: 48.79
+Vehicle_Speed: 62.83
+Millis: 1847
+=====================
+Elapsed Time: 1850
+PWM_Speed: 150
+Duty_Cycle: 48.06
+Vehicle_Speed: 62.83
+Millis: 1853
+=====================
+Elapsed Time: 1855
+PWM_Speed: 150
+Duty_Cycle: 48.16
+Vehicle_Speed: 62.83
+Millis: 1857
+=====================
+Elapsed Time: 1860
+PWM_Speed: 150
+Duty_Cycle: 48.69
+Vehicle_Speed: 62.83
+Millis: 1862
+=====================
+Elapsed Time: 1865
+PWM_Speed: 150
+Duty_Cycle: 47.96
+Vehicle_Speed: 62.83
+Millis: 1867
+=====================
+Elapsed Time: 1870
+PWM_Speed: 150
+Duty_Cycle: 48.48
+Vehicle_Speed: 62.83
+Millis: 1872
+=====================
+Elapsed Time: 1875
+PWM_Speed: 150
+Duty_Cycle: 48.59
+Vehicle_Speed: 62.83
+Millis: 1878
+=====================
+Elapsed Time: 1880
+PWM_Speed: 150
+Duty_Cycle: 47.65
+Vehicle_Speed: 62.83
+Millis: 1883
+=====================
+Elapsed Time: 1885
+PWM_Speed: 150
+Duty_Cycle: 47.98
+Vehicle_Speed: 62.83
+Millis: 1887
+=====================
+Elapsed Time: 1890
+PWM_Speed: 150
+Duty_Cycle: 48.19
+Vehicle_Speed: 62.83
+Millis: 1892
+=====================
+Elapsed Time: 1895
+PWM_Speed: 150
+Duty_Cycle: 47.44
+Vehicle_Speed: 62.83
+Millis: 1897
+=====================
+Elapsed Time: 1900
+PWM_Speed: 150
+Duty_Cycle: 47.88
+Vehicle_Speed: 62.83
+Millis: 1902
+=====================
+Elapsed Time: 1905
+PWM_Speed: 150
+Duty_Cycle: 48.37
+Vehicle_Speed: 62.83
+Millis: 1908
+=====================
+Elapsed Time: 1910
+PWM_Speed: 150
+Duty_Cycle: 46.84
+Vehicle_Speed: 62.83
+Millis: 1912
+=====================
+Elapsed Time: 1915
+PWM_Speed: 150
+Duty_Cycle: 47.27
+Vehicle_Speed: 62.83
+Millis: 1917
+=====================
+Elapsed Time: 1920
+PWM_Speed: 150
+Duty_Cycle: 47.65
+Vehicle_Speed: 62.83
+Millis: 1923
+=====================
+Elapsed Time: 1925
+PWM_Speed: 150
+Duty_Cycle: 46.12
+Vehicle_Speed: 62.83
+Millis: 1927
+=====================
+Elapsed Time: 1930
+PWM_Speed: 150
+Duty_Cycle: 46.48
+Vehicle_Speed: 62.83
+Millis: 1932
+=====================
+Elapsed Time: 1935
+PWM_Speed: 150
+Duty_Cycle: 45.97
+Vehicle_Speed: 62.83
+Millis: 1938
+=====================
+Elapsed Time: 1940
+PWM_Speed: 150
+Duty_Cycle: 44.69
+Vehicle_Speed: 62.83
+Millis: 1942
+=====================
+Elapsed Time: 1945
+PWM_Speed: 150
+Duty_Cycle: 44.76
+Vehicle_Speed: 62.83
+Millis: 1947
+=====================
+Elapsed Time: 1950
+PWM_Speed: 150
+Duty_Cycle: 43.24
+Vehicle_Speed: 62.83
+Millis: 1953
+=====================
+Elapsed Time: 1955
+PWM_Speed: 150
+Duty_Cycle: 42.13
+Vehicle_Speed: 62.83
+Millis: 1957
+=====================
+Elapsed Time: 1960
+PWM_Speed: 150
+Duty_Cycle: 41.85
+Vehicle_Speed: 62.83
+Millis: 1963
+=====================
+Elapsed Time: 1965
+PWM_Speed: 150
+Duty_Cycle: 40.73
+Vehicle_Speed: 62.83
+Millis: 1968
+=====================
+Elapsed Time: 1970
+PWM_Speed: 150
+Duty_Cycle: 38.70
+Vehicle_Speed: 62.83
+Millis: 1972
+=====================
+Elapsed Time: 1975
+PWM_Speed: 150
+Duty_Cycle: 37.70
+Vehicle_Speed: 62.83
+Millis: 1977
+=====================
+Elapsed Time: 1980
+PWM_Speed: 150
+Duty_Cycle: 35.31
+Vehicle_Speed: 62.83
+Millis: 1983
+=====================
+Elapsed Time: 1985
+PWM_Speed: 150
+Duty_Cycle: 34.48
+Vehicle_Speed: 62.83
+Millis: 1987
+=====================
+Elapsed Time: 1990
+PWM_Speed: 150
+Duty_Cycle: 33.06
+Vehicle_Speed: 62.83
+Millis: 1992
+=====================
+Elapsed Time: 1995
+PWM_Speed: 150
+Duty_Cycle: 31.43
+Vehicle_Speed: 62.83
+Millis: 1998
+=====================
+Elapsed Time: 2000
+PWM_Speed: 150
+Duty_Cycle: 32.06
+Vehicle_Speed: 62.83
+Millis: 2002
+=====================
+Elapsed Time: 2006
+PWM_Speed: 150
+Duty_Cycle: 32.73
+Vehicle_Speed: 52.36
+Millis: 2008
+=====================
+Elapsed Time: 2011
+PWM_Speed: 150
+Duty_Cycle: 33.13
+Vehicle_Speed: 62.83
+Millis: 2013
+=====================
+Elapsed Time: 2016
+PWM_Speed: 150
+Duty_Cycle: 35.76
+Vehicle_Speed: 62.83
+Millis: 2018
+=====================
+Elapsed Time: 2021
+PWM_Speed: 150
+Duty_Cycle: 38.32
+Vehicle_Speed: 62.83
+Millis: 2024
+=====================
+Elapsed Time: 2026
+PWM_Speed: 150
+Duty_Cycle: 39.34
+Vehicle_Speed: 62.83
+Millis: 2028
+=====================
+Elapsed Time: 2031
+PWM_Speed: 150
+Duty_Cycle: 42.14
+Vehicle_Speed: 62.83
+Millis: 2033
+=====================
+Elapsed Time: 2036
+PWM_Speed: 150
+Duty_Cycle: 43.93
+Vehicle_Speed: 62.83
+Millis: 2039
+=====================
+Elapsed Time: 2041
+PWM_Speed: 150
+Duty_Cycle: 44.67
+Vehicle_Speed: 62.83
+Millis: 2043
+=====================
+Elapsed Time: 2046
+PWM_Speed: 150
+Duty_Cycle: 46.26
+Vehicle_Speed: 62.83
+Millis: 2049
+=====================
+Elapsed Time: 2051
+PWM_Speed: 150
+Duty_Cycle: 46.87
+Vehicle_Speed: 62.83
+Millis: 2054
+=====================
+Elapsed Time: 2056
+PWM_Speed: 150
+Duty_Cycle: 46.72
+Vehicle_Speed: 62.83
+Millis: 2058
+=====================
+Elapsed Time: 2061
+PWM_Speed: 150
+Duty_Cycle: 47.78
+Vehicle_Speed: 62.83
+Millis: 2063
+=====================
+Elapsed Time: 2066
+PWM_Speed: 150
+Duty_Cycle: 47.44
+Vehicle_Speed: 62.83
+Millis: 2069
+=====================
+Elapsed Time: 2071
+PWM_Speed: 150
+Duty_Cycle: 47.65
+Vehicle_Speed: 62.83
+Millis: 2073
+=====================
+Elapsed Time: 2076
+PWM_Speed: 150
+Duty_Cycle: 48.59
+Vehicle_Speed: 62.83
+Millis: 2078
+=====================
+Elapsed Time: 2081
+PWM_Speed: 150
+Duty_Cycle: 48.06
+Vehicle_Speed: 62.83
+Millis: 2084
+=====================
+Elapsed Time: 2086
+PWM_Speed: 150
+Duty_Cycle: 48.16
+Vehicle_Speed: 62.83
+Millis: 2088
+=====================
+Elapsed Time: 2091
+PWM_Speed: 150
+Duty_Cycle: 48.79
+Vehicle_Speed: 62.83
+Millis: 2093
+=====================
+Elapsed Time: 2096
+PWM_Speed: 150
+Duty_Cycle: 48.16
+Vehicle_Speed: 62.83
+Millis: 2099
+=====================
+Elapsed Time: 2101
+PWM_Speed: 150
+Duty_Cycle: 48.37
+Vehicle_Speed: 62.83
+Millis: 2103
+=====================
+Elapsed Time: 2106
+PWM_Speed: 150
+Duty_Cycle: 48.99
+Vehicle_Speed: 62.83
+Millis: 2108
+=====================
+Elapsed Time: 2111
+PWM_Speed: 150
+Duty_Cycle: 48.26
+Vehicle_Speed: 62.83
+Millis: 2113
+=====================
+Elapsed Time: 2116
+PWM_Speed: 150
+Duty_Cycle: 48.99
+Vehicle_Speed: 62.83
+Millis: 2118
+=====================
+Elapsed Time: 2121
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 2123
+=====================
+Elapsed Time: 2126
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 2128
+=====================
+Elapsed Time: 2131
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 2134
+=====================
+Elapsed Time: 2136
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 2138
+=====================
+Elapsed Time: 2141
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 2143
+=====================
+Elapsed Time: 2146
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 2148
+=====================
+Elapsed Time: 2151
+PWM_Speed: 150
+Duty_Cycle: 49.29
+Vehicle_Speed: 62.83
+Millis: 2154
+=====================
+Elapsed Time: 2156
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 2158
+=====================
+Elapsed Time: 2161
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 2163
+=====================
+Elapsed Time: 2166
+PWM_Speed: 150
+Duty_Cycle: 48.88
+Vehicle_Speed: 62.83
+Millis: 2169
+=====================
+Elapsed Time: 2171
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 2173
+=====================
+Elapsed Time: 2176
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 2178
+=====================
+Elapsed Time: 2181
+PWM_Speed: 150
+Duty_Cycle: 48.88
+Vehicle_Speed: 62.83
+Millis: 2184
+=====================
+Elapsed Time: 2186
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 2188
+=====================
+Elapsed Time: 2191
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 2193
+=====================
+Elapsed Time: 2196
+PWM_Speed: 150
+Duty_Cycle: 48.67
+Vehicle_Speed: 62.83
+Millis: 2199
+=====================
+Elapsed Time: 2201
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 2203
+=====================
+Elapsed Time: 2206
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 2208
+=====================
+Elapsed Time: 2211
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 2214
+=====================
+Elapsed Time: 2216
+PWM_Speed: 150
+Duty_Cycle: 48.78
+Vehicle_Speed: 62.83
+Millis: 2219
+=====================
+Elapsed Time: 2221
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 2223
+=====================
+Elapsed Time: 2226
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 2229
+=====================
+Elapsed Time: 2231
+PWM_Speed: 150
+Duty_Cycle: 48.88
+Vehicle_Speed: 62.83
+Millis: 2233
+=====================
+Elapsed Time: 2236
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 2238
+=====================
+Elapsed Time: 2241
+PWM_Speed: 150
+Duty_Cycle: 48.37
+Vehicle_Speed: 62.83
+Millis: 2243
+=====================
+Elapsed Time: 2246
+PWM_Speed: 150
+Duty_Cycle: 48.99
+Vehicle_Speed: 62.83
+Millis: 2248
+=====================
+Elapsed Time: 2251
+PWM_Speed: 150
+Duty_Cycle: 49.49
+Vehicle_Speed: 62.83
+Millis: 2254
+=====================
+Elapsed Time: 2256
+PWM_Speed: 150
+Duty_Cycle: 48.36
+Vehicle_Speed: 62.83
+Millis: 2258
+=====================
+Elapsed Time: 2262
+PWM_Speed: 150
+Duty_Cycle: 48.89
+Vehicle_Speed: 52.36
+Millis: 2264
+=====================
+Elapsed Time: 2267
+PWM_Speed: 150
+Duty_Cycle: 48.37
+Vehicle_Speed: 62.83
+Millis: 2270
+=====================
+Elapsed Time: 2272
+PWM_Speed: 150
+Duty_Cycle: 48.37
+Vehicle_Speed: 62.83
+Millis: 2274
+=====================
+Elapsed Time: 2277
+PWM_Speed: 150
+Duty_Cycle: 48.79
+Vehicle_Speed: 62.83
+Millis: 2279
+=====================
+Elapsed Time: 2282
+PWM_Speed: 150
+Duty_Cycle: 48.16
+Vehicle_Speed: 62.83
+Millis: 2285
+=====================
+Elapsed Time: 2287
+PWM_Speed: 150
+Duty_Cycle: 48.16
+Vehicle_Speed: 62.83
+Millis: 2289
+=====================
+Elapsed Time: 2292
+PWM_Speed: 150
+Duty_Cycle: 48.79
+Vehicle_Speed: 62.83
+Millis: 2294
+=====================
+Elapsed Time: 2297
+PWM_Speed: 150
+Duty_Cycle: 48.06
+Vehicle_Speed: 62.83
+Millis: 2299
+=====================
+Elapsed Time: 2302
+PWM_Speed: 150
+Duty_Cycle: 48.59
+Vehicle_Speed: 62.83
+Millis: 2305
+=====================
+Elapsed Time: 2307
+PWM_Speed: 150
+Duty_Cycle: 48.69
+Vehicle_Speed: 62.83
+Millis: 2309
+=====================
+Elapsed Time: 2312
+PWM_Speed: 150
+Duty_Cycle: 47.85
+Vehicle_Speed: 62.83
+Millis: 2314
+=====================
+Elapsed Time: 2317
+PWM_Speed: 150
+Duty_Cycle: 48.39
+Vehicle_Speed: 62.83
+Millis: 2319
+=====================
+Elapsed Time: 2322
+PWM_Speed: 150
+Duty_Cycle: 48.98
+Vehicle_Speed: 62.83
+Millis: 2325
+=====================
+Elapsed Time: 2327
+PWM_Speed: 150
+Duty_Cycle: 47.65
+Vehicle_Speed: 62.83
+Millis: 2329
+=====================
+Elapsed Time: 2332
+PWM_Speed: 150
+Duty_Cycle: 48.19
+Vehicle_Speed: 62.83
+Millis: 2334
+=====================
+Elapsed Time: 2337
+PWM_Speed: 150
+Duty_Cycle: 48.19
+Vehicle_Speed: 62.83
+Millis: 2340
+=====================
+Elapsed Time: 2342
+PWM_Speed: 150
+Duty_Cycle: 47.24
+Vehicle_Speed: 62.83
+Millis: 2344
+=====================
+Elapsed Time: 2347
+PWM_Speed: 150
+Duty_Cycle: 47.78
+Vehicle_Speed: 62.83
+Millis: 2349
+=====================
+Elapsed Time: 2352
+PWM_Speed: 150
+Duty_Cycle: 47.58
+Vehicle_Speed: 62.83
+Millis: 2355
+=====================
+Elapsed Time: 2357
+PWM_Speed: 150
+Duty_Cycle: 46.73
+Vehicle_Speed: 62.83
+Millis: 2359
+=====================
+Elapsed Time: 2362
+PWM_Speed: 150
+Duty_Cycle: 46.98
+Vehicle_Speed: 62.83
+Millis: 2364
+=====================
+Elapsed Time: 2367
+PWM_Speed: 150
+Duty_Cycle: 46.01
+Vehicle_Speed: 62.83
+Millis: 2370
+=====================
+Elapsed Time: 2372
+PWM_Speed: 150
+Duty_Cycle: 45.60
+Vehicle_Speed: 62.83
+Millis: 2374
+=====================
+Elapsed Time: 2377
+PWM_Speed: 150
+Duty_Cycle: 45.86
+Vehicle_Speed: 62.83
+Millis: 2379
+=====================
+Elapsed Time: 2382
+PWM_Speed: 150
+Duty_Cycle: 44.38
+Vehicle_Speed: 62.83
+Millis: 2384
+=====================
+Elapsed Time: 2387
+PWM_Speed: 150
+Duty_Cycle: 44.44
+Vehicle_Speed: 62.83
+Millis: 2390
+=====================
+Elapsed Time: 2392
+PWM_Speed: 150
+Duty_Cycle: 43.66
+Vehicle_Speed: 62.83
+Millis: 2394
+=====================
+Elapsed Time: 2397
+PWM_Speed: 150
+Duty_Cycle: 42.04
+Vehicle_Speed: 62.83
+Millis: 2399
+=====================
+Elapsed Time: 2402
+PWM_Speed: 150
+Duty_Cycle: 41.53
+Vehicle_Speed: 62.83
+Millis: 2404
+=====================
+Elapsed Time: 2407
+PWM_Speed: 150
+Duty_Cycle: 40.61
+Vehicle_Speed: 62.83
+Millis: 2410
+=====================
+Elapsed Time: 2412
+PWM_Speed: 150
+Duty_Cycle: 37.88
+Vehicle_Speed: 62.83
+Millis: 2414
+=====================
+Elapsed Time: 2417
+PWM_Speed: 150
+Duty_Cycle: 36.90
+Vehicle_Speed: 62.83
+Millis: 2419
+=====================
+Elapsed Time: 2422
+PWM_Speed: 150
+Duty_Cycle: 35.15
+Vehicle_Speed: 62.83
+Millis: 2425
+=====================
+Elapsed Time: 2427
+PWM_Speed: 150
+Duty_Cycle: 32.65
+Vehicle_Speed: 62.83
+Millis: 2429
+=====================
+Elapsed Time: 2432
+PWM_Speed: 150
+Duty_Cycle: 32.46
+Vehicle_Speed: 62.83
+Millis: 2434
+=====================
+Elapsed Time: 2437
+PWM_Speed: 150
+Duty_Cycle: 32.06
+Vehicle_Speed: 62.83
+Millis: 2440
+=====================
+Elapsed Time: 2442
+PWM_Speed: 150
+Duty_Cycle: 31.43
+Vehicle_Speed: 62.83
+Millis: 2444
+=====================
+Elapsed Time: 2447
+PWM_Speed: 150
+Duty_Cycle: 32.79
+Vehicle_Speed: 62.83
+Millis: 2449
+=====================
+Elapsed Time: 2452
+PWM_Speed: 150
+Duty_Cycle: 33.61
+Vehicle_Speed: 62.83
+Millis: 2455
+=====================
+Elapsed Time: 2457
+PWM_Speed: 150
+Duty_Cycle: 36.36
+Vehicle_Speed: 62.83
+Millis: 2459
+=====================
+Elapsed Time: 2462
+PWM_Speed: 150
+Duty_Cycle: 38.34
+Vehicle_Speed: 62.83
+Millis: 2464
+=====================
+Elapsed Time: 2467
+PWM_Speed: 150
+Duty_Cycle: 40.08
+Vehicle_Speed: 62.83
+Millis: 2470
+=====================
+Elapsed Time: 2472
+PWM_Speed: 150
+Duty_Cycle: 42.63
+Vehicle_Speed: 62.83
+Millis: 2475
+=====================
+Elapsed Time: 2477
+PWM_Speed: 150
+Duty_Cycle: 43.93
+Vehicle_Speed: 62.83
+Millis: 2479
+=====================
+Elapsed Time: 2482
+PWM_Speed: 150
+Duty_Cycle: 44.79
+Vehicle_Speed: 62.83
+Millis: 2485
+=====================
+Elapsed Time: 2487
+PWM_Speed: 150
+Duty_Cycle: 45.60
+Vehicle_Speed: 62.83
+Millis: 2489
+=====================
+Elapsed Time: 2492
+PWM_Speed: 150
+Duty_Cycle: 47.27
+Vehicle_Speed: 62.83
+Millis: 2494
+=====================
+Elapsed Time: 2497
+PWM_Speed: 150
+Duty_Cycle: 47.03
+Vehicle_Speed: 62.83
+Millis: 2499
+=====================
+Elapsed Time: 2502
+PWM_Speed: 150
+Duty_Cycle: 47.98
+Vehicle_Speed: 62.83
+Millis: 2504
+=====================
+Elapsed Time: 2507
+PWM_Speed: 150
+Duty_Cycle: 48.18
+Vehicle_Speed: 62.83
+Millis: 2509
+=====================
+Elapsed Time: 2512
+PWM_Speed: 150
+Duty_Cycle: 47.85
+Vehicle_Speed: 62.83
+Millis: 2514
+=====================
+Elapsed Time: 2518
+PWM_Speed: 150
+Duty_Cycle: 48.59
+Vehicle_Speed: 52.36
+Millis: 2520
+=====================
+Elapsed Time: 2523
+PWM_Speed: 150
+Duty_Cycle: 48.79
+Vehicle_Speed: 62.83
+Millis: 2526
+=====================
+Elapsed Time: 2528
+PWM_Speed: 150
+Duty_Cycle: 48.06
+Vehicle_Speed: 62.83
+Millis: 2530
+=====================
+Elapsed Time: 2533
+PWM_Speed: 150
+Duty_Cycle: 48.89
+Vehicle_Speed: 62.83
+Millis: 2535
+=====================
+Elapsed Time: 2538
+PWM_Speed: 150
+Duty_Cycle: 48.37
+Vehicle_Speed: 62.83
+Millis: 2541
+=====================
+Elapsed Time: 2543
+PWM_Speed: 150
+Duty_Cycle: 48.26
+Vehicle_Speed: 62.83
+Millis: 2545
+=====================
+Elapsed Time: 2548
+PWM_Speed: 150
+Duty_Cycle: 48.89
+Vehicle_Speed: 62.83
+Millis: 2550
+=====================
+Elapsed Time: 2553
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 2556
+=====================
+Elapsed Time: 2558
+PWM_Speed: 150
+Duty_Cycle: 48.37
+Vehicle_Speed: 62.83
+Millis: 2561
+=====================
+Elapsed Time: 2563
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 2565
+=====================
+Elapsed Time: 2568
+PWM_Speed: 150
+Duty_Cycle: 48.36
+Vehicle_Speed: 62.83
+Millis: 2571
+=====================
+Elapsed Time: 2573
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 2575
+=====================
+Elapsed Time: 2578
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 2580
+=====================
+Elapsed Time: 2583
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 2585
+=====================
+Elapsed Time: 2588
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 2590
+=====================
+Elapsed Time: 2593
+PWM_Speed: 150
+Duty_Cycle: 49.29
+Vehicle_Speed: 62.83
+Millis: 2595
+=====================
+Elapsed Time: 2598
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 2600
+=====================
+Elapsed Time: 2603
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 2605
+=====================
+Elapsed Time: 2608
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 2610
+=====================
+Elapsed Time: 2613
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 2615
+=====================
+Elapsed Time: 2618
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 2620
+=====================
+Elapsed Time: 2623
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 2626
+=====================
+Elapsed Time: 2628
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 2630
+=====================
+Elapsed Time: 2633
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 2635
+=====================
+Elapsed Time: 2638
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 2641
+=====================
+Elapsed Time: 2643
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 2646
+=====================
+Elapsed Time: 2648
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 2650
+=====================
+Elapsed Time: 2653
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 2656
+=====================
+Elapsed Time: 2658
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 2660
+=====================
+Elapsed Time: 2663
+PWM_Speed: 150
+Duty_Cycle: 48.99
+Vehicle_Speed: 62.83
+Millis: 2665
+=====================
+Elapsed Time: 2668
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 2671
+=====================
+Elapsed Time: 2673
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 2675
+=====================
+Elapsed Time: 2678
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 2680
+=====================
+Elapsed Time: 2683
+PWM_Speed: 150
+Duty_Cycle: 48.26
+Vehicle_Speed: 62.83
+Millis: 2685
+=====================
+Elapsed Time: 2688
+PWM_Speed: 150
+Duty_Cycle: 48.37
+Vehicle_Speed: 62.83
+Millis: 2690
+=====================
+Elapsed Time: 2693
+PWM_Speed: 150
+Duty_Cycle: 48.99
+Vehicle_Speed: 62.83
+Millis: 2695
+=====================
+Elapsed Time: 2698
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 2701
+=====================
+Elapsed Time: 2703
+PWM_Speed: 150
+Duty_Cycle: 48.68
+Vehicle_Speed: 62.83
+Millis: 2705
+=====================
+Elapsed Time: 2708
+PWM_Speed: 150
+Duty_Cycle: 48.99
+Vehicle_Speed: 62.83
+Millis: 2710
+=====================
+Elapsed Time: 2713
+PWM_Speed: 150
+Duty_Cycle: 48.26
+Vehicle_Speed: 62.83
+Millis: 2715
+=====================
+Elapsed Time: 2718
+PWM_Speed: 150
+Duty_Cycle: 48.89
+Vehicle_Speed: 62.83
+Millis: 2720
+=====================
+Elapsed Time: 2723
+PWM_Speed: 150
+Duty_Cycle: 49.39
+Vehicle_Speed: 62.83
+Millis: 2726
+=====================
+Elapsed Time: 2728
+PWM_Speed: 150
+Duty_Cycle: 48.16
+Vehicle_Speed: 62.83
+Millis: 2731
+=====================
+Elapsed Time: 2733
+PWM_Speed: 150
+Duty_Cycle: 48.89
+Vehicle_Speed: 62.83
+Millis: 2735
+=====================
+Elapsed Time: 2738
+PWM_Speed: 150
+Duty_Cycle: 49.39
+Vehicle_Speed: 62.83
+Millis: 2741
+=====================
+Elapsed Time: 2743
+PWM_Speed: 150
+Duty_Cycle: 47.96
+Vehicle_Speed: 62.83
+Millis: 2745
+=====================
+Elapsed Time: 2748
+PWM_Speed: 150
+Duty_Cycle: 48.69
+Vehicle_Speed: 62.83
+Millis: 2750
+=====================
+Elapsed Time: 2753
+PWM_Speed: 150
+Duty_Cycle: 48.49
+Vehicle_Speed: 62.83
+Millis: 2756
+=====================
+Elapsed Time: 2758
+PWM_Speed: 150
+Duty_Cycle: 47.85
+Vehicle_Speed: 62.83
+Millis: 2760
+=====================
+Elapsed Time: 2763
+PWM_Speed: 150
+Duty_Cycle: 48.39
+Vehicle_Speed: 62.83
+Millis: 2765
+=====================
+Elapsed Time: 2768
+PWM_Speed: 150
+Duty_Cycle: 47.55
+Vehicle_Speed: 62.83
+Millis: 2771
+=====================
+Elapsed Time: 2774
+PWM_Speed: 150
+Duty_Cycle: 47.54
+Vehicle_Speed: 52.36
+Millis: 2776
+=====================
+Elapsed Time: 2779
+PWM_Speed: 150
+Duty_Cycle: 47.88
+Vehicle_Speed: 62.83
+Millis: 2781
+=====================
+Elapsed Time: 2784
+PWM_Speed: 150
+Duty_Cycle: 47.24
+Vehicle_Speed: 62.83
+Millis: 2787
+=====================
+Elapsed Time: 2789
+PWM_Speed: 150
+Duty_Cycle: 47.03
+Vehicle_Speed: 62.83
+Millis: 2791
+=====================
+Elapsed Time: 2794
+PWM_Speed: 150
+Duty_Cycle: 47.47
+Vehicle_Speed: 62.83
+Millis: 2796
+=====================
+Elapsed Time: 2799
+PWM_Speed: 150
+Duty_Cycle: 46.42
+Vehicle_Speed: 62.83
+Millis: 2801
+=====================
+Elapsed Time: 2804
+PWM_Speed: 150
+Duty_Cycle: 46.67
+Vehicle_Speed: 62.83
+Millis: 2806
+=====================
+Elapsed Time: 2809
+PWM_Speed: 150
+Duty_Cycle: 46.94
+Vehicle_Speed: 62.83
+Millis: 2812
+=====================
+Elapsed Time: 2814
+PWM_Speed: 150
+Duty_Cycle: 45.19
+Vehicle_Speed: 62.83
+Millis: 2817
+=====================
+Elapsed Time: 2819
+PWM_Speed: 150
+Duty_Cycle: 45.56
+Vehicle_Speed: 62.83
+Millis: 2821
+=====================
+Elapsed Time: 2824
+PWM_Speed: 150
+Duty_Cycle: 45.31
+Vehicle_Speed: 62.83
+Millis: 2827
+=====================
+Elapsed Time: 2829
+PWM_Speed: 150
+Duty_Cycle: 43.27
+Vehicle_Speed: 62.83
+Millis: 2831
+=====================
+Elapsed Time: 2834
+PWM_Speed: 150
+Duty_Cycle: 43.06
+Vehicle_Speed: 62.83
+Millis: 2836
+=====================
+Elapsed Time: 2839
+PWM_Speed: 150
+Duty_Cycle: 41.85
+Vehicle_Speed: 62.83
+Millis: 2842
+=====================
+Elapsed Time: 2844
+PWM_Speed: 150
+Duty_Cycle: 39.80
+Vehicle_Speed: 62.83
+Millis: 2846
+=====================
+Elapsed Time: 2849
+PWM_Speed: 150
+Duty_Cycle: 39.11
+Vehicle_Speed: 62.83
+Millis: 2851
+=====================
+Elapsed Time: 2854
+PWM_Speed: 150
+Duty_Cycle: 36.59
+Vehicle_Speed: 62.83
+Millis: 2857
+=====================
+Elapsed Time: 2859
+PWM_Speed: 150
+Duty_Cycle: 35.31
+Vehicle_Speed: 62.83
+Millis: 2861
+=====================
+Elapsed Time: 2864
+PWM_Speed: 150
+Duty_Cycle: 34.27
+Vehicle_Speed: 62.83
+Millis: 2866
+=====================
+Elapsed Time: 2869
+PWM_Speed: 150
+Duty_Cycle: 32.04
+Vehicle_Speed: 62.83
+Millis: 2872
+=====================
+Elapsed Time: 2874
+PWM_Speed: 150
+Duty_Cycle: 31.98
+Vehicle_Speed: 62.83
+Millis: 2876
+=====================
+Elapsed Time: 2879
+PWM_Speed: 150
+Duty_Cycle: 31.85
+Vehicle_Speed: 62.83
+Millis: 2881
+=====================
+Elapsed Time: 2884
+PWM_Speed: 150
+Duty_Cycle: 31.70
+Vehicle_Speed: 62.83
+Millis: 2887
+=====================
+Elapsed Time: 2889
+PWM_Speed: 150
+Duty_Cycle: 33.74
+Vehicle_Speed: 62.83
+Millis: 2891
+=====================
+Elapsed Time: 2894
+PWM_Speed: 150
+Duty_Cycle: 35.43
+Vehicle_Speed: 62.83
+Millis: 2896
+=====================
+Elapsed Time: 2899
+PWM_Speed: 150
+Duty_Cycle: 36.61
+Vehicle_Speed: 62.83
+Millis: 2903
+=====================
+Elapsed Time: 2904
+PWM_Speed: 150
+Duty_Cycle: 39.19
+Vehicle_Speed: 62.83
+Millis: 2906
+=====================
+Elapsed Time: 2909
+PWM_Speed: 150
+Duty_Cycle: 41.41
+Vehicle_Speed: 62.83
+Millis: 2911
+=====================
+Elapsed Time: 2914
+PWM_Speed: 150
+Duty_Cycle: 42.71
+Vehicle_Speed: 62.83
+Millis: 2917
+=====================
+Elapsed Time: 2919
+PWM_Speed: 150
+Duty_Cycle: 44.85
+Vehicle_Speed: 62.83
+Millis: 2921
+=====================
+Elapsed Time: 2924
+PWM_Speed: 150
+Duty_Cycle: 46.06
+Vehicle_Speed: 62.83
+Millis: 2926
+=====================
+Elapsed Time: 2929
+PWM_Speed: 150
+Duty_Cycle: 46.22
+Vehicle_Speed: 62.83
+Millis: 2931
+=====================
+Elapsed Time: 2934
+PWM_Speed: 150
+Duty_Cycle: 47.38
+Vehicle_Speed: 62.83
+Millis: 2936
+=====================
+Elapsed Time: 2939
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 2942
+=====================
+Elapsed Time: 2944
+PWM_Speed: 150
+Duty_Cycle: 47.44
+Vehicle_Speed: 62.83
+Millis: 2946
+=====================
+Elapsed Time: 2949
+PWM_Speed: 150
+Duty_Cycle: 48.28
+Vehicle_Speed: 62.83
+Millis: 2951
+=====================
+Elapsed Time: 2954
+PWM_Speed: 150
+Duty_Cycle: 48.69
+Vehicle_Speed: 62.83
+Millis: 2956
+=====================
+Elapsed Time: 2959
+PWM_Speed: 150
+Duty_Cycle: 48.16
+Vehicle_Speed: 62.83
+Millis: 2961
+=====================
+Elapsed Time: 2964
+PWM_Speed: 150
+Duty_Cycle: 48.89
+Vehicle_Speed: 62.83
+Millis: 2966
+=====================
+Elapsed Time: 2969
+PWM_Speed: 150
+Duty_Cycle: 48.79
+Vehicle_Speed: 62.83
+Millis: 2972
+=====================
+Elapsed Time: 2974
+PWM_Speed: 150
+Duty_Cycle: 48.26
+Vehicle_Speed: 62.83
+Millis: 2976
+=====================
+Elapsed Time: 2979
+PWM_Speed: 150
+Duty_Cycle: 48.89
+Vehicle_Speed: 62.83
+Millis: 2981
+=====================
+Elapsed Time: 2984
+PWM_Speed: 150
+Duty_Cycle: 48.37
+Vehicle_Speed: 62.83
+Millis: 2988
+=====================
+Elapsed Time: 2989
+PWM_Speed: 150
+Duty_Cycle: 48.37
+Vehicle_Speed: 62.83
+Millis: 2991
+=====================
+Elapsed Time: 2994
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 2996
+=====================
+Elapsed Time: 2999
+PWM_Speed: 150
+Duty_Cycle: 48.36
+Vehicle_Speed: 62.83
+Millis: 3002
+=====================
+Elapsed Time: 3004
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 3006
+=====================
+Elapsed Time: 3009
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 3011
+=====================
+Elapsed Time: 3014
+PWM_Speed: 150
+Duty_Cycle: 48.37
+Vehicle_Speed: 62.83
+Millis: 3017
+=====================
+Elapsed Time: 3019
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 3021
+=====================
+Elapsed Time: 3024
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 3026
+=====================
+Elapsed Time: 3030
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 52.36
+Millis: 3032
+=====================
+Elapsed Time: 3035
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 3037
+=====================
+Elapsed Time: 3040
+PWM_Speed: 150
+Duty_Cycle: 49.69
+Vehicle_Speed: 62.83
+Millis: 3043
+=====================
+Elapsed Time: 3045
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 3047
+=====================
+Elapsed Time: 3050
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 3052
+=====================
+Elapsed Time: 3055
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 3058
+=====================
+Elapsed Time: 3060
+PWM_Speed: 150
+Duty_Cycle: 48.67
+Vehicle_Speed: 62.83
+Millis: 3062
+=====================
+Elapsed Time: 3065
+PWM_Speed: 150
+Duty_Cycle: 49.29
+Vehicle_Speed: 62.83
+Millis: 3067
+=====================
+Elapsed Time: 3070
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 3074
+=====================
+Elapsed Time: 3075
+PWM_Speed: 150
+Duty_Cycle: 48.67
+Vehicle_Speed: 62.83
+Millis: 3077
+=====================
+Elapsed Time: 3080
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 3082
+=====================
+Elapsed Time: 3085
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 3088
+=====================
+Elapsed Time: 3090
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 3092
+=====================
+Elapsed Time: 3095
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 3097
+=====================
+Elapsed Time: 3100
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 3103
+=====================
+Elapsed Time: 3105
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 3107
+=====================
+Elapsed Time: 3110
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 3112
+=====================
+Elapsed Time: 3115
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 3118
+=====================
+Elapsed Time: 3120
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 3122
+=====================
+Elapsed Time: 3125
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 3127
+=====================
+Elapsed Time: 3130
+PWM_Speed: 150
+Duty_Cycle: 48.37
+Vehicle_Speed: 62.83
+Millis: 3132
+=====================
+Elapsed Time: 3135
+PWM_Speed: 150
+Duty_Cycle: 48.99
+Vehicle_Speed: 62.83
+Millis: 3137
+=====================
+Elapsed Time: 3140
+PWM_Speed: 150
+Duty_Cycle: 49.49
+Vehicle_Speed: 62.83
+Millis: 3143
+=====================
+Elapsed Time: 3145
+PWM_Speed: 150
+Duty_Cycle: 48.37
+Vehicle_Speed: 62.83
+Millis: 3147
+=====================
+Elapsed Time: 3150
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 3152
+=====================
+Elapsed Time: 3155
+PWM_Speed: 150
+Duty_Cycle: 48.89
+Vehicle_Speed: 62.83
+Millis: 3159
+=====================
+Elapsed Time: 3160
+PWM_Speed: 150
+Duty_Cycle: 48.26
+Vehicle_Speed: 62.83
+Millis: 3162
+=====================
+Elapsed Time: 3165
+PWM_Speed: 150
+Duty_Cycle: 48.79
+Vehicle_Speed: 62.83
+Millis: 3167
+=====================
+Elapsed Time: 3170
+PWM_Speed: 150
+Duty_Cycle: 48.69
+Vehicle_Speed: 62.83
+Millis: 3173
+=====================
+Elapsed Time: 3175
+PWM_Speed: 150
+Duty_Cycle: 48.06
+Vehicle_Speed: 62.83
+Millis: 3177
+=====================
+Elapsed Time: 3180
+PWM_Speed: 150
+Duty_Cycle: 48.79
+Vehicle_Speed: 62.83
+Millis: 3182
+=====================
+Elapsed Time: 3185
+PWM_Speed: 150
+Duty_Cycle: 48.06
+Vehicle_Speed: 62.83
+Millis: 3188
+=====================
+Elapsed Time: 3190
+PWM_Speed: 150
+Duty_Cycle: 47.96
+Vehicle_Speed: 62.83
+Millis: 3192
+=====================
+Elapsed Time: 3195
+PWM_Speed: 150
+Duty_Cycle: 48.39
+Vehicle_Speed: 62.83
+Millis: 3197
+=====================
+Elapsed Time: 3200
+PWM_Speed: 150
+Duty_Cycle: 47.76
+Vehicle_Speed: 62.83
+Millis: 3203
+=====================
+Elapsed Time: 3205
+PWM_Speed: 150
+Duty_Cycle: 47.65
+Vehicle_Speed: 62.83
+Millis: 3207
+=====================
+Elapsed Time: 3210
+PWM_Speed: 150
+Duty_Cycle: 48.28
+Vehicle_Speed: 62.83
+Millis: 3212
+=====================
+Elapsed Time: 3215
+PWM_Speed: 150
+Duty_Cycle: 47.34
+Vehicle_Speed: 62.83
+Millis: 3218
+=====================
+Elapsed Time: 3220
+PWM_Speed: 150
+Duty_Cycle: 47.24
+Vehicle_Speed: 62.83
+Millis: 3222
+=====================
+Elapsed Time: 3225
+PWM_Speed: 150
+Duty_Cycle: 47.78
+Vehicle_Speed: 62.83
+Millis: 3227
+=====================
+Elapsed Time: 3230
+PWM_Speed: 150
+Duty_Cycle: 46.94
+Vehicle_Speed: 62.83
+Millis: 3232
+=====================
+Elapsed Time: 3235
+PWM_Speed: 150
+Duty_Cycle: 47.27
+Vehicle_Speed: 62.83
+Millis: 3237
+=====================
+Elapsed Time: 3240
+PWM_Speed: 150
+Duty_Cycle: 47.44
+Vehicle_Speed: 62.83
+Millis: 3244
+=====================
+Elapsed Time: 3245
+PWM_Speed: 150
+Duty_Cycle: 46.01
+Vehicle_Speed: 62.83
+Millis: 3247
+=====================
+Elapsed Time: 3250
+PWM_Speed: 150
+Duty_Cycle: 46.17
+Vehicle_Speed: 62.83
+Millis: 3252
+=====================
+Elapsed Time: 3255
+PWM_Speed: 150
+Duty_Cycle: 46.33
+Vehicle_Speed: 62.83
+Millis: 3258
+=====================
+Elapsed Time: 3260
+PWM_Speed: 150
+Duty_Cycle: 44.49
+Vehicle_Speed: 62.83
+Millis: 3262
+=====================
+Elapsed Time: 3265
+PWM_Speed: 150
+Duty_Cycle: 44.35
+Vehicle_Speed: 62.83
+Millis: 3267
+=====================
+Elapsed Time: 3270
+PWM_Speed: 150
+Duty_Cycle: 43.55
+Vehicle_Speed: 62.83
+Millis: 3273
+=====================
+Elapsed Time: 3275
+PWM_Speed: 150
+Duty_Cycle: 41.72
+Vehicle_Speed: 62.83
+Millis: 3277
+=====================
+Elapsed Time: 3280
+PWM_Speed: 150
+Duty_Cycle: 41.13
+Vehicle_Speed: 62.83
+Millis: 3282
+=====================
+Elapsed Time: 3286
+PWM_Speed: 150
+Duty_Cycle: 38.98
+Vehicle_Speed: 52.36
+Millis: 3289
+=====================
+Elapsed Time: 3291
+PWM_Speed: 150
+Duty_Cycle: 37.60
+Vehicle_Speed: 62.83
+Millis: 3293
+=====================
+Elapsed Time: 3296
+PWM_Speed: 150
+Duty_Cycle: 36.49
+Vehicle_Speed: 62.83
+Millis: 3298
+=====================
+Elapsed Time: 3301
+PWM_Speed: 150
+Duty_Cycle: 33.88
+Vehicle_Speed: 62.83
+Millis: 3304
+=====================
+Elapsed Time: 3306
+PWM_Speed: 150
+Duty_Cycle: 33.27
+Vehicle_Speed: 62.83
+Millis: 3308
+=====================
+Elapsed Time: 3311
+PWM_Speed: 150
+Duty_Cycle: 32.26
+Vehicle_Speed: 62.83
+Millis: 3313
+=====================
+Elapsed Time: 3316
+PWM_Speed: 150
+Duty_Cycle: 31.02
+Vehicle_Speed: 62.83
+Millis: 3318
+=====================
+Elapsed Time: 3321
+PWM_Speed: 150
+Duty_Cycle: 32.12
+Vehicle_Speed: 62.83
+Millis: 3323
+=====================
+Elapsed Time: 3326
+PWM_Speed: 150
+Duty_Cycle: 33.13
+Vehicle_Speed: 62.83
+Millis: 3329
+=====================
+Elapsed Time: 3331
+PWM_Speed: 150
+Duty_Cycle: 33.81
+Vehicle_Speed: 62.83
+Millis: 3334
+=====================
+Elapsed Time: 3336
+PWM_Speed: 150
+Duty_Cycle: 36.57
+Vehicle_Speed: 62.83
+Millis: 3338
+=====================
+Elapsed Time: 3341
+PWM_Speed: 150
+Duty_Cycle: 38.59
+Vehicle_Speed: 62.83
+Millis: 3343
+=====================
+Elapsed Time: 3346
+PWM_Speed: 150
+Duty_Cycle: 40.08
+Vehicle_Speed: 62.83
+Millis: 3348
+=====================
+Elapsed Time: 3351
+PWM_Speed: 150
+Duty_Cycle: 42.83
+Vehicle_Speed: 62.83
+Millis: 3353
+=====================
+Elapsed Time: 3356
+PWM_Speed: 150
+Duty_Cycle: 45.19
+Vehicle_Speed: 62.83
+Millis: 3359
+=====================
+Elapsed Time: 3361
+PWM_Speed: 150
+Duty_Cycle: 45.19
+Vehicle_Speed: 62.83
+Millis: 3363
+=====================
+Elapsed Time: 3366
+PWM_Speed: 150
+Duty_Cycle: 46.67
+Vehicle_Speed: 62.83
+Millis: 3368
+=====================
+Elapsed Time: 3371
+PWM_Speed: 150
+Duty_Cycle: 47.65
+Vehicle_Speed: 62.83
+Millis: 3374
+=====================
+Elapsed Time: 3376
+PWM_Speed: 150
+Duty_Cycle: 47.03
+Vehicle_Speed: 62.83
+Millis: 3378
+=====================
+Elapsed Time: 3381
+PWM_Speed: 150
+Duty_Cycle: 48.08
+Vehicle_Speed: 62.83
+Millis: 3383
+=====================
+Elapsed Time: 3386
+PWM_Speed: 150
+Duty_Cycle: 48.48
+Vehicle_Speed: 62.83
+Millis: 3389
+=====================
+Elapsed Time: 3391
+PWM_Speed: 150
+Duty_Cycle: 47.95
+Vehicle_Speed: 62.83
+Millis: 3393
+=====================
+Elapsed Time: 3396
+PWM_Speed: 150
+Duty_Cycle: 48.79
+Vehicle_Speed: 62.83
+Millis: 3398
+=====================
+Elapsed Time: 3401
+PWM_Speed: 150
+Duty_Cycle: 48.06
+Vehicle_Speed: 62.83
+Millis: 3404
+=====================
+Elapsed Time: 3406
+PWM_Speed: 150
+Duty_Cycle: 48.26
+Vehicle_Speed: 62.83
+Millis: 3408
+=====================
+Elapsed Time: 3411
+PWM_Speed: 150
+Duty_Cycle: 48.99
+Vehicle_Speed: 62.83
+Millis: 3414
+=====================
+Elapsed Time: 3416
+PWM_Speed: 150
+Duty_Cycle: 48.26
+Vehicle_Speed: 62.83
+Millis: 3419
+=====================
+Elapsed Time: 3421
+PWM_Speed: 150
+Duty_Cycle: 48.26
+Vehicle_Speed: 62.83
+Millis: 3423
+=====================
+Elapsed Time: 3426
+PWM_Speed: 150
+Duty_Cycle: 48.99
+Vehicle_Speed: 62.83
+Millis: 3428
+=====================
+Elapsed Time: 3431
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 3434
+=====================
+Elapsed Time: 3436
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 3438
+=====================
+Elapsed Time: 3441
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 3443
+=====================
+Elapsed Time: 3446
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 3448
+=====================
+Elapsed Time: 3451
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 3453
+=====================
+Elapsed Time: 3456
+PWM_Speed: 150
+Duty_Cycle: 48.99
+Vehicle_Speed: 62.83
+Millis: 3458
+=====================
+Elapsed Time: 3461
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 3463
+=====================
+Elapsed Time: 3466
+PWM_Speed: 150
+Duty_Cycle: 48.68
+Vehicle_Speed: 62.83
+Millis: 3468
+=====================
+Elapsed Time: 3471
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 3473
+=====================
+Elapsed Time: 3476
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 3478
+=====================
+Elapsed Time: 3481
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 3483
+=====================
+Elapsed Time: 3486
+PWM_Speed: 150
+Duty_Cycle: 49.80
+Vehicle_Speed: 62.83
+Millis: 3489
+=====================
+Elapsed Time: 3491
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 3493
+=====================
+Elapsed Time: 3496
+PWM_Speed: 150
+Duty_Cycle: 49.29
+Vehicle_Speed: 62.83
+Millis: 3499
+=====================
+Elapsed Time: 3501
+PWM_Speed: 150
+Duty_Cycle: 49.90
+Vehicle_Speed: 62.83
+Millis: 3504
+=====================
+Elapsed Time: 3506
+PWM_Speed: 150
+Duty_Cycle: 48.67
+Vehicle_Speed: 62.83
+Millis: 3508
+=====================
+Elapsed Time: 3511
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 3513
+=====================
+Elapsed Time: 3516
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 3519
+=====================
+Elapsed Time: 3521
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 3523
+=====================
+Elapsed Time: 3526
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 3528
+=====================
+Elapsed Time: 3531
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 3534
+=====================
+Elapsed Time: 3536
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 3538
+=====================
+Elapsed Time: 3542
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 52.36
+Millis: 3544
+=====================
+Elapsed Time: 3547
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 3550
+=====================
+Elapsed Time: 3552
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 3554
+=====================
+Elapsed Time: 3557
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 3559
+=====================
+Elapsed Time: 3562
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 3565
+=====================
+Elapsed Time: 3567
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 3569
+=====================
+Elapsed Time: 3572
+PWM_Speed: 150
+Duty_Cycle: 48.99
+Vehicle_Speed: 62.83
+Millis: 3574
+=====================
+Elapsed Time: 3577
+PWM_Speed: 150
+Duty_Cycle: 48.26
+Vehicle_Speed: 62.83
+Millis: 3579
+=====================
+Elapsed Time: 3582
+PWM_Speed: 150
+Duty_Cycle: 48.99
+Vehicle_Speed: 62.83
+Millis: 3585
+=====================
+Elapsed Time: 3587
+PWM_Speed: 150
+Duty_Cycle: 48.99
+Vehicle_Speed: 62.83
+Millis: 3589
+=====================
+Elapsed Time: 3592
+PWM_Speed: 150
+Duty_Cycle: 48.37
+Vehicle_Speed: 62.83
+Millis: 3594
+=====================
+Elapsed Time: 3597
+PWM_Speed: 150
+Duty_Cycle: 48.89
+Vehicle_Speed: 62.83
+Millis: 3599
+=====================
+Elapsed Time: 3602
+PWM_Speed: 150
+Duty_Cycle: 49.39
+Vehicle_Speed: 62.83
+Millis: 3605
+=====================
+Elapsed Time: 3607
+PWM_Speed: 150
+Duty_Cycle: 48.06
+Vehicle_Speed: 62.83
+Millis: 3609
+=====================
+Elapsed Time: 3612
+PWM_Speed: 150
+Duty_Cycle: 48.69
+Vehicle_Speed: 62.83
+Millis: 3614
+=====================
+Elapsed Time: 3617
+PWM_Speed: 150
+Duty_Cycle: 48.69
+Vehicle_Speed: 62.83
+Millis: 3620
+=====================
+Elapsed Time: 3622
+PWM_Speed: 150
+Duty_Cycle: 48.06
+Vehicle_Speed: 62.83
+Millis: 3624
+=====================
+Elapsed Time: 3627
+PWM_Speed: 150
+Duty_Cycle: 48.59
+Vehicle_Speed: 62.83
+Millis: 3629
+=====================
+Elapsed Time: 3632
+PWM_Speed: 150
+Duty_Cycle: 48.39
+Vehicle_Speed: 62.83
+Millis: 3635
+=====================
+Elapsed Time: 3637
+PWM_Speed: 150
+Duty_Cycle: 47.85
+Vehicle_Speed: 62.83
+Millis: 3639
+=====================
+Elapsed Time: 3642
+PWM_Speed: 150
+Duty_Cycle: 48.28
+Vehicle_Speed: 62.83
+Millis: 3644
+=====================
+Elapsed Time: 3647
+PWM_Speed: 150
+Duty_Cycle: 47.55
+Vehicle_Speed: 62.83
+Millis: 3650
+=====================
+Elapsed Time: 3652
+PWM_Speed: 150
+Duty_Cycle: 47.44
+Vehicle_Speed: 62.83
+Millis: 3654
+=====================
+Elapsed Time: 3657
+PWM_Speed: 150
+Duty_Cycle: 47.98
+Vehicle_Speed: 62.83
+Millis: 3659
+=====================
+Elapsed Time: 3662
+PWM_Speed: 150
+Duty_Cycle: 47.05
+Vehicle_Speed: 62.83
+Millis: 3665
+=====================
+Elapsed Time: 3667
+PWM_Speed: 150
+Duty_Cycle: 46.94
+Vehicle_Speed: 62.83
+Millis: 3670
+=====================
+Elapsed Time: 3672
+PWM_Speed: 150
+Duty_Cycle: 47.27
+Vehicle_Speed: 62.83
+Millis: 3674
+=====================
+Elapsed Time: 3677
+PWM_Speed: 150
+Duty_Cycle: 46.53
+Vehicle_Speed: 62.83
+Millis: 3680
+=====================
+Elapsed Time: 3682
+PWM_Speed: 150
+Duty_Cycle: 46.01
+Vehicle_Speed: 62.83
+Millis: 3684
+=====================
+Elapsed Time: 3687
+PWM_Speed: 150
+Duty_Cycle: 46.37
+Vehicle_Speed: 62.83
+Millis: 3689
+=====================
+Elapsed Time: 3692
+PWM_Speed: 150
+Duty_Cycle: 45.10
+Vehicle_Speed: 62.83
+Millis: 3694
+=====================
+Elapsed Time: 3697
+PWM_Speed: 150
+Duty_Cycle: 45.36
+Vehicle_Speed: 62.83
+Millis: 3699
+=====================
+Elapsed Time: 3702
+PWM_Speed: 150
+Duty_Cycle: 44.56
+Vehicle_Speed: 62.83
+Millis: 3704
+=====================
+Elapsed Time: 3707
+PWM_Speed: 150
+Duty_Cycle: 42.94
+Vehicle_Speed: 62.83
+Millis: 3709
+=====================
+Elapsed Time: 3712
+PWM_Speed: 150
+Duty_Cycle: 42.74
+Vehicle_Speed: 62.83
+Millis: 3714
+=====================
+Elapsed Time: 3717
+PWM_Speed: 150
+Duty_Cycle: 41.73
+Vehicle_Speed: 62.83
+Millis: 3719
+=====================
+Elapsed Time: 3722
+PWM_Speed: 150
+Duty_Cycle: 39.59
+Vehicle_Speed: 62.83
+Millis: 3724
+=====================
+Elapsed Time: 3727
+PWM_Speed: 150
+Duty_Cycle: 38.83
+Vehicle_Speed: 62.83
+Millis: 3729
+=====================
+Elapsed Time: 3732
+PWM_Speed: 150
+Duty_Cycle: 37.47
+Vehicle_Speed: 62.83
+Millis: 3735
+=====================
+Elapsed Time: 3737
+PWM_Speed: 150
+Duty_Cycle: 34.49
+Vehicle_Speed: 62.83
+Millis: 3739
+=====================
+Elapsed Time: 3742
+PWM_Speed: 150
+Duty_Cycle: 33.60
+Vehicle_Speed: 62.83
+Millis: 3744
+=====================
+Elapsed Time: 3747
+PWM_Speed: 150
+Duty_Cycle: 32.32
+Vehicle_Speed: 62.83
+Millis: 3750
+=====================
+Elapsed Time: 3752
+PWM_Speed: 150
+Duty_Cycle: 31.72
+Vehicle_Speed: 62.83
+Millis: 3755
+=====================
+Elapsed Time: 3757
+PWM_Speed: 150
+Duty_Cycle: 31.72
+Vehicle_Speed: 62.83
+Millis: 3759
+=====================
+Elapsed Time: 3762
+PWM_Speed: 150
+Duty_Cycle: 32.53
+Vehicle_Speed: 62.83
+Millis: 3765
+=====================
+Elapsed Time: 3767
+PWM_Speed: 150
+Duty_Cycle: 32.92
+Vehicle_Speed: 62.83
+Millis: 3769
+=====================
+Elapsed Time: 3772
+PWM_Speed: 150
+Duty_Cycle: 35.56
+Vehicle_Speed: 62.83
+Millis: 3774
+=====================
+Elapsed Time: 3777
+PWM_Speed: 150
+Duty_Cycle: 36.96
+Vehicle_Speed: 62.83
+Millis: 3780
+=====================
+Elapsed Time: 3782
+PWM_Speed: 150
+Duty_Cycle: 39.39
+Vehicle_Speed: 62.83
+Millis: 3784
+=====================
+Elapsed Time: 3787
+PWM_Speed: 150
+Duty_Cycle: 42.22
+Vehicle_Speed: 62.83
+Millis: 3789
+=====================
+Elapsed Time: 3792
+PWM_Speed: 150
+Duty_Cycle: 43.44
+Vehicle_Speed: 62.83
+Millis: 3795
+=====================
+Elapsed Time: 3798
+PWM_Speed: 150
+Duty_Cycle: 45.45
+Vehicle_Speed: 52.36
+Millis: 3800
+=====================
+Elapsed Time: 3803
+PWM_Speed: 150
+Duty_Cycle: 46.36
+Vehicle_Speed: 62.83
+Millis: 3805
+=====================
+Elapsed Time: 3808
+PWM_Speed: 150
+Duty_Cycle: 46.52
+Vehicle_Speed: 62.83
+Millis: 3810
+=====================
+Elapsed Time: 3813
+PWM_Speed: 150
+Duty_Cycle: 47.78
+Vehicle_Speed: 62.83
+Millis: 3815
+=====================
+Elapsed Time: 3818
+PWM_Speed: 150
+Duty_Cycle: 48.88
+Vehicle_Speed: 62.83
+Millis: 3821
+=====================
+Elapsed Time: 3823
+PWM_Speed: 150
+Duty_Cycle: 47.65
+Vehicle_Speed: 62.83
+Millis: 3825
+=====================
+Elapsed Time: 3828
+PWM_Speed: 150
+Duty_Cycle: 48.69
+Vehicle_Speed: 62.83
+Millis: 3830
+=====================
+Elapsed Time: 3833
+PWM_Speed: 150
+Duty_Cycle: 48.79
+Vehicle_Speed: 62.83
+Millis: 3836
+=====================
+Elapsed Time: 3838
+PWM_Speed: 150
+Duty_Cycle: 48.06
+Vehicle_Speed: 62.83
+Millis: 3841
+=====================
+Elapsed Time: 3843
+PWM_Speed: 150
+Duty_Cycle: 48.89
+Vehicle_Speed: 62.83
+Millis: 3845
+=====================
+Elapsed Time: 3848
+PWM_Speed: 150
+Duty_Cycle: 48.79
+Vehicle_Speed: 62.83
+Millis: 3851
+=====================
+Elapsed Time: 3853
+PWM_Speed: 150
+Duty_Cycle: 48.26
+Vehicle_Speed: 62.83
+Millis: 3855
+=====================
+Elapsed Time: 3858
+PWM_Speed: 150
+Duty_Cycle: 48.89
+Vehicle_Speed: 62.83
+Millis: 3860
+=====================
+Elapsed Time: 3863
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 3866
+=====================
+Elapsed Time: 3868
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 3870
+=====================
+Elapsed Time: 3873
+PWM_Speed: 150
+Duty_Cycle: 48.99
+Vehicle_Speed: 62.83
+Millis: 3875
+=====================
+Elapsed Time: 3878
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 3881
+=====================
+Elapsed Time: 3883
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 3885
+=====================
+Elapsed Time: 3888
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 3890
+=====================
+Elapsed Time: 3893
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 3896
+=====================
+Elapsed Time: 3898
+PWM_Speed: 150
+Duty_Cycle: 48.99
+Vehicle_Speed: 62.83
+Millis: 3900
+=====================
+Elapsed Time: 3903
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 3905
+=====================
+Elapsed Time: 3908
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 3910
+=====================
+Elapsed Time: 3913
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 3915
+=====================
+Elapsed Time: 3918
+PWM_Speed: 150
+Duty_Cycle: 49.29
+Vehicle_Speed: 62.83
+Millis: 3921
+=====================
+Elapsed Time: 3923
+PWM_Speed: 150
+Duty_Cycle: 48.67
+Vehicle_Speed: 62.83
+Millis: 3926
+=====================
+Elapsed Time: 3928
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 3930
+=====================
+Elapsed Time: 3933
+PWM_Speed: 150
+Duty_Cycle: 49.29
+Vehicle_Speed: 62.83
+Millis: 3936
+=====================
+Elapsed Time: 3938
+PWM_Speed: 150
+Duty_Cycle: 48.67
+Vehicle_Speed: 62.83
+Millis: 3940
+=====================
+Elapsed Time: 3943
+PWM_Speed: 150
+Duty_Cycle: 49.29
+Vehicle_Speed: 62.83
+Millis: 3945
+=====================
+Elapsed Time: 3948
+PWM_Speed: 150
+Duty_Cycle: 48.67
+Vehicle_Speed: 62.83
+Millis: 3951
+=====================
+Elapsed Time: 3953
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 3955
+=====================
+Elapsed Time: 3958
+PWM_Speed: 150
+Duty_Cycle: 48.99
+Vehicle_Speed: 62.83
+Millis: 3960
+=====================
+Elapsed Time: 3963
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 3966
+=====================
+Elapsed Time: 3968
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 3970
+=====================
+Elapsed Time: 3973
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 3975
+=====================
+Elapsed Time: 3978
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 3981
+=====================
+Elapsed Time: 3983
+PWM_Speed: 150
+Duty_Cycle: 48.46
+Vehicle_Speed: 62.83
+Millis: 3985
+=====================
+Elapsed Time: 3988
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 3990
+=====================
+Elapsed Time: 3993
+PWM_Speed: 150
+Duty_Cycle: 48.37
+Vehicle_Speed: 62.83
+Millis: 3995
+=====================
+Elapsed Time: 3998
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 4000
+=====================
+Elapsed Time: 4003
+PWM_Speed: 150
+Duty_Cycle: 49.69
+Vehicle_Speed: 62.83
+Millis: 4006
+=====================
+Elapsed Time: 4008
+PWM_Speed: 150
+Duty_Cycle: 48.37
+Vehicle_Speed: 62.83
+Millis: 4011
+=====================
+Elapsed Time: 4013
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 4015
+=====================
+Elapsed Time: 4018
+PWM_Speed: 150
+Duty_Cycle: 49.49
+Vehicle_Speed: 62.83
+Millis: 4021
+=====================
+Elapsed Time: 4023
+PWM_Speed: 150
+Duty_Cycle: 48.26
+Vehicle_Speed: 62.84
+Millis: 4025
+=====================
+Elapsed Time: 4028
+PWM_Speed: 150
+Duty_Cycle: 48.99
+Vehicle_Speed: 62.83
+Millis: 4030
+=====================
+Elapsed Time: 4033
+PWM_Speed: 150
+Duty_Cycle: 48.89
+Vehicle_Speed: 62.83
+Millis: 4036
+=====================
+Elapsed Time: 4038
+PWM_Speed: 150
+Duty_Cycle: 48.26
+Vehicle_Speed: 62.83
+Millis: 4040
+=====================
+Elapsed Time: 4043
+PWM_Speed: 150
+Duty_Cycle: 48.79
+Vehicle_Speed: 62.83
+Millis: 4045
+=====================
+Elapsed Time: 4048
+PWM_Speed: 150
+Duty_Cycle: 48.05
+Vehicle_Speed: 62.84
+Millis: 4051
+=====================
+Elapsed Time: 4054
+PWM_Speed: 150
+Duty_Cycle: 48.06
+Vehicle_Speed: 52.36
+Millis: 4056
+=====================
+Elapsed Time: 4059
+PWM_Speed: 150
+Duty_Cycle: 48.69
+Vehicle_Speed: 62.83
+Millis: 4061
+=====================
+Elapsed Time: 4064
+PWM_Speed: 150
+Duty_Cycle: 48.06
+Vehicle_Speed: 62.83
+Millis: 4067
+=====================
+Elapsed Time: 4069
+PWM_Speed: 150
+Duty_Cycle: 47.96
+Vehicle_Speed: 62.84
+Millis: 4071
+=====================
+Elapsed Time: 4074
+PWM_Speed: 150
+Duty_Cycle: 48.39
+Vehicle_Speed: 62.83
+Millis: 4076
+=====================
+Elapsed Time: 4079
+PWM_Speed: 150
+Duty_Cycle: 47.65
+Vehicle_Speed: 62.83
+Millis: 4081
+=====================
+Elapsed Time: 4084
+PWM_Speed: 150
+Duty_Cycle: 48.08
+Vehicle_Speed: 62.83
+Millis: 4086
+=====================
+Elapsed Time: 4089
+PWM_Speed: 150
+Duty_Cycle: 48.67
+Vehicle_Speed: 62.83
+Millis: 4092
+=====================
+Elapsed Time: 4094
+PWM_Speed: 150
+Duty_Cycle: 47.24
+Vehicle_Speed: 62.84
+Millis: 4097
+=====================
+Elapsed Time: 4099
+PWM_Speed: 150
+Duty_Cycle: 47.88
+Vehicle_Speed: 62.83
+Millis: 4101
+=====================
+Elapsed Time: 4104
+PWM_Speed: 150
+Duty_Cycle: 48.06
+Vehicle_Speed: 62.83
+Millis: 4107
+=====================
+Elapsed Time: 4109
+PWM_Speed: 150
+Duty_Cycle: 46.63
+Vehicle_Speed: 62.83
+Millis: 4111
+=====================
+Elapsed Time: 4114
+PWM_Speed: 150
+Duty_Cycle: 47.07
+Vehicle_Speed: 62.84
+Millis: 4116
+=====================
+Elapsed Time: 4119
+PWM_Speed: 150
+Duty_Cycle: 46.67
+Vehicle_Speed: 62.83
+Millis: 4122
+=====================
+Elapsed Time: 4124
+PWM_Speed: 150
+Duty_Cycle: 45.51
+Vehicle_Speed: 62.83
+Millis: 4126
+=====================
+Elapsed Time: 4129
+PWM_Speed: 150
+Duty_Cycle: 45.97
+Vehicle_Speed: 62.83
+Millis: 4131
+=====================
+Elapsed Time: 4134
+PWM_Speed: 150
+Duty_Cycle: 44.49
+Vehicle_Speed: 62.84
+Millis: 4137
+=====================
+Elapsed Time: 4139
+PWM_Speed: 150
+Duty_Cycle: 43.97
+Vehicle_Speed: 62.83
+Millis: 4141
+=====================
+Elapsed Time: 4144
+PWM_Speed: 150
+Duty_Cycle: 43.95
+Vehicle_Speed: 62.83
+Millis: 4146
+=====================
+Elapsed Time: 4149
+PWM_Speed: 150
+Duty_Cycle: 42.04
+Vehicle_Speed: 62.83
+Millis: 4152
+=====================
+Elapsed Time: 4154
+PWM_Speed: 150
+Duty_Cycle: 40.82
+Vehicle_Speed: 62.84
+Millis: 4156
+=====================
+Elapsed Time: 4159
+PWM_Speed: 150
+Duty_Cycle: 40.52
+Vehicle_Speed: 62.83
+Millis: 4161
+=====================
+Elapsed Time: 4164
+PWM_Speed: 150
+Duty_Cycle: 37.96
+Vehicle_Speed: 62.83
+Millis: 4167
+=====================
+Elapsed Time: 4169
+PWM_Speed: 150
+Duty_Cycle: 37.10
+Vehicle_Speed: 62.83
+Millis: 4171
+=====================
+Elapsed Time: 4174
+PWM_Speed: 150
+Duty_Cycle: 35.56
+Vehicle_Speed: 62.84
+Millis: 4176
+=====================
+Elapsed Time: 4179
+PWM_Speed: 150
+Duty_Cycle: 33.06
+Vehicle_Speed: 62.83
+Millis: 4182
+=====================
+Elapsed Time: 4184
+PWM_Speed: 150
+Duty_Cycle: 32.86
+Vehicle_Speed: 62.83
+Millis: 4186
+=====================
+Elapsed Time: 4189
+PWM_Speed: 150
+Duty_Cycle: 31.92
+Vehicle_Speed: 62.83
+Millis: 4191
+=====================
+Elapsed Time: 4194
+PWM_Speed: 150
+Duty_Cycle: 30.82
+Vehicle_Speed: 62.84
+Millis: 4196
+=====================
+Elapsed Time: 4199
+PWM_Speed: 150
+Duty_Cycle: 32.12
+Vehicle_Speed: 62.83
+Millis: 4201
+=====================
+Elapsed Time: 4204
+PWM_Speed: 150
+Duty_Cycle: 34.15
+Vehicle_Speed: 62.83
+Millis: 4207
+=====================
+Elapsed Time: 4209
+PWM_Speed: 150
+Duty_Cycle: 34.63
+Vehicle_Speed: 62.83
+Millis: 4211
+=====================
+Elapsed Time: 4214
+PWM_Speed: 150
+Duty_Cycle: 37.45
+Vehicle_Speed: 62.83
+Millis: 4216
+=====================
+Elapsed Time: 4219
+PWM_Speed: 150
+Duty_Cycle: 39.88
+Vehicle_Speed: 62.84
+Millis: 4222
+=====================
+Elapsed Time: 4224
+PWM_Speed: 150
+Duty_Cycle: 40.98
+Vehicle_Speed: 62.83
+Millis: 4226
+=====================
+Elapsed Time: 4229
+PWM_Speed: 150
+Duty_Cycle: 43.64
+Vehicle_Speed: 62.83
+Millis: 4231
+=====================
+Elapsed Time: 4234
+PWM_Speed: 150
+Duty_Cycle: 45.25
+Vehicle_Speed: 62.83
+Millis: 4237
+=====================
+Ehicle_Speed: 62.84
+Millis: 4261
+=====================
+Elapsed Time: 4264
+PWM_Speed: 150
+Duty_Cycle: 47.96
+Vehicle_Speed: 62.83
+Millis: 4268
+=====================
+Elapsed Time: 4269
+PWM_Speed: 150
+Duty_Cycle: 48.16
+Vehicle_Speed: 62.83
+Millis: 4271
+=====================
+Elapsed Time: 4274
+PWM_Speed: 150
+Duty_Cycle: 48.69
+Vehicle_Speed: 62.83
+Millis: 4276
+=====================
+Elapsed Time: 4279
+PWM_Speed: 150
+Duty_Cycle: 48.26
+Vehicle_Speed: 62.84
+Millis: 4282
+=====================
+Elapsed Time: 4284
+PWM_Speed: 150
+Duty_Cycle: 48.26
+Vehicle_Speed: 62.83
+Millis: 4286
+=====================
+Elapsed Time: 4289
+PWM_Speed: 150
+Duty_Cycle: 48.89
+Vehicle_Speed: 62.83
+Millis: 4291
+=====================
+Elapsed Time: 4294
+PWM_Speed: 150
+Duty_Cycle: 48.26
+Vehicle_Speed: 62.83
+Millis: 4296
+=====================
+Elapsed Time: 4299
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.84
+Millis: 4301
+=====================
+Elapsed Time: 4304
+PWM_Speed: 150
+Duty_Cycle: 49.59
+Vehicle_Speed: 62.83
+Millis: 4307
+=====================
+Elapsed Time: 4310
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 52.36
+Millis: 4312
+=====================
+Elapsed Time: 4315
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 4317
+=====================
+Elapsed Time: 4320
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 4323
+=====================
+Elapsed Time: 4325
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.84
+Millis: 4327
+=====================
+Elapsed Time: 4330
+PWM_Speed: 150
+Duty_Cycle: 49.29
+Vehicle_Speed: 62.83
+Millis: 4332
+=====================
+Elapsed Time: 4335
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 4338
+=====================
+Elapsed Time: 4340
+PWM_Speed: 150
+Duty_Cycle: 48.67
+Vehicle_Speed: 62.83
+Millis: 4342
+=====================
+Elapsed Time: 4345
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.84
+Millis: 4347
+=====================
+Elapsed Time: 4350
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 4354
+=====================
+Elapsed Time: 4355
+PWM_Speed: 150
+Duty_Cycle: 48.67
+Vehicle_Speed: 62.83
+Millis: 4357
+=====================
+Elapsed Time: 4360
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 4362
+=====================
+Elapsed Time: 4365
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.84
+Millis: 4368
+=====================
+Elapsed Time: 4370
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 4372
+=====================
+Elapsed Time: 4375
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 4377
+=====================
+Elapsed Time: 4380
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 4382
+=====================
+Elapsed Time: 4385
+PWM_Speed: 150
+Duty_Cycle: 49.29
+Vehicle_Speed: 62.83
+Millis: 4387
+=====================
+Elapsed Time: 4390
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.84
+Millis: 4392
+=====================
+Elapsed Time: 4395
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 4397
+=====================
+Elapsed Time: 4400
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 4402
+=====================
+Elapsed Time: 4405
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 4407
+=====================
+Elapsed Time: 4410
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.84
+Millis: 4412
+=====================
+Elapsed Time: 4415
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 4417
+=====================
+Elapsed Time: 4420
+PWM_Speed: 150
+Duty_Cycle: 49.39
+Vehicle_Speed: 62.83
+Millis: 4423
+=====================
+Elapsed Time: 4425
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 4427
+=====================
+Elapsed Time: 4430
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.84
+Millis: 4432
+=====================
+Elapsed Time: 4435
+PWM_Speed: 150
+Duty_Cycle: 48.58
+Vehicle_Speed: 62.83
+Millis: 4439
+=====================
+Elapsed Time: 4440
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 4442
+=====================
+Elapsed Time: 4445
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 4447
+=====================
+Elapsed Time: 4450
+PWM_Speed: 150
+Duty_Cycle: 48.88
+Vehicle_Speed: 62.84
+Millis: 4453
+=====================
+Elapsed Time: 4455
+PWM_Speed: 150
+Duty_Cycle: 48.26
+Vehicle_Speed: 62.83
+Millis: 4457
+=====================
+Elapsed Time: 4460
+PWM_Speed: 150
+Duty_Cycle: 48.99
+Vehicle_Speed: 62.83
+Millis: 4462
+=====================
+Elapsed Time: 4465
+PWM_Speed: 150
+Duty_Cycle: 48.26
+Vehicle_Speed: 62.83
+Millis: 4468
+=====================
+Elapsed Time: 4470
+PWM_Speed: 150
+Duty_Cycle: 48.26
+Vehicle_Speed: 62.84
+Millis: 4472
+=====================
+Elapsed Time: 4475
+PWM_Speed: 150
+Duty_Cycle: 48.89
+Vehicle_Speed: 62.83
+Millis: 4477
+=====================
+Elapsed Time: 4480
+PWM_Speed: 150
+Duty_Cycle: 48.26
+Vehicle_Speed: 62.83
+Millis: 4483
+=====================
+Elapsed Time: 4485
+PWM_Speed: 150
+Duty_Cycle: 48.26
+Vehicle_Speed: 62.83
+Millis: 4487
+=====================
+Elapsed Time: 4490
+PWM_Speed: 150
+Duty_Cycle: 48.59
+Vehicle_Speed: 62.84
+Millis: 4492
+=====================
+Elapsed Time: 4495
+PWM_Speed: 150
+Duty_Cycle: 48.07
+Vehicle_Speed: 62.83
+Millis: 4497
+=====================
+Elapsed Time: 4500
+PWM_Speed: 150
+Duty_Cycle: 48.59
+Vehicle_Speed: 62.83
+Millis: 4502
+=====================
+Elapsed Time: 4505
+PWM_Speed: 150
+Duty_Cycle: 48.39
+Vehicle_Speed: 62.83
+Millis: 4507
+=====================
+Elapsed Time: 4510
+PWM_Speed: 150
+Duty_Cycle: 47.76
+Vehicle_Speed: 62.83
+Millis: 4512
+=====================
+Elapsed Time: 4515
+PWM_Speed: 150
+Duty_Cycle: 48.28
+Vehicle_Speed: 62.84
+Millis: 4517
+=====================
+Elapsed Time: 4520
+PWM_Speed: 150
+Duty_Cycle: 48.77
+Vehicle_Speed: 62.83
+Millis: 4524
+=====================
+Elapsed Time: 4525
+PWM_Speed: 150
+Duty_Cycle: 47.35
+Vehicle_Speed: 62.83
+Millis: 4527
+=====================
+Elapsed Time: 4530
+PWM_Speed: 150
+Duty_Cycle: 47.88
+Vehicle_Speed: 62.83
+Millis: 4532
+=====================
+Elapsed Time: 4535
+PWM_Speed: 150
+Duty_Cycle: 48.37
+Vehicle_Speed: 62.84
+Millis: 4538
+=====================
+Elapsed Time: 4540
+PWM_Speed: 150
+Duty_Cycle: 46.83
+Vehicle_Speed: 62.83
+Millis: 4542
+=====================
+Elapsed Time: 4545
+PWM_Speed: 150
+Duty_Cycle: 47.27
+Vehicle_Speed: 62.83
+Millis: 4547
+=====================
+Elapsed Time: 4550
+PWM_Speed: 150
+Duty_Cycle: 46.98
+Vehicle_Speed: 62.83
+Millis: 4553
+=====================
+Elapsed Time: 4555
+PWM_Speed: 150
+Duty_Cycle: 46.01
+Vehicle_Speed: 62.84
+Millis: 4557
+=====================
+Elapsed Time: 4560
+PWM_Speed: 150
+Duty_Cycle: 46.36
+Vehicle_Speed: 62.83
+Millis: 4562
+=====================
+Elapsed Time: 4566
+PWM_Speed: 150
+Duty_Cycle: 45.31
+Vehicle_Speed: 52.36
+Millis: 4569
+=====================
+Elapsed Time: 4571
+PWM_Speed: 150
+Duty_Cycle: 44.79
+Vehicle_Speed: 62.83
+Millis: 4573
+=====================
+Elapsed Time: 4576
+PWM_Speed: 150
+Duty_Cycle: 44.56
+Vehicle_Speed: 62.83
+Millis: 4578
+=====================
+Elapsed Time: 4581
+PWM_Speed: 150
+Duty_Cycle: 42.94
+Vehicle_Speed: 62.84
+Millis: 4583
+=====================
+Elapsed Time: 4586
+PWM_Speed: 150
+Duty_Cycle: 42.54
+Vehicle_Speed: 62.83
+Millis: 4588
+=====================
+Elapsed Time: 4591
+PWM_Speed: 150
+Duty_Cycle: 41.53
+Vehicle_Speed: 62.83
+Millis: 4593
+=====================
+Elapsed Time: 4596
+PWM_Speed: 150
+Duty_Cycle: 39.18
+Vehicle_Speed: 62.83
+Millis: 4598
+=====================
+Elapsed Time: 4601
+PWM_Speed: 150
+Duty_Cycle: 38.51
+Vehicle_Speed: 62.84
+Millis: 4603
+=====================
+Elapsed Time: 4606
+PWM_Speed: 150
+Duty_Cycle: 36.84
+Vehicle_Speed: 62.83
+Millis: 4610
+=====================
+Elapsed Time: 4611
+PWM_Speed: 150
+Duty_Cycle: 34.56
+Vehicle_Speed: 62.83
+Millis: 4613
+=====================
+Elapsed Time: 4616
+PWM_Speed: 150
+Duty_Cycle: 33.80
+Vehicle_Speed: 62.83
+Millis: 4618
+=====================
+Elapsed Time: 4621
+PWM_Speed: 150
+Duty_Cycle: 32.59
+Vehicle_Speed: 62.84
+Millis: 4624
+=====================
+Elapsed Time: 4626
+PWM_Speed: 150
+Duty_Cycle: 31.02
+Vehicle_Speed: 62.83
+Millis: 4628
+=====================
+Elapsed Time: 4631
+PWM_Speed: 150
+Duty_Cycle: 31.65
+Vehicle_Speed: 62.83
+Millis: 4633
+=====================
+Elapsed Time: 4636
+PWM_Speed: 150
+Duty_Cycle: 32.46
+Vehicle_Speed: 62.83
+Millis: 4639
+=====================
+Elapsed Time: 4641
+PWM_Speed: 150
+Duty_Cycle: 34.01
+Vehicle_Speed: 62.84
+Millis: 4643
+=====================
+Elapsed Time: 4646
+PWM_Speed: 150
+Duty_Cycle: 35.90
+Vehicle_Speed: 62.83
+Millis: 4648
+=====================
+Elapsed Time: 4651
+PWM_Speed: 150
+Duty_Cycle: 37.85
+Vehicle_Speed: 62.83
+Millis: 4654
+=====================
+Elapsed Time: 4656
+PWM_Speed: 150
+Duty_Cycle: 39.22
+Vehicle_Speed: 62.83
+Millis: 4658
+=====================
+Elapsed Time: 4661
+PWM_Speed: 150
+Duty_Cycle: 42.42
+Vehicle_Speed: 62.84
+Millis: 4663
+=====================
+Elapsed Time: 4666
+PWM_Speed: 150
+Duty_Cycle: 43.65
+Vehicle_Speed: 62.83
+Millis: 4669
+=====================
+Elapsed Time: 4671
+PWM_Speed: 150
+Duty_Cycle: 44.99
+Vehicle_Speed: 62.83
+Millis: 4673
+=====================
+Elapsed Time: 4676
+PWM_Speed: 150
+Duty_Cycle: 46.67
+Vehicle_Speed: 62.83
+Millis: 4678
+=====================
+Elapsed Time: 4681
+PWM_Speed: 150
+Duty_Cycle: 46.82
+Vehicle_Speed: 62.83
+Millis: 4684
+=====================
+Elapsed Time: 4686
+PWM_Speed: 150
+Duty_Cycle: 47.88
+Vehicle_Speed: 62.84
+Millis: 4688
+=====================
+Elapsed Time: 4691
+PWM_Speed: 150
+Duty_Cycle: 48.28
+Vehicle_Speed: 62.83
+Millis: 4694
+=====================
+Elapsed Time: 4696
+PWM_Speed: 150
+Duty_Cycle: 47.76
+Vehicle_Speed: 62.83
+Millis: 4699
+=====================
+Elapsed Time: 4701
+PWM_Speed: 150
+Duty_Cycle: 47.96
+Vehicle_Speed: 62.83
+Millis: 4703
+=====================
+Elapsed Time: 4706
+PWM_Speed: 150
+Duty_Cycle: 48.79
+Vehicle_Speed: 62.84
+Millis: 4708
+=====================
+Elapsed Time: 4711
+PWM_Speed: 150
+Duty_Cycle: 48.26
+Vehicle_Speed: 62.83
+Millis: 4713
+=====================
+Elapsed Time: 4716
+PWM_Speed: 150
+Duty_Cycle: 48.99
+Vehicle_Speed: 62.83
+Millis: 4718
+=====================
+Elapsed Time: 4721
+PWM_Speed: 150
+Duty_Cycle: 49.69
+Vehicle_Speed: 62.83
+Millis: 4724
+=====================
+Elapsed Time: 4726
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.84
+Millis: 4728
+=====================
+Elapsed Time: 4731
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 4733
+=====================
+Elapsed Time: 4736
+PWM_Speed: 150
+Duty_Cycle: 49.59
+Vehicle_Speed: 62.83
+Millis: 4739
+=====================
+Elapsed Time: 4741
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 4743
+=====================
+Elapsed Time: 4746
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.84
+Millis: 4748
+=====================
+Elapsed Time: 4751
+PWM_Speed: 150
+Duty_Cycle: 49.29
+Vehicle_Speed: 62.83
+Millis: 4754
+=====================
+Elapsed Time: 4756
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 4758
+=====================
+Elapsed Time: 4761
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 4763
+=====================
+Elapsed Time: 4766
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.84
+Millis: 4769
+=====================
+Elapsed Time: 4771
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 4773
+=====================
+Elapsed Time: 4776
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 4779
+=====================
+Elapsed Time: 4781
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 4784
+=====================
+Elapsed Time: 4786
+PWM_Speed: 150
+Duty_Cycle: 48.67
+Vehicle_Speed: 62.84
+Millis: 4788
+=====================
+Elapsed Time: 4791
+PWM_Speed: 150
+Duty_Cycle: 49.29
+Vehicle_Speed: 62.83
+Millis: 4793
+=====================
+Elapsed Time: 4796
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 4799
+=====================
+Elapsed Time: 4801
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 4803
+=====================
+Elapsed Time: 4806
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 4808
+=====================
+Elapsed Time: 4811
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.84
+Millis: 4813
+=====================
+Elapsed Time: 4816
+PWM_Speed: 150
+Duty_Cycle: 49.29
+Vehicle_Speed: 62.83
+Millis: 4818
+=====================
+Elapsed Time: 4822
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 52.36
+Millis: 4824
+=====================
+Elapsed Time: 4827
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 4829
+=====================
+Elapsed Time: 4832
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.84
+Millis: 4834
+=====================
+Elapsed Time: 4837
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 4840
+=====================
+Elapsed Time: 4842
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 4844
+=====================
+Elapsed Time: 4847
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 4849
+=====================
+Elapsed Time: 4852
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 4855
+=====================
+Elapsed Time: 4857
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.84
+Millis: 4859
+=====================
+Elapsed Time: 4862
+PWM_Speed: 150
+Duty_Cycle: 48.99
+Vehicle_Speed: 62.83
+Millis: 4865
+=====================
+Elapsed Time: 4867
+PWM_Speed: 150
+Duty_Cycle: 48.88
+Vehicle_Speed: 62.83
+Millis: 4870
+=====================
+Elapsed Time: 4872
+PWM_Speed: 150
+Duty_Cycle: 48.36
+Vehicle_Speed: 62.83
+Millis: 4874
+=====================
+Elapsed Time: 4877
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.84
+Millis: 4879
+=====================
+Elapsed Time: 4882
+PWM_Speed: 150
+Duty_Cycle: 48.36
+Vehicle_Speed: 62.83
+Millis: 4885
+=====================
+Elapsed Time: 4887
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 4889
+=====================
+Elapsed Time: 4892
+PWM_Speed: 150
+Duty_Cycle: 48.89
+Vehicle_Speed: 62.83
+Millis: 4894
+=====================
+Elapsed Time: 4897
+PWM_Speed: 150
+Duty_Cycle: 48.26
+Vehicle_Speed: 62.84
+Millis: 4900
+=====================
+Elapsed Time: 4902
+PWM_Speed: 150
+Duty_Cycle: 48.26
+Vehicle_Speed: 62.83
+Millis: 4904
+=====================
+Elapsed Time: 4907
+PWM_Speed: 150
+Duty_Cycle: 48.89
+Vehicle_Speed: 62.83
+Millis: 4909
+=====================
+Elapsed Time: 4912
+PWM_Speed: 150
+Duty_Cycle: 48.26
+Vehicle_Speed: 62.83
+Millis: 4915
+=====================
+Elapsed Time: 4917
+PWM_Speed: 150
+Duty_Cycle: 48.16
+Vehicle_Speed: 62.84
+Millis: 4919
+=====================
+Elapsed Time: 4922
+PWM_Speed: 150
+Duty_Cycle: 48.79
+Vehicle_Speed: 62.83
+Millis: 4924
+=====================
+Elapsed Time: 4927
+PWM_Speed: 150
+Duty_Cycle: 47.95
+Vehicle_Speed: 62.83
+Millis: 4929
+=====================
+Elapsed Time: 4932
+PWM_Speed: 150
+Duty_Cycle: 48.59
+Vehicle_Speed: 62.83
+Millis: 4934
+=====================
+Elapsed Time: 4937
+PWM_Speed: 150
+Duty_Cycle: 49.18
+Vehicle_Speed: 62.84
+Millis: 4940
+=====================
+Elapsed Time: 4942
+PWM_Speed: 150
+Duty_Cycle: 47.85
+Vehicle_Speed: 62.83
+Millis: 4944
+=====================
+Elapsed Time: 4947
+PWM_Speed: 150
+Duty_Cycle: 48.28
+Vehicle_Speed: 62.83
+Millis: 4950
+=====================
+Elapsed Time: 4952
+PWM_Speed: 150
+Duty_Cycle: 48.78
+Vehicle_Speed: 62.83
+Millis: 4955
+=====================
+Elapsed Time: 4957
+PWM_Speed: 150
+Duty_Cycle: 47.55
+Vehicle_Speed: 62.84
+Millis: 4959
+=====================
+Elapsed Time: 4962
+PWM_Speed: 150
+Duty_Cycle: 48.08
+Vehicle_Speed: 62.83
+Millis: 4964
+=====================
+Elapsed Time: 4967
+PWM_Speed: 150
+Duty_Cycle: 47.78
+Vehicle_Speed: 62.83
+Millis: 4970
+=====================
+Elapsed Time: 4972
+PWM_Speed: 150
+Duty_Cycle: 47.14
+Vehicle_Speed: 62.83
+Millis: 4974
+=====================
+Elapsed Time: 4977
+PWM_Speed: 150
+Duty_Cycle: 47.38
+Vehicle_Speed: 62.83
+Millis: 4979
+=====================
+Elapsed Time: 4982
+PWM_Speed: 150
+Duty_Cycle: 46.63
+Vehicle_Speed: 62.84
+Millis: 4985
+=====================
+Elapsed Time: 4987
+PWM_Speed: 150
+Duty_Cycle: 46.23
+Vehicle_Speed: 62.83
+Millis: 4989
+=====================
+Elapsed Time: 4992
+PWM_Speed: 150
+Duty_Cycle: 46.57
+Vehicle_Speed: 62.83
+Millis: 4994
+=====================
+Elapsed Time: 4997
+PWM_Speed: 150
+Duty_Cycle: 45.51
+Vehicle_Speed: 62.83
+Millis: 5000
+=====================
+Elapsed Time: 5002
+PWM_Speed: 150
+Duty_Cycle: 45.19
+Vehicle_Speed: 62.84
+Millis: 5004
+=====================
+Elapsed Time: 5007
+PWM_Speed: 150
+Duty_Cycle: 45.25
+Vehicle_Speed: 62.83
+Millis: 5009
+=====================
+Elapsed Time: 5012
+PWM_Speed: 150
+Duty_Cycle: 43.76
+Vehicle_Speed: 62.83
+Millis: 5015
+=====================
+Elapsed Time: 5017
+PWM_Speed: 150
+Duty_Cycle: 43.55
+Vehicle_Speed: 62.83
+Millis: 5019
+=====================
+Elapsed Time: 5022
+PWM_Speed: 150
+Duty_Cycle: 42.54
+Vehicle_Speed: 62.84
+Millis: 5024
+=====================
+Elapsed Time: 5027
+PWM_Speed: 150
+Duty_Cycle: 40.61
+Vehicle_Speed: 62.83
+Millis: 5029
+=====================
+Elapsed Time: 5032
+PWM_Speed: 150
+Duty_Cycle: 39.92
+Vehicle_Speed: 62.83
+Millis: 5035
+=====================
+Elapsed Time: 5037
+PWM_Speed: 150
+Duty_Cycle: 38.71
+Vehicle_Speed: 62.83
+Millis: 5039
+=====================
+Elapsed Time: 5042
+PWM_Speed: 150
+Duty_Cycle: 36.12
+Vehicle_Speed: 62.84
+Millis: 5044
+=====================
+Elapsed Time: 5047
+PWM_Speed: 150
+Duty_Cycle: 35.21
+Vehicle_Speed: 62.83
+Millis: 5049
+=====================
+Elapsed Time: 5052
+PWM_Speed: 150
+Duty_Cycle: 33.67
+Vehicle_Speed: 62.83
+Millis: 5055
+=====================
+Elapsed Time: 5057
+PWM_Speed: 150
+Duty_Cycle: 31.29
+Vehicle_Speed: 62.83
+Millis: 5059
+=====================
+Elapsed Time: 5062
+PWM_Speed: 150
+Duty_Cycle: 31.65
+Vehicle_Speed: 62.84
+Millis: 5064
+=====================
+Elapsed Time: 5067
+PWM_Speed: 150
+Duty_Cycle: 31.92
+Vehicle_Speed: 62.83
+Millis: 5070
+=====================
+Elapsed Time: 5072
+PWM_Speed: 150
+Duty_Cycle: 32.93
+Vehicle_Speed: 62.83
+Millis: 5074
+=====================
+Elapsed Time: 5078
+PWM_Speed: 150
+Duty_Cycle: 34.55
+Vehicle_Speed: 52.36
+Millis: 5080
+=====================
+Elapsed Time: 5083
+PWM_Speed: 150
+Duty_Cycle: 35.99
+Vehicle_Speed: 62.83
+Millis: 5086
+=====================
+Elapsed Time: 5088
+PWM_Speed: 150
+Duty_Cycle: 38.95
+Vehicle_Speed: 62.84
+Millis: 5090
+=====================
+Elapsed Time: 5093
+PWM_Speed: 150
+Duty_Cycle: 41.30
+Vehicle_Speed: 62.83
+Millis: 5095
+=====================
+Elapsed Time: 5098
+PWM_Speed: 150
+Duty_Cycle: 42.62
+Vehicle_Speed: 62.83
+Millis: 5100
+=====================
+Elapsed Time: 5103
+PWM_Speed: 150
+Duty_Cycle: 45.05
+Vehicle_Speed: 62.83
+Millis: 5105
+=====================
+Elapsed Time: 5108
+PWM_Speed: 150
+Duty_Cycle: 46.06
+Vehicle_Speed: 62.84
+Millis: 5110
+=====================
+Elapsed Time: 5113
+PWM_Speed: 150
+Duty_Cycle: 46.53
+Vehicle_Speed: 62.83
+Millis: 5115
+=====================
+Elapsed Time: 5118
+PWM_Speed: 150
+Duty_Cycle: 47.68
+Vehicle_Speed: 62.83
+Millis: 5121
+=====================
+Elapsed Time: 5123
+PWM_Speed: 150
+Duty_Cycle: 47.88
+Vehicle_Speed: 62.83
+Millis: 5125
+=====================
+Elapsed Time: 5128
+PWM_Speed: 150
+Duty_Cycle: 47.65
+Vehicle_Speed: 62.84
+Millis: 5130
+=====================
+Elapsed Time: 5133
+PWM_Speed: 150
+Duty_Cycle: 48.39
+Vehicle_Speed: 62.83
+Millis: 5135
+=====================
+Elapsed Time: 5138
+PWM_Speed: 150
+Duty_Cycle: 48.79
+Vehicle_Speed: 62.83
+Millis: 5141
+=====================
+Elapsed Time: 5143
+PWM_Speed: 150
+Duty_Cycle: 48.16
+Vehicle_Speed: 62.83
+Millis: 5145
+=====================
+Elapsed Time: 5148
+PWM_Speed: 150
+Duty_Cycle: 48.89
+Vehicle_Speed: 62.84
+Millis: 5150
+=====================
+Elapsed Time: 5153
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 5156
+=====================
+Elapsed Time: 5158
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 5160
+=====================
+Elapsed Time: 5163
+PWM_Speed: 150
+Duty_Cycle: 48.99
+Vehicle_Speed: 62.83
+Millis: 5165
+=====================
+Elapsed Time: 5168
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 5171
+=====================
+Elapsed Time: 5173
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.84
+Millis: 5175
+=====================
+Elapsed Time: 5178
+PWM_Speed: 150
+Duty_Cycle: 48.99
+Vehicle_Speed: 62.83
+Millis: 5180
+=====================
+Elapsed Time: 5183
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 5186
+=====================
+Elapsed Time: 5188
+PWM_Speed: 150
+Duty_Cycle: 48.67
+Vehicle_Speed: 62.83
+Millis: 5190
+=====================
+Elapsed Time: 5193
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.84
+Millis: 5195
+=====================
+Elapsed Time: 5198
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 5200
+=====================
+Elapsed Time: 5203
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 5206
+=====================
+Elapsed Time: 5208
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 5210
+=====================
+Elapsed Time: 5213
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.84
+Millis: 5215
+=====================
+Elapsed Time: 5218
+PWM_Speed: 150
+Duty_Cycle: 49.29
+Vehicle_Speed: 62.83
+Millis: 5220
+=====================
+Elapsed Time: 5223
+PWM_Speed: 150
+Duty_Cycle: 49.39
+Vehicle_Speed: 62.83
+Millis: 5225
+=====================
+Elapsed Time: 5228
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 5230
+=====================
+Elapsed Time: 5233
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.84
+Millis: 5235
+=====================
+Elapsed Time: 5238
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 5241
+=====================
+Elapsed Time: 5243
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 5245
+=====================
+Elapsed Time: 5248
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 5250
+=====================
+Elapsed Time: 5253
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.84
+Millis: 5256
+=====================
+Elapsed Time: 5258
+PWM_Speed: 150
+Duty_Cycle: 48.67
+Vehicle_Speed: 62.83
+Millis: 5260
+=====================
+Elapsed Time: 5263
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 5265
+=====================
+Elapsed Time: 5268
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 5271
+=====================
+Elapsed Time: 5273
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.84
+Millis: 5275
+=====================
+Elapsed Time: 5278
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 5280
+=====================
+Elapsed Time: 5283
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 5286
+=====================
+Elapsed Time: 5288
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 5291
+=====================
+Elapsed Time: 5293
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 5295
+=====================
+Elapsed Time: 5298
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.84
+Millis: 5301
+=====================
+Elapsed Time: 5303
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 5305
+=====================
+Elapsed Time: 5308
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 5310
+=====================
+Elapsed Time: 5313
+PWM_Speed: 150
+Duty_Cycle: 48.36
+Vehicle_Speed: 62.83
+Millis: 5315
+=====================
+Elapsed Time: 5318
+PWM_Speed: 150
+Duty_Cycle: 48.99
+Vehicle_Speed: 62.84
+Millis: 5320
+=====================
+Elapsed Time: 5323
+PWM_Speed: 150
+Duty_Cycle: 49.69
+Vehicle_Speed: 62.83
+Millis: 5326
+=====================
+Elapsed Time: 5328
+PWM_Speed: 150
+Duty_Cycle: 48.37
+Vehicle_Speed: 62.83
+Millis: 5330
+=====================
+Elapsed Time: 5334
+PWM_Speed: 150
+Duty_Cycle: 48.99
+Vehicle_Speed: 52.36
+Millis: 5336
+=====================
+Elapsed Time: 5339
+PWM_Speed: 150
+Duty_Cycle: 48.79
+Vehicle_Speed: 62.83
+Millis: 5342
+=====================
+Elapsed Time: 5344
+PWM_Speed: 150
+Duty_Cycle: 48.16
+Vehicle_Speed: 62.84
+Millis: 5346
+=====================
+Elapsed Time: 5349
+PWM_Speed: 150
+Duty_Cycle: 48.79
+Vehicle_Speed: 62.83
+Millis: 5351
+=====================
+Elapsed Time: 5354
+PWM_Speed: 150
+Duty_Cycle: 48.06
+Vehicle_Speed: 62.83
+Millis: 5357
+=====================
+Elapsed Time: 5359
+PWM_Speed: 150
+Duty_Cycle: 48.16
+Vehicle_Speed: 62.83
+Millis: 5361
+=====================
+Elapsed Time: 5364
+PWM_Speed: 150
+Duty_Cycle: 48.59
+Vehicle_Speed: 62.84
+Millis: 5366
+=====================
+Elapsed Time: 5369
+PWM_Speed: 150
+Duty_Cycle: 47.86
+Vehicle_Speed: 62.83
+Millis: 5372
+=====================
+Elapsed Time: 5374
+PWM_Speed: 150
+Duty_Cycle: 47.65
+Vehicle_Speed: 62.83
+Millis: 5377
+=====================
+Elapsed Time: 5379
+PWM_Speed: 150
+Duty_Cycle: 48.39
+Vehicle_Speed: 62.83
+Millis: 5381
+=====================
+Elapsed Time: 5384
+PWM_Speed: 150
+Duty_Cycle: 47.65
+Vehicle_Speed: 62.84
+Millis: 5387
+=====================
+Elapsed Time: 5389
+PWM_Speed: 150
+Duty_Cycle: 47.55
+Vehicle_Speed: 62.83
+Millis: 5391
+=====================
+Elapsed Time: 5394
+PWM_Speed: 150
+Duty_Cycle: 48.08
+Vehicle_Speed: 62.83
+Millis: 5396
+=====================
+Elapsed Time: 5399
+PWM_Speed: 150
+Duty_Cycle: 47.24
+Vehicle_Speed: 62.83
+Millis: 5401
+=====================
+Elapsed Time: 5404
+PWM_Speed: 150
+Duty_Cycle: 47.88
+Vehicle_Speed: 62.84
+Millis: 5406
+=====================
+Elapsed Time: 5409
+PWM_Speed: 150
+Duty_Cycle: 47.58
+Vehicle_Speed: 62.83
+Millis: 5411
+=====================
+Elapsed Time: 5414
+PWM_Speed: 150
+Duty_Cycle: 46.63
+Vehicle_Speed: 62.83
+Millis: 5416
+=====================
+Elapsed Time: 5419
+PWM_Speed: 150
+Duty_Cycle: 47.18
+Vehicle_Speed: 62.83
+Millis: 5421
+=====================
+Elapsed Time: 5424
+PWM_Speed: 150
+Duty_Cycle: 46.87
+Vehicle_Speed: 62.84
+Millis: 5426
+=====================
+Elapsed Time: 5429
+PWM_Speed: 150
+Duty_Cycle: 45.81
+Vehicle_Speed: 62.83
+Millis: 5431
+=====================
+Elapsed Time: 5434
+PWM_Speed: 150
+Duty_Cycle: 46.06
+Vehicle_Speed: 62.83
+Millis: 5436
+=====================
+Elapsed Time: 5439
+PWM_Speed: 150
+Duty_Cycle: 45.56
+Vehicle_Speed: 62.83
+Millis: 5442
+=====================
+Elapsed Time: 5444
+PWM_Speed: 150
+Duty_Cycle: 43.97
+Vehicle_Speed: 62.84
+Millis: 5446
+=====================
+Elapsed Time: 5449
+PWM_Speed: 150
+Duty_Cycle: 43.95
+Vehicle_Speed: 62.83
+Millis: 5451
+=====================
+Elapsed Time: 5454
+PWM_Speed: 150
+Duty_Cycle: 42.33
+Vehicle_Speed: 62.83
+Millis: 5457
+=====================
+Elapsed Time: 5459
+PWM_Speed: 150
+Duty_Cycle: 41.14
+Vehicle_Speed: 62.83
+Millis: 5462
+=====================
+Elapsed Time: 5464
+PWM_Speed: 150
+Duty_Cycle: 40.73
+Vehicle_Speed: 62.83
+Millis: 5466
+=====================
+Elapsed Time: 5469
+PWM_Speed: 150
+Duty_Cycle: 38.37
+Vehicle_Speed: 62.84
+Millis: 5472
+=====================
+Elapsed Time: 5474
+PWM_Speed: 150
+Duty_Cycle: 36.99
+Vehicle_Speed: 62.83
+Millis: 5476
+=====================
+Elapsed Time: 5479
+PWM_Speed: 150
+Duty_Cycle: 35.76
+Vehicle_Speed: 62.83
+Millis: 5481
+=====================
+Elapsed Time: 5484
+PWM_Speed: 150
+Duty_Cycle: 33.13
+Vehicle_Speed: 62.83
+Millis: 5487
+=====================
+Elapsed Time: 5489
+PWM_Speed: 150
+Duty_Cycle: 32.46
+Vehicle_Speed: 62.84
+Millis: 5491
+=====================
+Elapsed Time: 5494
+PWM_Speed: 150
+Duty_Cycle: 31.65
+Vehicle_Speed: 62.83
+Millis: 5496
+=====================
+Elapsed Time: 5499
+PWM_Speed: 150
+Duty_Cycle: 30.94
+Vehicle_Speed: 62.83
+Millis: 5501
+=====================
+Elapsed Time: 5504
+PWM_Speed: 150
+Duty_Cycle: 32.12
+Vehicle_Speed: 62.83
+Millis: 5506
+=====================
+Elapsed Time: 5509
+PWM_Speed: 150
+Duty_Cycle: 33.54
+Vehicle_Speed: 62.84
+Millis: 5511
+=====================
+Elapsed Time: 5514
+PWM_Speed: 150
+Duty_Cycle: 34.97
+Vehicle_Speed: 62.83
+Millis: 5516
+=====================
+Elapsed Time: 5519
+PWM_Speed: 150
+Duty_Cycle: 37.85
+Vehicle_Speed: 62.83
+Millis: 5521
+=====================
+Elapsed Time: 5524
+PWM_Speed: 150
+Duty_Cycle: 40.90
+Vehicle_Speed: 62.83
+Millis: 5527
+=====================
+Elapsed Time: 5529
+PWM_Speed: 150
+Duty_Cycle: 41.72
+Vehicle_Speed: 62.84
+Millis: 5531
+=====================
+Elapsed Time: 5534
+PWM_Speed: 150
+Duty_Cycle: 44.24
+Vehicle_Speed: 62.83
+Millis: 5536
+=====================
+Elapsed Time: 5539
+PWM_Speed: 150
+Duty_Cycle: 45.75
+Vehicle_Speed: 62.83
+Millis: 5542
+=====================
+Elapsed Time: 5544
+PWM_Speed: 150
+Duty_Cycle: 45.90
+Vehicle_Speed: 62.83
+Millis: 5547
+=====================
+Elapsed Time: 5549
+PWM_Speed: 150
+Duty_Cycle: 47.27
+Vehicle_Speed: 62.84
+Millis: 5551
+=====================
+Elapsed Time: 5554
+PWM_Speed: 150
+Duty_Cycle: 47.88
+Vehicle_Speed: 62.83
+Millis: 5557
+=====================
+Elapsed Time: 5559
+PWM_Speed: 150
+Duty_Cycle: 47.55
+Vehicle_Speed: 62.83
+Millis: 5561
+=====================
+Elapsed Time: 5564
+PWM_Speed: 150
+Duty_Cycle: 48.48
+Vehicle_Speed: 62.83
+Millis: 5566
+=====================
+Elapsed Time: 5569
+PWM_Speed: 150
+Duty_Cycle: 47.96
+Vehicle_Speed: 62.84
+Millis: 5572
+=====================
+Elapsed Time: 5574
+PWM_Speed: 150
+Duty_Cycle: 48.06
+Vehicle_Speed: 62.83
+Millis: 5576
+=====================
+Elapsed Time: 5579
+PWM_Speed: 150
+Duty_Cycle: 48.79
+Vehicle_Speed: 62.83
+Millis: 5581
+=====================
+Elapsed Time: 5584
+PWM_Speed: 150
+Duty_Cycle: 48.16
+Vehicle_Speed: 62.83
+Millis: 5587
+=====================
+Elapsed Time: 5590
+PWM_Speed: 150
+Duty_Cycle: 48.26
+Vehicle_Speed: 52.36
+Millis: 5592
+=====================
+Elapsed Time: 5595
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.84
+Millis: 5597
+=====================
+Elapsed Time: 5600
+PWM_Speed: 150
+Duty_Cycle: 48.36
+Vehicle_Speed: 62.83
+Millis: 5602
+=====================
+Elapsed Time: 5605
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 5607
+=====================
+Elapsed Time: 5610
+PWM_Speed: 150
+Duty_Cycle: 49.69
+Vehicle_Speed: 62.83
+Millis: 5613
+=====================
+Elapsed Time: 5615
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.84
+Millis: 5617
+=====================
+Elapsed Time: 5620
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 5622
+=====================
+Elapsed Time: 5625
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 5628
+=====================
+Elapsed Time: 5630
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 5633
+=====================
+Elapsed Time: 5635
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 5637
+=====================
+Elapsed Time: 5640
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.84
+Millis: 5643
+=====================
+Elapsed Time: 5645
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 5647
+=====================
+Elapsed Time: 5650
+PWM_Speed: 150
+Duty_Cycle: 49.29
+Vehicle_Speed: 62.83
+Millis: 5652
+=====================
+Elapsed Time: 5655
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 5658
+=====================
+Elapsed Time: 5660
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.84
+Millis: 5662
+=====================
+Elapsed Time: 5665
+PWM_Speed: 150
+Duty_Cycle: 49.29
+Vehicle_Speed: 62.83
+Millis: 5667
+=====================
+Elapsed Time: 5670
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 5673
+=====================
+Elapsed Time: 5675
+PWM_Speed: 150
+Duty_Cycle: 48.67
+Vehicle_Speed: 62.83
+Millis: 5677
+=====================
+Elapsed Time: 5680
+PWM_Speed: 150
+Duty_Cycle: 49.29
+Vehicle_Speed: 62.84
+Millis: 5682
+=====================
+Elapsed Time: 5685
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 5688
+=====================
+Elapsed Time: 5690
+PWM_Speed: 150
+Duty_Cycle: 48.67
+Vehicle_Speed: 62.83
+Millis: 5692
+=====================
+Elapsed Time: 5695
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 5697
+=====================
+Elapsed Time: 5700
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.84
+Millis: 5702
+=====================
+Elapsed Time: 5705
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 5707
+=====================
+Elapsed Time: 5710
+PWM_Speed: 150
+Duty_Cycle: 49.69
+Vehicle_Speed: 62.83
+Millis: 5713
+=====================
+Elapsed Time: 5715
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 5718
+=====================
+Elapsed Time: 5720
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.84
+Millis: 5722
+=====================
+Elapsed Time: 5725
+PWM_Speed: 150
+Duty_Cycle: 49.59
+Vehicle_Speed: 62.83
+Millis: 5728
+=====================
+Elapsed Time: 5730
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 5732
+=====================
+Elapsed Time: 5735
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 5737
+=====================
+Elapsed Time: 5740
+PWM_Speed: 150
+Duty_Cycle: 48.99
+Vehicle_Speed: 62.84
+Millis: 5743
+=====================
+Elapsed Time: 5745
+PWM_Speed: 150
+Duty_Cycle: 48.37
+Vehicle_Speed: 62.83
+Millis: 5747
+=====================
+Elapsed Time: 5750
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.83
+Millis: 5752
+=====================
+Elapsed Time: 5755
+PWM_Speed: 150
+Duty_Cycle: 48.26
+Vehicle_Speed: 62.83
+Millis: 5758
+=====================
+Elapsed Time: 5760
+PWM_Speed: 150
+Duty_Cycle: 48.26
+Vehicle_Speed: 62.83
+Millis: 5762
+=====================
+Elapsed Time: 5765
+PWM_Speed: 150
+Duty_Cycle: 48.89
+Vehicle_Speed: 62.84
+Millis: 5767
+=====================
+Elapsed Time: 5770
+PWM_Speed: 150
+Duty_Cycle: 48.26
+Vehicle_Speed: 62.83
+Millis: 5773
+=====================
+Elapsed Time: 5775
+PWM_Speed: 150
+Duty_Cycle: 48.26
+Vehicle_Speed: 62.83
+Millis: 5777
+=====================
+Elapsed Time: 5780
+PWM_Speed: 150
+Duty_Cycle: 48.89
+Vehicle_Speed: 62.83
+Millis: 5782
+=====================
+Elapsed Time: 5785
+PWM_Speed: 150
+Duty_Cycle: 48.26
+Vehicle_Speed: 62.84
+Millis: 5788
+=====================
+Elapsed Time: 5790
+PWM_Speed: 150
+Duty_Cycle: 48.58
+Vehicle_Speed: 62.83
+Millis: 5792
+=====================
+Elapsed Time: 5795
+PWM_Speed: 150
+Duty_Cycle: 48.69
+Vehicle_Speed: 62.83
+Millis: 5797
+=====================
+Elapsed Time: 5800
+PWM_Speed: 150
+Duty_Cycle: 47.95
+Vehicle_Speed: 62.83
+Millis: 5803
+=====================
+Elapsed Time: 5805
+PWM_Speed: 150
+Duty_Cycle: 48.59
+Vehicle_Speed: 62.84
+Millis: 5807
+=====================
+Elapsed Time: 5810
+PWM_Speed: 150
+Duty_Cycle: 48.48
+Vehicle_Speed: 62.83
+Millis: 5812
+=====================
+Elapsed Time: 5815
+PWM_Speed: 150
+Duty_Cycle: 47.85
+Vehicle_Speed: 62.83
+Millis: 5817
+=====================
+Elapsed Time: 5820
+PWM_Speed: 150
+Duty_Cycle: 48.28
+Vehicle_Speed: 62.83
+Millis: 5822
+=====================
+Elapsed Time: 5825
+PWM_Speed: 150
+Duty_Cycle: 48.28
+Vehicle_Speed: 62.84
+Millis: 5828
+=====================
+Elapsed Time: 5830
+PWM_Speed: 150
+Duty_Cycle: 47.35
+Vehicle_Speed: 62.83
+Millis: 5832
+=====================
+Elapsed Time: 5835
+PWM_Speed: 150
+Duty_Cycle: 47.88
+Vehicle_Speed: 62.83
+Millis: 5837
+=====================
+Elapsed Time: 5840
+PWM_Speed: 150
+Duty_Cycle: 47.03
+Vehicle_Speed: 62.83
+Millis: 5843
+=====================
+Elapsed Time: 5846
+PWM_Speed: 150
+Duty_Cycle: 46.94
+Vehicle_Speed: 52.36
+Millis: 5848
+=====================
+Elapsed Time: 5851
+PWM_Speed: 150
+Duty_Cycle: 47.18
+Vehicle_Speed: 62.84
+Millis: 5853
+=====================
+Elapsed Time: 5856
+PWM_Speed: 150
+Duty_Cycle: 46.22
+Vehicle_Speed: 62.83
+Millis: 5859
+=====================
+Elapsed Time: 5861
+PWM_Speed: 150
+Duty_Cycle: 45.92
+Vehicle_Speed: 62.83
+Millis: 5863
+=====================
+Elapsed Time: 5866
+PWM_Speed: 150
+Duty_Cycle: 46.17
+Vehicle_Speed: 62.83
+Millis: 5868
+=====================
+Elapsed Time: 5871
+PWM_Speed: 150
+Duty_Cycle: 44.99
+Vehicle_Speed: 62.84
+Millis: 5873
+=====================
+Elapsed Time: 5876
+PWM_Speed: 150
+Duty_Cycle: 44.96
+Vehicle_Speed: 62.83
+Millis: 5878
+=====================
+Elapsed Time: 5881
+PWM_Speed: 150
+Duty_Cycle: 44.69
+Vehicle_Speed: 62.83
+Millis: 5884
+=====================
+Elapsed Time: 5886
+PWM_Speed: 150
+Duty_Cycle: 42.45
+Vehicle_Speed: 62.83
+Millis: 5889
+=====================
+Elapsed Time: 5891
+PWM_Speed: 150
+Duty_Cycle: 42.22
+Vehicle_Speed: 62.84
+Millis: 5893
+=====================
+Elapsed Time: 5896
+PWM_Speed: 150
+Duty_Cycle: 41.43
+Vehicle_Speed: 62.83
+Millis: 5899
+=====================
+Elapsed Time: 5901
+PWM_Speed: 150
+Duty_Cycle: 38.78
+Vehicle_Speed: 62.83
+Millis: 5903
+=====================
+Elapsed Time: 5906
+PWM_Speed: 150
+Duty_Cycle: 37.83
+Vehicle_Speed: 62.83
+Millis: 5908
+=====================
+Elapsed Time: 5911
+PWM_Speed: 150
+Duty_Cycle: 36.09
+Vehicle_Speed: 62.84
+Millis: 5914
+=====================
+Elapsed Time: 5916
+PWM_Speed: 150
+Duty_Cycle: 33.54
+Vehicle_Speed: 62.83
+Millis: 5918
+=====================
+Elapsed Time: 5921
+PWM_Speed: 150
+Duty_Cycle: 32.86
+Vehicle_Speed: 62.83
+Millis: 5923
+=====================
+Elapsed Time: 5926
+PWM_Speed: 150
+Duty_Cycle: 31.02
+Vehicle_Speed: 62.83
+Millis: 5929
+=====================
+Elapsed Time: 5931
+PWM_Speed: 150
+Duty_Cycle: 31.10
+Vehicle_Speed: 62.83
+Millis: 5933
+=====================
+Elapsed Time: 5936
+PWM_Speed: 150
+Duty_Cycle: 31.92
+Vehicle_Speed: 62.84
+Millis: 5938
+=====================
+Elapsed Time: 5941
+PWM_Speed: 150
+Duty_Cycle: 32.31
+Vehicle_Speed: 62.83
+Millis: 5944
+=====================
+Elapsed Time: 5946
+PWM_Speed: 150
+Duty_Cycle: 34.82
+Vehicle_Speed: 62.83
+Millis: 5948
+=====================
+Elapsed Time: 5951
+PWM_Speed: 150
+Duty_Cycle: 36.84
+Vehicle_Speed: 62.83
+Millis: 5953
+=====================
+Elapsed Time: 5956
+PWM_Speed: 150
+Duty_Cycle: 38.52
+Vehicle_Speed: 62.84
+Millis: 5959
+=====================
+Elapsed Time: 5961
+PWM_Speed: 150
+Duty_Cycle: 41.50
+Vehicle_Speed: 62.83
+Millis: 5963
+=====================
+Elapsed Time: 5966
+PWM_Speed: 150
+Duty_Cycle: 43.52
+Vehicle_Speed: 62.83
+Millis: 5968
+=====================
+Elapsed Time: 5971
+PWM_Speed: 150
+Duty_Cycle: 44.58
+Vehicle_Speed: 62.83
+Millis: 5974
+=====================
+Elapsed Time: 5976
+PWM_Speed: 150
+Duty_Cycle: 45.49
+Vehicle_Speed: 62.84
+Millis: 5978
+=====================
+Elapsed Time: 5981
+PWM_Speed: 150
+Duty_Cycle: 47.07
+Vehicle_Speed: 62.83
+Millis: 5983
+=====================
+Elapsed Time: 5986
+PWM_Speed: 150
+Duty_Cycle: 47.03
+Vehicle_Speed: 62.83
+Millis: 5988
+=====================
+Elapsed Time: 5991
+PWM_Speed: 150
+Duty_Cycle: 48.18
+Vehicle_Speed: 62.83
+Millis: 5993
+=====================
+Elapsed Time: 5996
+PWM_Speed: 150
+Duty_Cycle: 48.39
+Vehicle_Speed: 62.84
+Millis: 5998
+=====================
+Elapsed Time: 6001
+PWM_Speed: 150
+Duty_Cycle: 48.06
+Vehicle_Speed: 62.83
+Millis: 6003
+=====================
+Elapsed Time: 6006
+PWM_Speed: 150
+Duty_Cycle: 48.79
+Vehicle_Speed: 62.83
+Millis: 6008
+=====================
+Elapsed Time: 6011
+PWM_Speed: 150
+Duty_Cycle: 49.29
+Vehicle_Speed: 62.83
+Millis: 6014
+=====================
+Elapsed Time: 6016
+PWM_Speed: 150
+Duty_Cycle: 48.26
+Vehicle_Speed: 62.84
+Millis: 6018
+=====================
+Elapsed Time: 6021
+PWM_Speed: 150
+Duty_Cycle: 48.89
+Vehicle_Speed: 62.83
+Millis: 6023
+=====================
+Elapsed Time: 6026
+PWM_Speed: 150
+Duty_Cycle: 49.39
+Vehicle_Speed: 62.83
+Millis: 6029
+=====================
+Elapsed Time: 6031
+PWM_Speed: 150
+Duty_Cycle: 48.36
+Vehicle_Speed: 62.83
+Millis: 6033
+=====================
+Elapsed Time: 6036
+PWM_Speed: 150
+Duty_Cycle: 48.99
+Vehicle_Speed: 62.84
+Millis: 6038
+=====================
+Elapsed Time: 6041
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 6044
+=====================
+Elapsed Time: 6046
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 6048
+=====================
+Elapsed Time: 6051
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 6053
+=====================
+Elapsed Time: 6056
+PWM_Speed: 150
+Duty_Cycle: 48.67
+Vehicle_Speed: 62.83
+Millis: 6060
+=====================
+Elapsed Time: 6061
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.84
+Millis: 6063
+=====================
+Elapsed Time: 6066
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 6068
+=====================
+Elapsed Time: 6071
+PWM_Speed: 150
+Duty_Cycle: 48.67
+Vehicle_Speed: 62.83
+Millis: 6074
+=====================
+Elapsed Time: 6076
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 6078
+=====================
+Elapsed Time: 6081
+PWM_Speed: 150
+Duty_Cycle: 49.09
+Vehicle_Speed: 62.84
+Millis: 6083
+=====================
+Elapsed Time: 6086
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 6088
+=====================
+Elapsed Time: 6091
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 6093
+=====================
+Elapsed Time: 6096
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 6098
+=====================
+Elapsed Time: 6102
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 52.36
+Millis: 6104
+=====================
+Elapsed Time: 6107
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.84
+Millis: 6109
+=====================
+Elapsed Time: 6112
+PWM_Speed: 150
+Duty_Cycle: 49.69
+Vehicle_Speed: 62.83
+Millis: 6115
+=====================
+Elapsed Time: 6117
+PWM_Speed: 150
+Duty_Cycle: 48.67
+Vehicle_Speed: 62.83
+Millis: 6119
+=====================
+Elapsed Time: 6122
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 6124
+=====================
+Elapsed Time: 6127
+PWM_Speed: 150
+Duty_Cycle: 48.67
+Vehicle_Speed: 62.84
+Millis: 6130
+=====================
+Elapsed Time: 6132
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 6134
+=====================
+Elapsed Time: 6137
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 6139
+=====================
+Elapsed Time: 6142
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 6146
+=====================
+Elapsed Time: 6147
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.84
+Millis: 6149
+=====================
+Elapsed Time: 6152
+PWM_Speed: 150
+Duty_Cycle: 49.19
+Vehicle_Speed: 62.83
+Millis: 6154
+=====================
+Elapsed Time: 6157
+PWM_Speed: 150
+Duty_Cycle: 48.67
+Vehicle_Speed: 62.83
+Millis: 6160
+=====================
+Elapsed Time: 6162
+PWM_Speed: 150
+Duty_Cycle: 48.47
+Vehicle_Speed: 62.83
+Millis: 6164
+=====================
+Elapsed Time: 6167
+PWM_Speed: 150
+Duty_Cycle: 48.99
+Vehicle_Speed: 62.84
+Millis: 6169
+=====================
+Elapsed Time: 6172
+PWM_Speed: 150
+Duty_Cycle: 48.57
+Vehicle_Speed: 62.83
+Millis: 6174
+=====================
+Elapsed Time: 6177
+PWM_Speed: 150
+Duty_Cycle: 48.99
+Vehicle_Speed: 62.83
+Millis: 6179
+=====================
+Elapsed Time: 6182
+PWM_Speed: 150
+Duty_Cycle: 49.49
+Vehicle_Speed: 62.83
+Millis: 6185
+=====================
+Elapsed Time: 6187
+PWM_Speed: 150
+Duty_Cycle: 48.37
+Vehicle_Speed: 62.84
+Millis: 6189
+=====================
+Elapsed Time: 6192
+PWM_Speed: 150
+Duty_Cycle: 48.99
+Vehicle_Speed: 62.83
+Millis: 6194
+=====================
+Elapsed Time: 6197
+PWM_Speed: 150
+Duty_Cycle: 49.59
+Vehicle_Speed: 62.83
+Millis: 6200
+=====================
+Elapsed Time: 6202
+PWM_Speed: 150
+Duty_Cycle: 48.36
+Vehicle_Speed: 62.83
+Millis: 6204
+=====================
+Elapsed Time: 6207
+PWM_Speed: 150
+Duty_Cycle: 48.89
+Vehicle_Speed: 62.84
+Millis: 6209
+=====================
+Elapsed Time: 6212
+PWM_Speed: 150
+Duty_Cycle: 48.79
+Vehicle_Speed: 62.83
+Millis: 6215
+=====================
+Elapsed Time: 6217
+PWM_Speed: 150
+Duty_Cycle: 48.16
+Vehicle_Speed: 62.83
+Millis: 6219
+=====================
+Elapsed Time: 6222
+PWM_Speed: 150
+Duty_Cycle: 48.69
+Vehicle_Speed: 62.83
+Millis: 6224
+=====================
+Elapsed Time: 6227
+PWM_Speed: 150
+Duty_Cycle: 48.06
+Vehicle_Speed: 62.83
+Millis: 6231
+=====================
+Elapsed Time: 6232
+PWM_Speed: 150
+Duty_Cycle: 47.96
+Vehicle_Speed: 62.84
+Millis: 6234
+=====================
+Elapsed Time: 6237
+PWM_Speed: 150
+Duty_Cycle: 48.69
+Vehicle_Speed: 62.83
+Millis: 6239
+=====================
+Elapsed Time: 6242
+PWM_Speed: 150
+Duty_Cycle: 47.85
+Vehicle_Speed: 62.83
+Millis: 6245
+=====================
+Elapsed Time: 6247
+PWM_Speed: 150
+Duty_Cycle: 47.65
+Vehicle_Speed: 62.83
+Millis: 6249
+=====================
+Elapsed Time: 6252
+PWM_Speed: 150
+Duty_Cycle: 48.28
+Vehicle_Speed: 62.84
+Millis: 6254
+=====================
+Elapsed Time: 6257
+PWM_Speed: 150
+Duty_Cycle: 47.65
+Vehicle_Speed: 62.83
+Millis: 6260
+=====================
+Elapsed Time: 6262
+PWM_Speed: 150
+Duty_Cycle: 47.54
+Vehicle_Speed: 62.83
+Millis: 6264
+=====================
+Elapsed Time: 6267
+PWM_Speed: 150
+Duty_Cycle: 47.88
+Vehicle_Speed: 62.83
+Millis: 6269
+=====================
+Elapsed Time: 6272
+PWM_Speed: 150
+Duty_Cycle: 47.14
+Vehicle_Speed: 62.84
+Millis: 6275
+=====================
+Elapsed Time: 6277
+PWM_Speed: 150
+Duty_Cycle: 46.94
+Vehicle_Speed: 62.83
+Millis: 6279
+=====================
+Elapsed Time: 6282
+PWM_Speed: 150
+Duty_Cycle: 47.18
+Vehicle_Speed: 62.83
+Millis: 6284
+=====================
+Elapsed Time: 6287
+PWM_Speed: 150
+Duty_Cycle: 46.53
+Vehicle_Speed: 62.83
+Millis: 6289
+=====================
+Elapsed Time: 6292
+PWM_Speed: 150
+Duty_Cycle: 46.87
+Vehicle_Speed: 62.84
+Millis: 6294
+=====================
+Elapsed Time: 6297
+PWM_Speed: 150
+Duty_Cycle: 46.37
+Vehicle_Speed: 62.83
+Millis: 6299
+=====================
+Elapsed Time: 6302
+PWM_Speed: 150
+Duty_Cycle: 45.19
+Vehicle_Speed: 62.83
+Millis: 6304
+=====================
+Elapsed Time: 6307
+PWM_Speed: 150
+Duty_Cycle: 45.47
+Vehicle_Speed: 62.83
+Millis: 6309
+=====================
+Elapsed Time: 6312
+PWM_Speed: 150
+Duty_Cycle: 44.92
+Vehicle_Speed: 62.84
+Millis: 6316
+=====================
+Elapsed Time: 6317
+PWM_Speed: 150
+Duty_Cycle: 43.27
+Vehicle_Speed: 62.83
+Millis: 6319
+=====================
+Elapsed Time: 6322
+PWM_Speed: 150
+Duty_Cycle: 42.74
+Vehicle_Speed: 62.83
+Millis: 6324
+=====================
+Elapsed Time: 6327
+PWM_Speed: 150
+Duty_Cycle: 42.04
+Vehicle_Speed: 62.83
+Millis: 6330
+=====================
+Elapsed Time: 6332
+PWM_Speed: 150
+Duty_Cycle: 39.47
+Vehicle_Speed: 62.84
+Millis: 6334
+=====================
+Elapsed Time: 6337
+PWM_Speed: 150
+Duty_Cycle: 38.71
+Vehicle_Speed: 62.83
+Millis: 6339
+=====================
+Elapsed Time: 6342
+PWM_Speed: 150
+Duty_Cycle: 36.90
+Vehicle_Speed: 62.83
+Millis: 6345
+=====================
+Elapsed Time: 6347
+PWM_Speed: 150
+Duty_Cycle: 34.42
+Vehicle_Speed: 62.83
+Millis: 6349
+=====================
+Elapsed Time: 6352
+PWM_Speed: 150
+Duty_Cycle: 33.54
+Vehicle_Speed: 62.83
+Millis: 6354
+=====================
+Elapsed Time: 6358
+PWM_Speed: 150
+Duty_Cycle: 31.29
+Vehicle_Speed: 52.36
+Millis: 6361
+=====================
+Elapsed Time: 6363
+PWM_Speed: 150
+Duty_Cycle: 31.65
+Vehicle_Speed: 62.83
+Millis: 6365
+=====================
+Elapsed Time: 6368
+PWM_Speed: 150
+Duty_Cycle: 31.72
+Vehicle_Speed: 62.83
+Millis: 6370
+=====================
+Elapsed Time: 6373
+PWM_Speed: 150
+Duty_Cycle: 31.49
+Vehicle_Speed: 62.83
+Millis: 6376
+=====================
+Elapsed Time: 6378
+PWM_Speed: 150
+Duty_Cycle: 33.87
+Vehicle_Speed: 62.84
+Millis: 6380
+=====================
+Elapsed Time: 6383
+PWM_Speed: 150
+Duty_Cycle: 35.83
+Vehicle_Speed: 62.83
+Millis: 6385
+=====================
+Elapsed Time: 6388
+PWM_Speed: 150
+Duty_Cycle: 37.63
+Vehicle_Speed: 62.83
+Millis: 6390
+=====================
+Elapsed Time: 6393
+PWM_Speed: 150
+Duty_Cycle: 40.69
+Vehicle_Speed: 62.83
+Millis: 6395
+=====================
+Elapsed Time: 6398
+PWM_Speed: 150
+Duty_Cycle: 43.35
+Vehicle_Speed: 62.84
+Millis: 6402
+=====================
+Elapsed Time: 6403
+PWM_Speed: 150
+Duty_Cycle: 43.65
+Vehicle_Speed: 62.83
+Millis: 6405
+=====================
+Elapsed Time: 6408
+PWM_Speed: 150
+Duty_Cycle: 45.75
+Vehicle_Speed: 62.83
+Millis: 6410
+=====================
+Elapsed Time: 6413
+PWM_Speed: 150
+Duty_Cycle: 47.24
+Vehicle_Speed: 62.83
+Millis: 6416
+=====================

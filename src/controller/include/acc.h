@@ -17,7 +17,7 @@ typedef struct PidParams {
     float lastError;
 } PidParams;
 
-struct AccParams {
+typedef struct {
     float maxLeadDist;
     PidParams speedPid;
 } AccParams;
@@ -28,7 +28,8 @@ enum Mode {
     FOLLOW
 };
 
-const float dt = 0.01f;
+extern const float dt;
+extern AccParams accParams;
 
 // function headers
 bool leadVehicleExists(float leadDist, float leadSpeed, float setSpeed);
@@ -36,8 +37,12 @@ void initPidParams(PidParams* params, float P, float I, float D);
 float pidStep(PidParams* params, float err);
 uint8_t saturateActReq(float actReq);
 
+#ifdef EXPORT_DLL
 __declspec(dllexport) // mark function for dll export
+#endif
 void initAcc();
 
+#ifdef EXPORT_DLL
 __declspec(dllexport) // mark function for dll export
+#endif
 uint8_t stepAcc(float hostVel, float leadVel, float setSpeed, float leadDist);

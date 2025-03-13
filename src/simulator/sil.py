@@ -8,7 +8,7 @@ from time import time
 # pathing stuff
 PROJECT_BASE = Path(__file__).parents[1]
 DRIVE_CYCLE_DIR = PROJECT_BASE / 'simulator' / 'drive_cycle'
-ACC_DLL_PATH = PROJECT_BASE / 'controller' / 'acc' / 'bin' / 'controller_shared.dll'
+ACC_DLL_PATH = PROJECT_BASE / 'controller' / 'bin' / 'controller_shared.dll'
 
 # simulation parameters
 DRIVE_CYCLE_NAME = 'hwfet.csv'
@@ -43,7 +43,6 @@ def main():
         while (elapsed_time > 0 and (time() - (start_time + elapsed_time)) < dt): pass
         elapsed_time = time() - start_time
 
-        # TODO: function binding to ACC controller in C (DLL)
         act_req = acc.step_acc(
             ego_speed,
             simulator.get_current_lead_speed(),

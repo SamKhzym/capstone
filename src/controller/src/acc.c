@@ -5,10 +5,11 @@
  * Description: Implements and ACC control algorithm
  * */
 
-#include "ACC.h"
+#include "acc.h"
 
 //Globals and parameters
-struct AccParams accParams;
+AccParams accParams;
+const float dt = 0.01f;
 bool leadVehicleExists(float leadDist, float leadSpeed, float setSpeed) {
     return leadSpeed < setSpeed && leadDist < accParams.maxLeadDist;
 }
@@ -38,12 +39,12 @@ float pidStep(PidParams* params, float err) {
 
 void initAcc() {
 
-    float speedKp = 3.0f;
+    float speedKp = 2.5f;
     float speedKi = 1.0f;
     float speedKd = 0.04f;
 
     initPidParams(&accParams.speedPid, speedKp, speedKi, speedKd);
-    accParams.maxLeadDist = 5.0f;
+    accParams.maxLeadDist = 1.5f;
 
 }
 

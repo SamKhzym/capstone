@@ -156,7 +156,7 @@ class RealTimeViz:
 
     def display_stats(self, ego_speed: float, lead_speed: float, lead_dist: float) -> None:
         ego_speed_text = self.font.render(f'Ego Vehicle Speed: {ego_speed} m/s', False, (0, 0, 0))
-        lead_speed_text = self.font.render(f'Lead Vehicle Speed: {lead_speed} m/s', False, (0, 0, 0))
+        lead_speed_text = self.font.render(f'Lead Vehicle Speed: {round(float(lead_speed), 2)} m/s', False, (0, 0, 0))
         lead_dist_text = self.font.render(f'Lead Vehicle Distance: {lead_dist:.2f} m', False, (0, 0, 0))
         self.screen.blit(ego_speed_text, (0,0))
         self.screen.blit(lead_speed_text, (0,30))

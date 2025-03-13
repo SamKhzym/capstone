@@ -282,5 +282,6 @@ TSWLatexianTemp*
 .vscode/*
 
 **/build/**
+**/cmake-build-*/**
 **/.idea/**
 **/__pycache__/**
