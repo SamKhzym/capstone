@@ -29,10 +29,10 @@ uint8_t* padMessage(uint8_t* message, size_t len){
     return paddedMsg;
 }
 
+
 /** CRC check based on the following
  * https://barrgroup.com/blog/crc-series-part-3-crc-implementation-code-cc
- *
- *
+ * NO Reflections
  */
 
 uint8_t  paddedCRC(uint8_t* message, size_t len){
@@ -69,7 +69,7 @@ uint8_t crc8(uint8_t* message, size_t len){
 
 
 bool checkCRC(uint8_t CRC, uint8_t* payload, int len){
-    return (crc8(payload, len) == CRC);
+    return (crc8(payload, len-1) == CRC);// upto last byte is the original message
 }
 
 uint8_t extractCRC(uint8_t* payload, int len){
