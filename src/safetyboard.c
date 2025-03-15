@@ -67,8 +67,14 @@ uint8_t crc8(uint8_t* message, size_t len){
     return crc; 
 }
 
+
 bool checkCRC(uint8_t CRC, uint8_t* payload, int len){
     return (crc8(payload, len) == CRC);
+}
+
+uint8_t extractCRC(uint8_t* payload, int len){
+    uint8_t crc = payload[3*sizeof(uint8_t)];//24-bit starts the crc
+    return crc;
 }
 
 bool checkRC(uint8_t currRC, uint8_t prevRC, uint8_t RCMax){

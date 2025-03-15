@@ -1,3 +1,4 @@
+#pragma once
 /** Name: safetyboard.h
  *  Description: header file for system safety board functionality
  *
@@ -20,6 +21,7 @@ uint8_t crc8(uint8_t* message, size_t len);
 uint8_t paddedCRC(uint8_t* message, size_t len);
 
 bool checkCRC(uint8_t CRC, uint8_t* payload, int len);
+uint8_t extractCRC(uint8_t* payload, int len);
 
 bool checkRC(uint8_t currRC, uint8_t prevRC, uint8_t RCMax);
 bool checkCommandRange(uint8_t actReq);
