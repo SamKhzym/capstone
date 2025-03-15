@@ -47,7 +47,7 @@ bool checkCommandRange(uint8_t actReq){
 
 uint8_t saturateOutputCommand(uint8_t actReq, uint8_t actReqPrev){
     #if DEBUG
-        uint8_t actReqMax = 0;
+        #define actReqMax 255
     #endif
     if (actReq-actReqPrev > actReqMax){
         actReq = actReq-actReqMax;
