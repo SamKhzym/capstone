@@ -9,6 +9,11 @@ int main(){
     uint8_t message1[] = {0x32,0x12};
     uint8_t crc1 = crc8(message1, sizeof(message1));  // Poly: 0x07 (CRC-8 standard)
     printf("CRC-8: 0x%02X\n", crc1);  // Print 8-bit CRC
+    
+    #if DEBUG
+    uint8_t padcrc1 = paddedCRC(message1, sizeof(message1)); 
+    printf("PADDED CRC-8: 0x%02X\n", padcrc1);  // Print 8-bit CRC
+    #endif
 
     uint8_t message2[] = {0x00,0x00,0x00};
     uint8_t crc2 = crc8(message2, sizeof(message2));  // Poly: 0x07 (CRC-8 standard)
