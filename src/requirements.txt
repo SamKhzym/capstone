@@ -1,0 +1,6 @@
+numpy
+pandas
+control
+scipy
+pygame
+pytest

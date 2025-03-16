@@ -281,6 +281,7 @@ TSWLatexianTemp*
 # ignore vscode
 .vscode/*
 
-src/safetyboard-test
-
-**/build
+**/build/**
+**/cmake-build-*/**
+**/.idea/**
+**/__pycache__/**
