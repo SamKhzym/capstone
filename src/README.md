@@ -58,3 +58,8 @@ Steps for running HIL program:
 16. Now to build our safety board code use: west build -p always -b stm32h735g_disco -s [PATH_TO_CAPSTONE/src/controller/configs/hil]
  - This points zephyr to the cmakelists that configures the build
 - Follow the same steps to flash the code onto the board
+
+# Standards for CRC and RC checks
+
+The standard I'm using to make tests
+https://crccalc.com/?crc=32,12&method=CRC-8/SMBUS&datatype=hex&outtype=hex

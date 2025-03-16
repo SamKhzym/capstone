@@ -285,3 +285,6 @@ TSWLatexianTemp*
 **/cmake-build-*/**
 **/.idea/**
 **/__pycache__/**
+
+#ignore compiled test binaries
+**/safetyboard-test
