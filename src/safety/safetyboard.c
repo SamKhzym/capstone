@@ -52,7 +52,7 @@ uint8_t  paddedCRC(uint8_t* message, size_t len){
     return crc; 
 }
 
-uint8_t crc8(uint8_t* message, size_t len){
+uint8_t crc8(uint8_t* message, int len){
     uint8_t crc = 0x00;
     for (int byte = 0; byte < len; byte++){
         crc ^= message[byte];

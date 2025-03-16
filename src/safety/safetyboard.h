@@ -17,7 +17,8 @@
 
 //functions
 //uint8_t crc8(uint8_t* message, size_t len, uint8_t poly, uint8_t init);
-uint8_t crc8(uint8_t* message, size_t len);
+uint8_t crc8(uint8_t* message, int len);
+//uint8_t crc8(unsigned char* message, int len);
 uint8_t paddedCRC(uint8_t* message, size_t len);
 
 bool checkCRC(uint8_t CRC, uint8_t* payload, int len);
