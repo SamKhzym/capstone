@@ -282,3 +282,5 @@ TSWLatexianTemp*
 .vscode/*
 
 src/safetyboard-test
+
+**/build
