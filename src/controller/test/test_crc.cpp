@@ -3,8 +3,6 @@
 #include <stdint.h>
 #include <math.h>
 
-namespace{
-
 TEST(CRC8, TwoByteCase){
   uint8_t message1[] = {0x32,0x12};
   uint8_t crc1 = crc8(message1, sizeof(message1));
@@ -34,7 +32,5 @@ TEST(CRC8, OneByteCase){
   uint8_t crc5 = crc8(message5, sizeof(message5));  // Poly: 0x07 (CRC-8 standard)
   EXPECT_EQ(crc5, 0x97);
 }
-}
-
 
 

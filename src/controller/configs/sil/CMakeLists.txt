@@ -23,7 +23,7 @@ add_compile_definitions(EXPORT_DLL) # build to dll target
 message(${PROJECT_BASE})
 
 # glob to find all files that need to be included
-set(acc_sources ${PROJECT_BASE}/src/acc.c)
+set(acc_sources ${PROJECT_BASE}/src/acc.c ${PROJECT_BASE}/src/safetyboard.c)
 set(arduino_includes ${PROJECT_BASE}/../arduino)
 file(GLOB_RECURSE arduino_sources ${PROJECT_BASE}/../arduino/**.c)
 

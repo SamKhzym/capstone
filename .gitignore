@@ -285,3 +285,11 @@ TSWLatexianTemp*
 **/cmake-build-*/**
 **/.idea/**
 **/__pycache__/**
+
+**/.west/**
+**/bootloader/**
+**/modules/**
+**/tools/**
+**/zephyr*
+**/zephyrproject.venv/**
+**/zephyrproject/**

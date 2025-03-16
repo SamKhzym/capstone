@@ -1,4 +1,9 @@
 #pragma once
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /** Name: safetyboard.h
  *  Description: header file for system safety board functionality
  *
@@ -31,3 +36,6 @@ bool determineState(bool crcFaultActive, bool rcFaultActive, bool wheelSpeedFaul
 
 void send_data(const uint8_t* data, size_t len);
 
+#ifdef __cplusplus
+}
+#endif
