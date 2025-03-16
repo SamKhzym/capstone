@@ -22,12 +22,17 @@ void unpackSpeedCommandPayload(const char* payloadBuffer, struct SpeedCommandPay
 
 void packVehicleSpeedPayload(const struct VehicleSpeedPayload* payload, char* payloadBuffer) {
     char speedString[8];
-    formatFloatString(speedString, payload->vehicleSpeed_mps, 8, 3);
+    formatFloatString(speedString, payload->vehicleSpeed_mps, 8, 3);    
     sprintf(payloadBuffer, "<%s>", speedString);
+
+    uint8_t crc = crc8((uint8_t*)payloadBuffer, VEHICLE_SPEED_EXTENDED_PAYLOAD_LENGTH-1);
+    payloadBuffer[VEHICLE_SPEED_EXTENDED_PAYLOAD_LENGTH-1] = crc;
 }
 
 void unpackVehicleSpeedPayload(const char* payloadBuffer, struct VehicleSpeedPayload* payload) {
     sscanf(payloadBuffer, "<%f>", &payload->vehicleSpeed_mps);
+    uint8_t receivedCRC = payloadBuffer[VEHICLE_SPEED_EXTENDED_PAYLOAD_LENGTH-1];
+    checkCRC((uint8_t*)payloadBuffer, VEHICLE_SPEED_EXTENDED_PAYLOAD_LENGTH-1, receivedCRC);
 }
 
 void packVehicleSpeedExtendedPayload(const struct VehicleSpeedExtendedPayload* payload, char* payloadBuffer) {

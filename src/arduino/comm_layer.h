@@ -12,6 +12,7 @@ extern "C" {
 #endif
 
 #include <stdlib.h>
+#include "safetyboard.h"
 
 // <XXX>
 #define SPEED_COMMAND_PAYLOAD_LENGTH (5+1)
