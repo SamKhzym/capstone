@@ -13,6 +13,7 @@
 #include "safetyboard.h"
 
 uint8_t crcTable[256];
+uint8_t currRC = 0;
 
 void crcInit(void){
     uint8_t crc;
@@ -91,7 +92,15 @@ uint8_t extractCRC(uint8_t* payload, int len){
 }
 
 bool checkRC(uint8_t currRC, uint8_t prevRC, uint8_t RCMax){
-    return (currRC == (prevRC + 1)) % RCMax;
+    return (currRC == (prevRC + 1) % RCMax);
+}
+
+// bool checkRC(uint8_t currRC, uint8_t prevRC){
+//     return (currRC == (prevRC + 1) % RCMAX);
+// }
+
+void updateRC(){
+    currRC = (currRC+1) % RCMAX;
 }
 
 bool checkCommandRange(uint8_t actReq){

@@ -35,6 +35,9 @@ bool checkCRC(uint8_t CRC, uint8_t* payload, int len);
 uint8_t extractCRC(uint8_t* payload, int len);
 
 bool checkRC(uint8_t currRC, uint8_t prevRC, uint8_t RCMax);
+//bool checkRC(uint8_t currRC, uint8_t prevRC);
+void updateRC(void);
+
 bool checkCommandRange(uint8_t actReq);
 uint8_t saturateOutputCommand(uint8_t actReq, uint8_t actReqPrev);
 bool determineState(bool crcFaultActive, bool rcFaultActive, bool wheelSpeedFaultActive, bool outOFRangeFaultActive);
