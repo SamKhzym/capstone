@@ -1,6 +1,6 @@
 #pragma once
 #include "safetyboard.h"
-#include "Speedometer.h"
+//#include "Speedometer.h"
 #include <gtest/gtest.h>
 #include "comm_layer.h"
 
@@ -8,16 +8,16 @@
 extern "C" {
 #endif
 
-class SafeStateMaintenanceTest : public :: testing :: Test
-{
-    protected:
-    SafeStateMaintenanceTest()
-    {
-        Speedometer
-    }
-};
+// class SafeStateMaintenanceTest : public :: testing :: Test
+// {
+//     protected:
+//     SafeStateMaintenanceTest()
+//     {
+//         Speedometer
+//     }
+// };
 
-TEST_F()
+// TEST_F()
 
 #ifdef __cplusplus
 }

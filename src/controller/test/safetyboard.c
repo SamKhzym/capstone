@@ -13,7 +13,7 @@
 #include "safetyboard.h"
 
 uint8_t crcTable[256];
-uint8_t rolling_count = 0;
+uint8_t rollingCount = 0;
 
 void crcInit(void){
     uint8_t crc;
@@ -100,10 +100,10 @@ bool checkRC(uint8_t currRC, uint8_t prevRC, uint8_t RCMax){
 // }
 
 uint8_t getRC(void){
-    return rolling_count;
+    return rollingCount;
 }
 void updateRC(){
-    rolling_count = (rolling_count+1) % RCMAX;
+    rollingCount = (rollingCount+1) % RCMAX;
 }
 
 bool checkCommandRange(uint8_t actReq){

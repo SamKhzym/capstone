@@ -4,10 +4,10 @@
 #include <math.h>
 
 TEST(RC1, IncrementRC){
-  uint8_t rolling_count = getRollingCount();
+  uint8_t rolling_count = getRC();
   for (int i = rolling_count; i < 300+rolling_count; i++){
     uint8_t expected = i%RCMAX;
-    ASSERT_EQ(expected, getRollingCount);
+    ASSERT_EQ(expected, getRC());
     updateRC();
   }
 }
