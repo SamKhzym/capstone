@@ -12,6 +12,50 @@
 #include <stddef.h>
 #include "safetyboard.h"
 
+uint8_t crcTable[256];
+uint8_t rolling_count = 0;
+
+void crcInit(void){
+    uint8_t crc;
+    for (int dividend = 0; dividend < 256; dividend++){
+        crc = dividend << (WIDTH - 8);
+        for (uint8_t bit = 8; bit > 0; bit--){
+            if (crc & TOPBIT){
+                crc = (crc << 1) ^ POLYNOMIAL;
+            }else{
+                crc = (crc << 1);
+            }
+        }
+        crcTable[dividend] = crc;
+    }
+}
+
+uint8_t crc8Fast(uint8_t const *message, int len){
+    uint8_t data;
+    uint8_t crc = 0;
+    for (int byte = 0; byte < len; byte++){
+        data = message[byte] ^ (crc >> (WIDTH - 8));
+        crc = crcTable[data] ^ (crc << 8);
+    }
+    return crc;
+}
+
+//use this
+uint8_t crc8(uint8_t* message, int len){
+    uint8_t crc = 0x00;
+    for (int byte = 0; byte < len; byte++){
+        crc ^= message[byte];
+        for (uint8_t bit = 8; bit > 0; bit--){
+            if (crc & TOPBIT){
+                crc = (crc << 1) ^ POLYNOMIAL;
+            }else{
+                crc = (crc << 1);
+            }
+        }
+    }
+    return crc; 
+}
+
 //utility method for padding messages before doing crc
 uint8_t* padMessage(uint8_t* message, size_t len){
     uint8_t* paddedMsg = malloc((len+DEGPOLY)*sizeof(uint8_t));
@@ -35,34 +79,7 @@ uint8_t* padMessage(uint8_t* message, size_t len){
 uint8_t paddedCRC(uint8_t* message, size_t len){
     message = padMessage(message,len);
     len = len+DEGPOLY;
-    uint8_t crc = 0x00;
-    for (int byte = 0; byte < len; byte++){
-        crc ^= message[byte];
-        for (uint8_t bit = 8; bit > 0; bit--){
-            if (crc & TOPBIT){
-                crc = (crc << 1) ^ POLYNOMIAL;
-            }else{
-                crc = (crc << 1);
-            }
-        }
-    }
-    return crc; 
-}
-
-//use this
-uint8_t crc8(uint8_t* message, int len){
-    uint8_t crc = 0x00;
-    for (int byte = 0; byte < len; byte++){
-        crc ^= message[byte];
-        for (uint8_t bit = 8; bit > 0; bit--){
-            if (crc & TOPBIT){
-                crc = (crc << 1) ^ POLYNOMIAL;
-            }else{
-                crc = (crc << 1);
-            }
-        }
-    }
-    return crc; 
+    return crc8(message,len);
 }
 
 bool checkCRC(uint8_t CRC, uint8_t* payload, int len){
@@ -70,12 +87,23 @@ bool checkCRC(uint8_t CRC, uint8_t* payload, int len){
 }
 
 uint8_t extractCRC(uint8_t* payload, int len){
-    uint8_t crc = payload[3*sizeof(uint8_t)];//24-bit starts the crc
+    uint8_t crc = payload[(len-1)*sizeof(uint8_t)];//24-bit starts the crc
     return crc;
 }
 
 bool checkRC(uint8_t currRC, uint8_t prevRC, uint8_t RCMax){
-    return (currRC == (prevRC + 1)) % RCMax;
+    return (currRC == (prevRC + 1) % RCMax);
+}
+
+// bool checkRC(uint8_t currRC, uint8_t prevRC){
+//     return (currRC == (prevRC + 1) % RCMAX);
+// }
+
+uint8_t getRC(void){
+    return rolling_count;
+}
+void updateRC(){
+    rolling_count = (rolling_count+1) % RCMAX;
 }
 
 bool checkCommandRange(uint8_t actReq){

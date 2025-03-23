@@ -45,5 +45,6 @@ int main(){
     uint8_t crc7 = crc8Fast(message7,sizeof(message7));
     printf("CRC-8: 0x%02X\n", crc7);
 
+    
     return 0;
 }
