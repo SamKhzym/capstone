@@ -37,6 +37,7 @@ uint8_t extractCRC(uint8_t* payload, int len);
 bool checkRC(uint8_t currRC, uint8_t prevRC, uint8_t RCMax);
 //bool checkRC(uint8_t currRC, uint8_t prevRC);
 void updateRC(void);
+uint8_t getRollingCount(void);
 
 bool checkCommandRange(uint8_t actReq);
 uint8_t saturateOutputCommand(uint8_t actReq, uint8_t actReqPrev);
