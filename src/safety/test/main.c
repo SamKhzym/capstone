@@ -45,6 +45,38 @@ int main(){
     uint8_t crc7 = crc8Fast(message7,sizeof(message7));
     printf("CRC-8: 0x%02X\n", crc7);
 
-    
+    uint8_t rolling_count = getRC();
+    bool stateRC = true;
+    for (int i = rolling_count; i < 300+rolling_count; i++){
+        uint8_t expected = i%RCMAX;
+        if (expected == getRC()){
+            stateRC = (stateRC && true);
+        }else{
+            stateRC = false;
+            break;
+        }
+        updateRC();
+    }
+    if (stateRC){
+        printf("RC works!\n");
+    }else{
+        printf("RC doesn't work!\n");
+    }
+
+    uint8_t message[] = {0x12,0x34,0x56};
+    uint8_t prevCRC = crc8(message,sizeof(message));
+    for (uint8_t rc = 0; rc < 10; rc++){
+        const int len = sizeof(message)+1;
+        uint8_t buffer[4];
+        buffer[len-1] = rc;
+        memcpy(&buffer[0],message,sizeof(message));
+
+        uint8_t crc = crc8(buffer, sizeof(buffer));
+        if ((crc - prevCRC) == 0){
+            printf("RC messes with CRC!\n");
+        }else{
+            printf("RC works with CRC!\n");
+        }
+    }
     return 0;
 }
