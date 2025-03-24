@@ -21,6 +21,7 @@ from env_simulator import EnvironmentalSimulator, DT_SIM
 from plant_model import PlantModel
 from acc_wrapper import AccWrapper
 from time import time
+from requirements import check_reqs, MIN_SPEED_MPS, MAX_SPEED_MPS, AVG_SPEED_MPS
 
 INIT_LEAD_DIST_M = 1.0
 
@@ -41,12 +42,13 @@ class SilTester:
         self.drive_cycle_path = drive_cycle_path
         self.set_speed = set_speed
         self.set_speed_schedule = set_speed_schedule
-        self.is_const_set_speed = self.set_speed_schedule is None
+        self.is_var_set_speed = self.set_speed_schedule is not None
 
-        if not self.is_const_set_speed:
+        if self.is_var_set_speed:
             self.set_speed_schedule_func = scipy.interpolate.interp1d(
                 self.set_speed_schedule[0],
-                self.set_speed_schedule[1]
+                self.set_speed_schedule[1],
+                kind='zero'
             )
             self.set_speed = self.set_speed_schedule_func(0)
 
@@ -88,7 +90,7 @@ class SilTester:
         for ts in range(num_timesteps):
 
             # update set speed from schedule if necessary
-            if not self.is_const_set_speed:
+            if self.is_var_set_speed:
                 self.set_speed = self.set_speed_schedule_func(ts * DT_SIM)
 
             # update metrics
@@ -100,6 +102,7 @@ class SilTester:
             self.metrics['lead_dist_m'].append(self.simulator.get_rel_lead_distance())
 
             # step acc
+            self.simulator.set_speed = self.set_speed
             self.act_req = self.acc.step_acc(
                 self.ego_speed,
                 self.simulator.get_current_lead_speed(),
@@ -127,22 +130,31 @@ class SilTester:
         self.metrics['ego_jerk_mps3'] = np.diff(self.metrics['ego_accel_mps2']) / np.diff(self.metrics['time_s'])
         self.metrics['ego_jerk_mps3'] = np.concatenate([[0.0], self.metrics['ego_jerk_mps3']], axis=None)
 
-        self.metrics['speed_error_mps'] = self.metrics['ego_speed_mps'] - np.min(np.array([self.metrics['set_speed_mps'], self.metrics['lead_speed_mps']]))
+        N = 5
+        self.metrics['ego_jerk_mps3'] = np.convolve(self.metrics['ego_jerk_mps3'], np.ones(N)/N, mode='same')
+
+        self.metrics['speed_error_mps'] = self.metrics['ego_speed_mps'] - np.min(np.array([self.metrics['set_speed_mps'], self.metrics['lead_speed_mps']]), axis=0)
 
     def plot_metrics(self, plot_name):
 
         t = self.metrics['time_s']
 
-        fig, ax = plt.subplots(5, 1, sharex=True)
+        fig, ax = plt.subplots(6, 1, sharex=True)
 
         fig.suptitle(plot_name)
         fig.set_size_inches(18.5, 10.5)
 
-        ax[0].plot(t, self.metrics['ego_speed_mps'], label="Ego Speed (m/s)")
+        ax[0].plot(t, self.metrics['ego_speed_mps'], label="Ego Speed (m/s)", color='blue')
+        ax[0].plot(t, self.metrics['set_speed_mps'], label="Set Speed (m/s)", color='green')
+
+        if not 'lv1' in plot_name:
+            ax[0].plot(t, self.metrics['lead_speed_mps'], label="Lead Speed (m/s)", color='red')
+
         ax[1].plot(t, self.metrics['ego_accel_mps2'], label="Ego Accel (m/s^2)")
         ax[2].plot(t, self.metrics['ego_jerk_mps3'], label="Ego Jerk (m/s^3)")
         ax[3].plot(t, self.metrics['lead_dist_m'], label="Lead Dist (m)")
         ax[4].plot(t, self.metrics['act_req'], label="Act Req")
+        ax[5].plot(t, self.metrics['speed_error_mps'], label="Speed Error (m/s)")
 
         for a in ax:
             a.legend()
@@ -154,16 +166,17 @@ LV1_NO_LEAD_DC_PATH = DRIVE_CYCLE_DIR / 'no_lead.csv'
 LV2_STD_HIGHWAY = DRIVE_CYCLE_DIR / 'hwfet.csv'
 LV3_STD_CITY = DRIVE_CYCLE_DIR / 'udds.csv'
 LV4_STEPWISE_VEL = DRIVE_CYCLE_DIR / 'stepwise.csv'
+LV5_ERRATIC = DRIVE_CYCLE_DIR / 'erratic.csv'
 
-SS1_CONST_AVG = [[0, 1000000.0], [0.55, 0.55]]
-SS2_CONST_MIN = [[0, 1000000.0], [0.3, 0.3]]
-SS3_CONST_MAX = [[0, 1000000.0], [0.8, 0.8]]
-SS4_STEPWISE = [[i*30.0 for i in range(100)], [0.8, 0.55, 0.3, 0.5]*25]
+SS1_CONST_AVG = [[0, 1000000.0], [AVG_SPEED_MPS, AVG_SPEED_MPS]]
+SS2_CONST_MIN = [[0, 1000000.0], [MIN_SPEED_MPS, MIN_SPEED_MPS]]
+SS3_CONST_MAX = [[0, 1000000.0], [MAX_SPEED_MPS, MAX_SPEED_MPS]]
+SS4_STEPWISE = [[i*30.0 for i in range(100)], [MAX_SPEED_MPS, AVG_SPEED_MPS, MIN_SPEED_MPS, AVG_SPEED_MPS]*25]
 
 def get_test_matrix():
     test_matrix = []
 
-    for i, lv in enumerate([LV1_NO_LEAD_DC_PATH, LV2_STD_HIGHWAY, LV3_STD_CITY, LV4_STEPWISE_VEL]):
+    for i, lv in enumerate([LV1_NO_LEAD_DC_PATH, LV2_STD_HIGHWAY, LV3_STD_CITY, LV4_STEPWISE_VEL, LV5_ERRATIC]):
         for j, ss in enumerate([SS1_CONST_AVG, SS2_CONST_MIN, SS3_CONST_MAX, SS4_STEPWISE]):
             test_matrix.append(pytest.param(str(lv), ss, id=f'system_test_lv{i+1}_ss{j+1}'))
 
@@ -176,6 +189,11 @@ TEST_MATRIX = get_test_matrix()
     TEST_MATRIX,
 )
 def test_suite(lv, ss):
+
+    test_name = os.environ.get('PYTEST_CURRENT_TEST').split('[')[1].split(']')[0]
+
     tester = SilTester(drive_cycle_path=lv, set_speed_schedule=ss)
     tester.run()
-    tester.plot_metrics(os.environ.get('PYTEST_CURRENT_TEST').split('[')[1].split(']')[0])
+    tester.plot_metrics(test_name)
+
+    check_reqs(tester.metrics, test_name)
