@@ -1,7 +1,7 @@
 import pytest, sys
 from pathlib import Path
 
-PROJECT_BASE = Path(__file__).parents[2]
+PROJECT_BASE = Path(__file__).parents[4]
 SIMULATOR_PATH = PROJECT_BASE / 'src' / 'simulator'
 
 sys.path.append(str(SIMULATOR_PATH))
