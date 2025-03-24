@@ -21,7 +21,7 @@ from env_simulator import EnvironmentalSimulator, DT_SIM
 from plant_model import PlantModel
 from acc_wrapper import AccWrapper
 from time import time
-from requirements import check_reqs, MIN_SPEED_MPS, MAX_SPEED_MPS, AVG_SPEED_MPS
+from requirements import check_reqs, MIN_SPEED_MPS, MAX_SPEED_MPS, AVG_SPEED_MPS, acc_2_1, acc_2_2, acc_2_3, acc_2_4, acc_3_1, acc_3_2, acc_5_1, no_collision
 
 INIT_LEAD_DIST_M = 1.0
 
@@ -37,12 +37,14 @@ class SilTester:
         drive_cycle_path: str,
         set_speed: float = None,
         set_speed_schedule: List[List[float]] = None,
+        scenario_name: str = 'default'
     ):
         
         self.drive_cycle_path = drive_cycle_path
         self.set_speed = set_speed
         self.set_speed_schedule = set_speed_schedule
         self.is_var_set_speed = self.set_speed_schedule is not None
+        self.scenario_name = scenario_name
 
         if self.is_var_set_speed:
             self.set_speed_schedule_func = scipy.interpolate.interp1d(
@@ -135,19 +137,19 @@ class SilTester:
 
         self.metrics['speed_error_mps'] = self.metrics['ego_speed_mps'] - np.min(np.array([self.metrics['set_speed_mps'], self.metrics['lead_speed_mps']]), axis=0)
 
-    def plot_metrics(self, plot_name):
+    def plot_metrics(self):
 
         t = self.metrics['time_s']
 
         fig, ax = plt.subplots(6, 1, sharex=True)
 
-        fig.suptitle(plot_name)
+        fig.suptitle(self.scenario_name)
         fig.set_size_inches(18.5, 10.5)
 
         ax[0].plot(t, self.metrics['ego_speed_mps'], label="Ego Speed (m/s)", color='blue')
         ax[0].plot(t, self.metrics['set_speed_mps'], label="Set Speed (m/s)", color='green')
 
-        if not 'lv1' in plot_name:
+        if not 'lv1' in self.scenario_name:
             ax[0].plot(t, self.metrics['lead_speed_mps'], label="Lead Speed (m/s)", color='red')
 
         ax[1].plot(t, self.metrics['ego_accel_mps2'], label="Ego Accel (m/s^2)")
@@ -160,7 +162,7 @@ class SilTester:
             a.legend()
             a.grid()
 
-        plt.savefig(str(PLOT_PATH / f'{plot_name}.png'))
+        plt.savefig(str(PLOT_PATH / f'{self.scenario_name}.png'))
 
 LV1_NO_LEAD_DC_PATH = DRIVE_CYCLE_DIR / 'no_lead.csv'
 LV2_STD_HIGHWAY = DRIVE_CYCLE_DIR / 'hwfet.csv'
@@ -175,25 +177,51 @@ SS4_STEPWISE = [[i*30.0 for i in range(100)], [MAX_SPEED_MPS, AVG_SPEED_MPS, MIN
 
 def get_test_matrix():
     test_matrix = []
+    test_ids = []
 
     for i, lv in enumerate([LV1_NO_LEAD_DC_PATH, LV2_STD_HIGHWAY, LV3_STD_CITY, LV4_STEPWISE_VEL, LV5_ERRATIC]):
         for j, ss in enumerate([SS1_CONST_AVG, SS2_CONST_MIN, SS3_CONST_MAX, SS4_STEPWISE]):
-            test_matrix.append(pytest.param(str(lv), ss, id=f'system_test_lv{i+1}_ss{j+1}'))
+            test_id = f'system_test_lv{i+1}_ss{j+1}'
+            test_matrix.append( [str(lv), ss, test_id] )
+            test_ids.append(test_id)
 
-    return test_matrix
+    return test_matrix, test_ids
 
-TEST_MATRIX = get_test_matrix()
+TEST_MATRIX, TEST_IDS = get_test_matrix()
 
-@pytest.mark.parametrize(
-    ("lv", "ss"),
-    TEST_MATRIX,
+@pytest.fixture(
+    scope='session',
+    params=TEST_MATRIX,
+    ids=TEST_IDS
 )
-def test_suite(lv, ss):
+def test_scenario(request):
 
-    test_name = os.environ.get('PYTEST_CURRENT_TEST').split('[')[1].split(']')[0]
-
-    tester = SilTester(drive_cycle_path=lv, set_speed_schedule=ss)
+    tester = SilTester(drive_cycle_path=request.param[0], set_speed_schedule=request.param[1], scenario_name=request.param[2])
     tester.run()
-    tester.plot_metrics(test_name)
+    # tester.plot_metrics()
 
-    check_reqs(tester.metrics, test_name)
+    return tester
+
+def test_no_collision(test_scenario):
+    no_collision(test_scenario.metrics)
+
+def test_acc_2_1(test_scenario):
+    acc_2_1(test_scenario.metrics)
+
+def test_acc_2_2(test_scenario):
+    acc_2_2(test_scenario.metrics)
+
+def test_acc_2_3(test_scenario):
+    acc_2_3(test_scenario.metrics)
+
+def test_acc_2_4(test_scenario):
+    acc_2_4(test_scenario.metrics)
+
+def test_acc_3_1(test_scenario):
+    acc_3_1(test_scenario.metrics)
+
+def test_acc_3_2(test_scenario):
+    acc_3_2(test_scenario.metrics)
+
+def test_acc_5_1(test_scenario):
+    acc_5_1(test_scenario.metrics)
