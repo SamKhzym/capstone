@@ -2,28 +2,33 @@ import pygame as pg
 from typing import Tuple, List
 import numpy as np
 from time import time, sleep
+from pathlib import Path
 
 BLACK = (0, 0, 0)
 RED = (255, 0, 0)
 GREEN = (0, 255, 0)
 BLUE = (0, 100, 255)
 YELLOW = (255, 255, 0)
+DARKGRAY = (59,59,59)
+VERYDARKGRAY = (34,34,34)
 GRAY = (100, 100, 100)
 WHITE = (255, 255, 255)
 
 DT_VIZ = 0.02
+
+ASSET_PATH = Path(__file__).parent / 'assets'      
 
 class RealTimeViz:
 
     def __init__(self, dt: float = DT_VIZ):
         
         # window height and length (pixels)
-        self.WINDOW_WIDTH: int = 800
-        self.WINDOW_HEIGHT: int = 600
+        self.WINDOW_WIDTH: int = 1500
+        self.WINDOW_HEIGHT: int = 1000
         
         # parameter that dictates distortion of screen as a function of long distance from ego veh
         # higher parameter has more distortion, 1 has no distortion
-        self.MAX_DISTORTION: float = 5.0
+        self.MAX_DISTORTION: float = 6.0
 
         # max length, height, depth of visualizer (m)
         self.VIZ_LENGTH_M: float = 0.5
@@ -31,7 +36,7 @@ class RealTimeViz:
         self.MAX_DEPTH_M: float = 2.0
 
         # horizon params
-        self.HORIZON_HEIGHT_PCT = 0.6
+        self.HORIZON_HEIGHT_PCT = 0.7
         self.HORIZON_HEIGHT_PX = self.pct_to_h_px(self.HORIZON_HEIGHT_PCT)
 
         # lanes params
@@ -44,9 +49,18 @@ class RealTimeViz:
         self.LINE_SPACING_M = self.LINE_LENGTH_M
 
         # lead vehicle params
-        self.LEAD_VEH_WIDTH_M = 0.2
+        self.LEAD_VEH_WIDTH_M = 0.25
         self.LEAD_VEH_LENGTH_M = 0.3
-        self.LEAD_VEH_HEIGHT_M = 0.1
+        self.LEAD_VEH_HEIGHT_M = 0.2
+        
+        # sprite objects
+        self.car_sprite = None
+        self.steering_wheel_sprite = None
+        
+        # fonts
+        self.small_font = None
+        self.med_font = None
+        self.big_font = None
 
         # sample time and vehicle parameters
         self.dt = DT_VIZ
@@ -60,7 +74,18 @@ class RealTimeViz:
         self.clock = pg.time.Clock()
         self.surface = pg.display.set_mode((self.WINDOW_WIDTH, self.WINDOW_HEIGHT))
         self.screen = pg.display.set_mode((self.WINDOW_WIDTH, self.WINDOW_HEIGHT))
-        self.font = pg.font.SysFont('Comic Sans MS', 30)
+        
+        # initialize fonts
+        font_path = str(ASSET_PATH / 'display_font.ttf')
+        self.small_font = pg.font.Font(font_path, int(0.025*self.WINDOW_HEIGHT))
+        self.med_font = pg.font.Font(font_path, int(0.05*self.WINDOW_HEIGHT))
+        self.big_font = pg.font.Font(font_path, int(0.075*self.WINDOW_HEIGHT))
+        self.font = pg.font.SysFont('Comic Sans MS', int(0.05*self.WINDOW_HEIGHT))
+        
+        # car and steering wheel sprites
+        self.car_sprite = pg.image.load(str(ASSET_PATH / 'car.webp')).convert_alpha()
+        self.steering_wheel_sprite = pg.image.load(str(ASSET_PATH / 'steering_wheel.png')).convert_alpha()
+        self.steering_wheel_sprite = pg.transform.scale(self.steering_wheel_sprite, (self.WINDOW_WIDTH*0.4, self.WINDOW_WIDTH*0.4))
 
     def pct_to_h_px(self, pct: float) -> int:
         '''Converts a percentage of the screen height into a number of pixels'''
@@ -122,7 +147,7 @@ class RealTimeViz:
         far_left_x = int(self.WINDOW_WIDTH / 2) - int(far_width / 2) + far_offset
         far_right_x = int(self.WINDOW_WIDTH / 2) + int(far_width / 2) + far_offset
 
-        # create point list and flip it to conform to pygamr coord system (+ve y is down)
+        # create point list and flip it to conform to pygame coord system (+ve y is down)
         points = self.flip_coords([
             (close_left_x, close_y), (close_right_x, close_y), (far_right_x, far_y), (far_left_x, far_y)
         ])
@@ -140,8 +165,11 @@ class RealTimeViz:
 
         left_x = int(self.WINDOW_WIDTH / 2) - int(lead_width_px / 2)
 
-        pg.draw.rect(self.surface, color, (left_x, top_y, lead_width_px, lead_height_px))
+        # pg.draw.rect(self.surface, color, (left_x, top_y, lead_width_px, lead_height_px))
         # self.draw_offset_center_polygon(self.LEAD_VEH_WIDTH_M, lead_dist, self.LEAD_VEH_LENGTH_M, 0, YELLOW)
+        
+        car_sprite = pg.transform.scale(self.car_sprite, (lead_width_px, lead_height_px))
+        self.screen.blit(car_sprite, (left_x, top_y))
 
     def draw_road(self, ego_position: float) -> None:
 
@@ -153,11 +181,52 @@ class RealTimeViz:
         for line_start in np.arange(lane_line_offset, self.MAX_DEPTH_M , self.LINE_LENGTH_M + self.LINE_SPACING_M):
             self.draw_offset_center_polygon(self.LINE_WIDTH_M, line_start, self.LINE_LENGTH_M, self.LANE_WIDTH_M / 2, WHITE)
             self.draw_offset_center_polygon(self.LINE_WIDTH_M, line_start, self.LINE_LENGTH_M, -self.LANE_WIDTH_M / 2, WHITE)
+            
+    def draw_hud(self, ego_speed: float, lead_speed: float, lead_dist: float):
+        
+        # draw left gray pillar of car interior
+        pg.draw.polygon(self.surface, VERYDARKGRAY, 
+            [(0,0), 
+             (0, self.WINDOW_HEIGHT), 
+             (self.WINDOW_WIDTH*0.15, self.WINDOW_HEIGHT),
+             (self.WINDOW_WIDTH*0.00, 0)])
+        
+        # draw right gray pillar of car interior
+        pg.draw.polygon(self.surface, VERYDARKGRAY, 
+            [(self.WINDOW_WIDTH,0), 
+             (self.WINDOW_WIDTH, self.WINDOW_HEIGHT), 
+             (self.WINDOW_WIDTH*(1-0.15), self.WINDOW_HEIGHT),
+             (self.WINDOW_WIDTH*(1-0.00), 0)])
+        
+        # draw top and bottom of car interior
+        pg.draw.rect(self.surface, VERYDARKGRAY, ((0, 0, self.WINDOW_WIDTH, self.WINDOW_HEIGHT*0.1)))
+        pg.draw.rect(self.surface, VERYDARKGRAY, ((0, self.WINDOW_HEIGHT*(1 - 0.25), self.WINDOW_WIDTH, self.WINDOW_HEIGHT*0.25)))
+        
+        # draw lighter shade for car dashboard and steering wheel
+        pg.draw.rect(self.surface, DARKGRAY, ((0, self.WINDOW_HEIGHT*(1 - 0.2), self.WINDOW_WIDTH, self.WINDOW_HEIGHT*0.2)))
+        self.screen.blit(self.steering_wheel_sprite, (self.WINDOW_WIDTH*0.05, self.WINDOW_HEIGHT*0.6))
+        
+        ego_speed_text = self.med_font.render(f'{ego_speed:.2f} m/s', False, (0, 0, 0))
+        lead_speed_text = self.med_font.render(f'{lead_speed:.2f} m/s', False, (0, 0, 0))
+        lead_dist_text = self.med_font.render(f'{lead_dist:.2f} m', False, (0, 0, 0))
+        
+        # draw data displays - not working :(
+        # pg.draw.rect(self.surface, VERYDARKGRAY, 
+        #     ((int(self.WINDOW_WIDTH*0.5), int(self.WINDOW_HEIGHT*(1 - 0.175)), int(self.WINDOW_HEIGHT*0.2), int(self.WINDOW_HEIGHT*0.15))), 
+        #     border_radius=int(self.WINDOW_HEIGHT*0.01))
+        
+        # pg.draw.rect(self.surface, BLACK, 
+        #     ((int(self.WINDOW_WIDTH*0.5), int(self.WINDOW_HEIGHT*(1 - 0.175)), int(self.WINDOW_HEIGHT*0.2), int(self.WINDOW_HEIGHT*0.15))), 
+        #     border_radius=int(self.WINDOW_HEIGHT*0.01))
+        
+        # self.screen.blit(ego_speed_text, (self.WINDOW_WIDTH*0.5, self.WINDOW_HEIGHT*0.8))
+        # self.screen.blit(lead_speed_text, (self.WINDOW_WIDTH*0.6, self.WINDOW_HEIGHT*0.8))
+        # self.screen.blit(lead_dist_text, (self.WINDOW_WIDTH*0.7, self.WINDOW_HEIGHT*0.8))
 
     def display_stats(self, ego_speed: float, lead_speed: float, lead_dist: float) -> None:
-        ego_speed_text = self.font.render(f'Ego Vehicle Speed: {ego_speed} m/s', False, (0, 0, 0))
-        lead_speed_text = self.font.render(f'Lead Vehicle Speed: {round(float(lead_speed), 2)} m/s', False, (0, 0, 0))
-        lead_dist_text = self.font.render(f'Lead Vehicle Distance: {lead_dist:.2f} m', False, (0, 0, 0))
+        ego_speed_text = self.font.render(f'Ego Vehicle Speed: {ego_speed:.2f} m/s', False, WHITE)
+        lead_speed_text = self.font.render(f'Lead Vehicle Speed: {lead_speed:.2f} m/s', False, WHITE)
+        lead_dist_text = self.font.render(f'Lead Vehicle Distance: {lead_dist:.2f} m', False, WHITE)
         self.screen.blit(ego_speed_text, (0,0))
         self.screen.blit(lead_speed_text, (0,30))
         self.screen.blit(lead_dist_text, (0,60))
@@ -175,6 +244,8 @@ class RealTimeViz:
 
         # draw lead vehicle
         self.draw_lead_vehicle(lead_dist, RED)
+        
+        self.draw_hud(ego_speed, lead_speed, lead_dist)
 
         self.display_stats(ego_speed, lead_speed, lead_dist)
 
