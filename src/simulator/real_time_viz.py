@@ -212,20 +212,19 @@ class RealTimeViz:
             self.screen.blit(row_slice, (slice_x, wall_bottom))
             
     def draw_hud(self, ego_speed: float, lead_speed: float, lead_dist: float):
+        ellipse_rect = pg.Rect(int((self.WINDOW_WIDTH - self.WINDOW_WIDTH * self.DASHBOARD_WIDTH) / 2), 
+                            int(self.WINDOW_HEIGHT * self.DASHBOARD_HEIGHT), 
+                            int(self.WINDOW_WIDTH * self.DASHBOARD_WIDTH), 
+                            int(self.WINDOW_HEIGHT * self.DASHBOARD_HEIGHT))
 
-        line_top = 0.1
-        pg.draw.line(self.screen, DARKGRAY, 
-                    [int(self.WINDOW_WIDTH*(line_top)), 0], 
-                    [self.WINDOW_WIDTH//3, int(self.WINDOW_HEIGHT*0.7)], 5)
+        lighter_ellipse_rect = pg.Rect(int((self.WINDOW_WIDTH - self.WINDOW_WIDTH * self.DASHBOARD_WIDTH) / 2), 
+                            int(self.WINDOW_HEIGHT * self.DASHBOARD_HEIGHT) + 20, 
+                            int(self.WINDOW_WIDTH * self.DASHBOARD_WIDTH), 
+                            int(self.WINDOW_HEIGHT * self.DASHBOARD_HEIGHT))
         
-        pg.draw.arc(self.screen, DARKGRAY, pg.Rect(-int(self.WINDOW_WIDTH*0.8), -self.WINDOW_HEIGHT//10, self.WINDOW_WIDTH, self.WINDOW_HEIGHT*3), -pi / 2, pi / 2, 5)
-        
-        pg.draw.line(self.screen, DARKGRAY, 
-                    [int(self.WINDOW_WIDTH*(1-line_top)), 0], 
-                    [int(self.WINDOW_WIDTH*2/3), int(self.WINDOW_HEIGHT*0.7)], 5)
-        
-        pg.draw.arc(self.screen, DARKGRAY, pg.Rect(int(self.WINDOW_WIDTH*0.8), -self.WINDOW_HEIGHT//10, self.WINDOW_WIDTH, self.WINDOW_HEIGHT*3), pi / 2, -pi / 2, 5)
-        
+        pg.draw.ellipse(self.screen, DARKGRAY, ellipse_rect)
+        pg.draw.ellipse(self.screen, GRAY, lighter_ellipse_rect)
+    
         CENTER = (int(self.WINDOW_WIDTH * 0.6), int(self.WINDOW_HEIGHT * 0.8))
         RADIUS = 70
         RED_RADIUS = 65
@@ -285,6 +284,8 @@ class RealTimeViz:
         # Display speed value
         speed_text = self.font.render(f"Speed: {round(ego_speed, 2)} m/s", True, BLACK)
         self.screen.blit(speed_text, (CENTER[0] - 50, CENTER[1] + 80))
+        
+        self.screen.blit(self.steering_wheel_sprite, (self.WINDOW_WIDTH*0.05, self.WINDOW_HEIGHT*0.6))
 
 
     def display_stats(self, ego_speed: float, lead_speed: float, lead_dist: float) -> None:
