@@ -4,11 +4,17 @@ from plant_model import PlantModel
 from acc_wrapper import AccWrapper
 from pathlib import Path
 from time import time
+import os
 
 # pathing stuff
 PROJECT_BASE = Path(__file__).parents[1]
 DRIVE_CYCLE_DIR = PROJECT_BASE / 'simulator' / 'drive_cycle'
-ACC_DLL_PATH = PROJECT_BASE / 'controller' / 'bin' / 'controller_shared.dll'
+ACC_DLL_PATH = '' 
+
+if os.name == 'nt':
+    ACC_DLL_PATH = PROJECT_BASE / 'controller' / 'bin' / 'controller_shared.dll' 
+elif os.name == 'posix':
+    ACC_DLL_PATH = PROJECT_BASE / 'controller' / 'bin' / 'libcontroller_shared.so' 
 
 # simulation parameters
 DRIVE_CYCLE_NAME = 'hwfet.csv'

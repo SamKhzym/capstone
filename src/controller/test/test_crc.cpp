@@ -33,4 +33,21 @@ TEST(CRC8, OneByteCase){
   EXPECT_EQ(crc5, 0x97);
 }
 
+TEST(CRC8, StringLiteralCase){
+  uint8_t message6[] = "123456789";
+  uint8_t crc6 = crc8(message6, sizeof(message6)-1);  // Poly: 0x07 (CRC-8 standard), not counting null char
+  EXPECT_EQ(crc6, 0xF4);
+}
 
+// fast algorithm not working. to use regular crc8 algo.
+// TEST(CRC8, StringCaseFast){
+//   uint8_t const message6[] = "123456789";
+//   uint8_t crc6 = crc8Fast(message6,sizeof(message6));
+//   EXPECT_EQ(crc6, 0xF4);
+// }
+
+// TEST(CRC8, MultipleByteCaseFast){
+//   uint8_t const message7[] = {0x12,0x34,0x56,0x78,0x09};
+//   uint8_t crc7 = crc8Fast(message7,sizeof(message7));
+//   EXPECT_EQ(crc7, 0x6B);
+// }

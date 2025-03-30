@@ -15,6 +15,7 @@ class SerialData:
         self.dutyCycles1 = []
         self.dutyCycles2 = []
         self.pwmSpeeds = []
+        self.vehSpeeds = []
 
         with open(txt_name, 'r') as file:
             lines = file.readlines()
@@ -35,6 +36,7 @@ class SerialData:
             if name == "Duty_Cycle_W2": self.dutyCycles2.append(value)
             if name == "Wheel_Speed_W1": self.wheelSpeeds1.append(value)
             if name == "Wheel_Speed_W2": self.wheelSpeeds2.append(value)
+            if name == "Vehicle_Speed": self.vehSpeeds.append(value)
 
         # print(len(self.times))
         # print(self.times)

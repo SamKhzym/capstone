@@ -49,7 +49,7 @@ struct EnvironmentInfoPayload{
     int rc; // XX (2)
     int crc; // XXX (3)
 };
-void unpackEnvironmentInfoPayload(char* payloadBuffer, struct EnvironmentInfoPayload* payload);
+void unpackEnvironmentInfoPayload(const char* payloadBuffer, struct EnvironmentInfoPayload* payload);
 void packEnvironmentInfoPayload(const struct EnvironmentInfoPayload* payload, char* payloadBuffer);
 
 #ifdef __cplusplus
