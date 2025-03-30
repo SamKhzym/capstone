@@ -89,7 +89,7 @@ uint8_t stepAcc(float hostVel, float leadVel, float setSpeed, float leadDist){
     
     //Calculate PID terms
     float speed_error = setSpeed - hostVel;
-    float dist_error = hostVel * accParams.timeGap + accParams.constDistGap;
+    float dist_error = leadDist - hostVel * accParams.timeGap + accParams.constDistGap;
     float speed_req = pidStep(&accParams.speedPid, speed_error);
     float actReq;
 
