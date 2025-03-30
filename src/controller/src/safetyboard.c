@@ -40,8 +40,7 @@ uint8_t crc8Fast(uint8_t const *message, int len){
     return crc;
 }
 
-//use this
-uint8_t crc8(uint8_t* message, int len){
+uint8_t crc8_cap(uint8_t* message, int len){
     uint8_t crc = 0x00;
     for (int byte = 0; byte < len; byte++){
         crc ^= message[byte];
@@ -79,11 +78,11 @@ uint8_t* padMessage(uint8_t* message, size_t len){
 uint8_t paddedCRC(uint8_t* message, size_t len){
     message = padMessage(message,len);
     len = len+DEGPOLY;
-    return crc8(message,len);
+    return crc8_cap(message,len);
 }
 
 bool checkCRC(uint8_t CRC, uint8_t* payload, int len){
-    return (crc8(payload, len-1) == CRC);// upto last byte is the original message
+    return (crc8_cap(payload, len-1) == CRC);// upto last byte is the original message
 }
 
 uint8_t extractCRC(uint8_t* payload, int len){

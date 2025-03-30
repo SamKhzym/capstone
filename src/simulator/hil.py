@@ -12,7 +12,7 @@ DRIVE_CYCLE_DIR = PROJECT_BASE / 'simulator' / 'drive_cycle'
 # simulation parameters
 DRIVE_CYCLE_NAME = 'hwfet.csv'
 SET_SPEED_MPS = 0.85
-INIT_LEAD_DIST_M = 1.0
+INIT_LEAD_DIST_M = 2
 VIZ_ENABLE = True
 
 # Ethernet connection params

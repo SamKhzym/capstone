@@ -34,7 +34,10 @@ typedef struct PidParams {
 
 typedef struct {
     float maxLeadDist;
+    float timeGap;
+    float constDistGap;
     PidParams speedPid;
+    PidParams distPid;
 } AccParams;
 
 //enums
