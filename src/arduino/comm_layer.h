@@ -4,12 +4,12 @@
 extern "C" {
 #endif
 
-#ifdef ARDUINO
-#pragma GCC diagnostic option "-Wl"
-#pragma GCC diagnostic error "-u"
-#pragma GCC diagnostic ignored "-lscanf_flt"
-#pragma GCC diagnostic ignored "-lm"
-#endif
+// #ifdef ARDUINO
+// #pragma GCC diagnostic option "-Wl"
+// #pragma GCC diagnostic error "-u"
+// #pragma GCC diagnostic ignored "-lscanf_flt"
+// #pragma GCC diagnostic ignored "-lm"
+// #endif
 
 #include <stdlib.h>
 

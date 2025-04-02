@@ -28,6 +28,7 @@ private:
     float minSpeed_mps = 0;
     float num_mags = 0;
     float timeout = 0;
+    float initTime_s = 0.5;
     float pwmToDutyCycle();
 
 };
