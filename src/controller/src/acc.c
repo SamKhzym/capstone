@@ -43,8 +43,15 @@ void initAcc() {
     float speedKi = 1.0f;
     float speedKd = 0.04f;
 
+    float distKp = 5.0f;
+    float distKi = 2.0f;
+    float distKd = 0.08f;
+
     initPidParams(&accParams.speedPid, speedKp, speedKi, speedKd);
-    accParams.maxLeadDist = 1.5f;
+    initPidParams(&accParams.distPid, distKp, distKi, distKd);
+    accParams.maxLeadDist = 2.5f;
+    accParams.timeGap = 5.0f;
+    accParams.constDistGap = 1.0f;
 
 }
 
@@ -73,15 +80,26 @@ uint8_t stepAcc(float hostVel, float leadVel, float setSpeed, float leadDist){
 
     // Decide between cruise and follow modes
     enum Mode mode = CRUISE; // defaults in cruise state
+    bool lead_exists = leadVehicleExists(leadDist, leadVel, setSpeed);
 
-    if (leadVehicleExists(leadDist, leadVel, setSpeed)) { //Future additions: safety critical mode, failure mode
+    if (lead_exists) { //Future additions: safety critical mode, failure mode
         mode = FOLLOW;
         setSpeed = leadVel;
     }
     
     //Calculate PID terms
-    float error = setSpeed - hostVel;
-    float actReq = pidStep(&accParams.speedPid, error);
+    float speed_error = setSpeed - hostVel;
+    float dist_error = leadDist - hostVel * accParams.timeGap + accParams.constDistGap;
+    float speed_req = pidStep(&accParams.speedPid, speed_error);
+    float actReq;
+
+    if (lead_exists) {
+        float dist_req = pidStep(&accParams.distPid, dist_error);
+        actReq = (speed_req + dist_req) / 2;
+    }
+    else {
+        actReq = speed_req;
+    }
 
     // pseudo-saturation
     uint8_t saturatedActReq = saturateActReq(actReq);

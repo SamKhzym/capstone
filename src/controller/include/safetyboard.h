@@ -23,19 +23,16 @@ extern "C" {
 #define DEBUG 1
 
 //functions
-//uint8_t crc8(uint8_t* message, size_t len, uint8_t poly, uint8_t init);
 void crcInit(void);
 uint8_t crc8Fast(uint8_t const *message, int len);
 
-uint8_t crc8(uint8_t* message, int len);
-//uint8_t crc8(unsigned char* message, int len);
+uint8_t crc8_cap(uint8_t* message, int len);
 uint8_t paddedCRC(uint8_t* message, size_t len);
 
 bool checkCRC(uint8_t CRC, uint8_t* payload, int len);
 uint8_t extractCRC(uint8_t* payload, int len);
 
 bool checkRC(uint8_t currRC, uint8_t prevRC, uint8_t RCMax);
-//bool checkRC(uint8_t currRC, uint8_t prevRC);
 void updateRC(void);
 uint8_t getRC(void);
 

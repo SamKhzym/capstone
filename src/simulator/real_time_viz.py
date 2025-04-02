@@ -38,11 +38,14 @@ class RealTimeViz:
         # max length, height, depth of visualizer (m)
         self.VIZ_LENGTH_M: float = 0.5
         self.VIZ_HEIGHT_M: float = 0.3
-        self.MAX_DEPTH_M: float = 2.0
+        self.MAX_DEPTH_M: float = 4.0
 
         # horizon params
         self.HORIZON_HEIGHT_PCT = 0.7
         self.HORIZON_HEIGHT_PX = self.pct_to_h_px(self.HORIZON_HEIGHT_PCT)
+        
+        self.moving_avg_speed = 0.0
+        self.MOVING_AVG_WINDOW = 10
 
         # lanes params
         self.LANE_WIDTH_M = 0.3
@@ -195,7 +198,7 @@ class RealTimeViz:
         car_sprite = pg.transform.scale(self.car_sprite, (lead_width_px, lead_height_px))
         self.screen.blit(car_sprite, (left_x, top_y))
 
-    def draw_road(self, ego_position: float, ego_speed: float) -> None:
+    def draw_road(self, ego_position: float) -> None:
         wall_bottom = self.WINDOW_HEIGHT
         while wall_bottom > self.plane_center + 1:
             wall_bottom -= self.resolution
@@ -211,7 +214,9 @@ class RealTimeViz:
             self.screen.blit(self.stripes_texture, (0, wall_bottom), (0, floor_y, self.WINDOW_WIDTH, self.resolution))
             self.screen.blit(row_slice, (slice_x, wall_bottom))
             
-    def draw_hud(self, ego_speed: float, lead_speed: float, lead_dist: float):
+    def draw_hud(self, ego_speed: float):
+        self.moving_avg_speed = self.moving_avg_speed * (self.MOVING_AVG_WINDOW - 1)/self.MOVING_AVG_WINDOW + ego_speed / self.MOVING_AVG_WINDOW
+        
         ellipse_rect = pg.Rect(int((self.WINDOW_WIDTH - self.WINDOW_WIDTH * self.DASHBOARD_WIDTH) / 2), 
                             int(self.WINDOW_HEIGHT * self.DASHBOARD_HEIGHT), 
                             int(self.WINDOW_WIDTH * self.DASHBOARD_WIDTH), 
@@ -264,7 +269,7 @@ class RealTimeViz:
             self.screen.blit(text_surface, (text_x, text_y))
         
         # Draw needle with a triangular shape
-        needle_angle = -180 + (ego_speed / MAX_SPEED) * 180  # Map speed to angle range
+        needle_angle = -180 + (self.moving_avg_speed / MAX_SPEED) * 180  # Map speed to angle range
         needle_rad = radians(needle_angle)
         
         needle_x1 = CENTER[0] + RADIUS * 0.7 * cos(needle_rad)
@@ -282,7 +287,7 @@ class RealTimeViz:
         pg.draw.polygon(self.screen, BLACK, [(needle_x1, needle_y1), (needle_x2, needle_y2), (needle_x3, needle_y3)])
         
         # Display speed value
-        speed_text = self.font.render(f"Speed: {round(ego_speed, 2)} m/s", True, BLACK)
+        speed_text = self.font.render(f"Speed: {round(self.moving_avg_speed, 2)} m/s", True, BLACK)
         self.screen.blit(speed_text, (CENTER[0] - 50, CENTER[1] + 80))
         
         self.screen.blit(self.steering_wheel_sprite, (self.WINDOW_WIDTH*0.05, self.WINDOW_HEIGHT*0.6))
@@ -313,14 +318,14 @@ class RealTimeViz:
         self.surface.fill(GREEN)
 
         # draw road (grey polygon and white lines)
-        self.draw_road(ego_position, ego_speed)
+        self.draw_road(ego_position)
 
         self.draw_sky()
 
         # draw lead vehicle
         self.draw_lead_vehicle(lead_dist, RED)
         
-        self.draw_hud(ego_speed, lead_speed, lead_dist)
+        self.draw_hud(ego_speed)
 
         self.display_stats(ego_speed, lead_speed, lead_dist)
 
@@ -346,7 +351,7 @@ if __name__ == '__main__':
     rt = RealTimeViz(dt=0.01)
     ego_speed = 0
     ego_distance = 0.0
-    lead_distance = 1.0
+    lead_distance = 2.0
     while True:
         ego_distance += ego_speed * 0.01
         if ego_speed < 1:

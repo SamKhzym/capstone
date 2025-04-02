@@ -61,4 +61,5 @@ Steps for running HIL program:
 
 16. Now to build our safety board code use: west build -p always -b stm32h735g_disco -s [PATH_TO_CAPSTONE/src/controller/configs/hil]
  - This points zephyr to the cmakelists that configures the build
-- Follow the same steps to flash the code onto the board
+ - Follow the same steps to flash the code onto the board
+ - To rebuild use `ninja` to save time

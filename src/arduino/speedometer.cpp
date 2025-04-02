@@ -13,9 +13,8 @@ Speedometer::Speedometer(String name, int pinNum, float dutyCycleLowerThreshold_
     this->dutyCycleUpperThreshold_pct = dutyCycleUpperThreshold_pct;
     this->wheelRadius_m = radius_m;
     this->minSpeed_mps = minSpeed_mps;
-    //NEW PARAMETER
     this->num_mags = num_mags;
-    this->timeout = 1.2 * (2 * M_PI * this->wheelRadius_m) / this->minSpeed_mps;
+    this->timeout = 1.5 * (2 * M_PI * this->wheelRadius_m * this->wheelRadius_m) / (this->minSpeed_mps * this->num_mags);
 
 }
 
@@ -58,7 +57,8 @@ float Speedometer::getSpeed(float ts_s) {
     }
     
     // determine if we have not received a tick for the maximum allowable timeout (speed = 0)
-    if ((ts_s - this->lastTimestep_s) >= this->timeout) {
+    // also if we are not initialized
+    if ((ts_s - this->lastTimestep_s) >= this->timeout || ts_s <= this->initTime_s) {
         this->lastSpeed_mps = 0;
     }
 
