@@ -21,19 +21,19 @@
 #define T1_PWM_PIN 10 // Pin connected to t1 sensor - NEED TO CHECK IF THIS WORKS
 #define T2_PWM_PIN 2 // Pin connected to t2 sensor - NEED TO CHECK IF THIS WORKS
 
-#define W1_LOWER_THRESHOLD_PCT 45
-#define W1_UPPER_THRESHOLD_PCT 90
+#define W1_LOWER_THRESHOLD_PCT 60
+#define W1_UPPER_THRESHOLD_PCT 65
 
-#define W2_LOWER_THRESHOLD_PCT 10
+#define W2_LOWER_THRESHOLD_PCT 40
 #define W2_UPPER_THRESHOLD_PCT 50
 
-#define T1_LOWER_THRESHOLD_PCT 10
-#define T1_UPPER_THRESHOLD_PCT 50
+#define T1_LOWER_THRESHOLD_PCT 50
+#define T1_UPPER_THRESHOLD_PCT 55
 
-#define T2_LOWER_THRESHOLD_PCT 10
-#define T2_UPPER_THRESHOLD_PCT 50
+#define T2_LOWER_THRESHOLD_PCT 46
+#define T2_UPPER_THRESHOLD_PCT 49
 
-#define MIN_SPEED_MPS 0.05
+#define MIN_SPEED_MPS 0.01
 
 #define CAR_WHEEL_RAD_M 0.05
 
@@ -70,9 +70,9 @@ void setup() {
 
     // set all pwm pins to inputs
     pinMode(W1_PWM_PIN, INPUT);
-    pinMode(W2_PWM_PIN, INPUT); //waiting for validation on these three
-    // pinMode(T1_PWM_PIN, INPUT);
-    // pinMode(T2_PWM_PIN, INPUT);
+    pinMode(W2_PWM_PIN, INPUT);
+    pinMode(T1_PWM_PIN, INPUT);
+    pinMode(T2_PWM_PIN, INPUT);
 
     // Set all the motor control pins to outputs
     pinMode(AIN1, OUTPUT);
@@ -92,8 +92,8 @@ void setup() {
     // setup speedometers
     w1 = new Speedometer("W1", W1_PWM_PIN, W1_LOWER_THRESHOLD_PCT, W1_UPPER_THRESHOLD_PCT, CAR_WHEEL_RAD_M, 5.0, MIN_SPEED_MPS);
     w2 = new Speedometer("W2", W2_PWM_PIN, W2_LOWER_THRESHOLD_PCT, W2_UPPER_THRESHOLD_PCT, CAR_WHEEL_RAD_M, 5.0, MIN_SPEED_MPS);
-    // t1 = new Speedometer("T1", T1_PWM_PIN, T1_LOWER_THRESHOLD_PCT, T1_UPPER_THRESHOLD_PCT,CAR_WHEEL_RAD_M,  4.0, MIN_SPEED_MPS);
-    // t2 = new Speedometer("T2", T2_PWM_PIN, T2_LOWER_THRESHOLD_PCT, T2_UPPER_THRESHOLD_PCT, CAR_WHEEL_RAD_M, 4.0, MIN_SPEED_MPS);
+    t1 = new Speedometer("T1", T1_PWM_PIN, T1_LOWER_THRESHOLD_PCT, T1_UPPER_THRESHOLD_PCT,CAR_WHEEL_RAD_M,  4.0, MIN_SPEED_MPS);
+    t2 = new Speedometer("T2", T2_PWM_PIN, T2_LOWER_THRESHOLD_PCT, T2_UPPER_THRESHOLD_PCT, CAR_WHEEL_RAD_M, 4.0, MIN_SPEED_MPS);
 
 }
 
@@ -163,6 +163,12 @@ void loop() {
     else {
       speedCommand = prevSpeedCommand;
     }
+
+    // COMMENT OUT IF NOT DOING HALL EFFECT CALIBRATION
+    // int speedCommand = (int)generateSweptSineCommand(millisToSec(elapsedTime_ms), 100, 255, 0.25, 0.15);
+    // if (elapsedTime_ms < 3000 || elapsedTime_ms > 20000) {
+    //     speedCommand = 0;
+    // }
     
     // Check if the speed value is valid
     if (speedCommand >= 100 && speedCommand <= 255) {
@@ -176,17 +182,14 @@ void loop() {
     // SpeedCommandPayload speedCommand = rxSpeedCommandPayload();
     // int speed = speedCommand.speedCommand_pwm; // uncomment when receiving from mcu
 
-    //int speedCommand = (int)generateSweptSineCommand(millisToSec(elapsedTime_ms), 100, 255, 0.25, 0.15);
-
     // get vehicle speed from w1 speedometer
     float wheel1Speed = w1->getSpeed(millisToSec(elapsedTime_ms));
     float wheel2Speed = w2->getSpeed(millisToSec(elapsedTime_ms));
-    // float dyno1Speed = t1->getSpeed(millisToSec(elapsedTime_ms));
-    // float dyno2Speed = t2->getSpeed(millisToSec(elapsedTime_ms));
+    float dyno1Speed = t1->getSpeed(millisToSec(elapsedTime_ms));
+    float dyno2Speed = t2->getSpeed(millisToSec(elapsedTime_ms));
 
     // average out wheel speeds
-    // float vehicleSpeed = (wheel1Speed + wheel2Speed + dyno1Speed + dyno2Speed) / 4;
-    float vehicleSpeed = (wheel1Speed + wheel2Speed) / 2;
+    float vehicleSpeed = (wheel1Speed + wheel2Speed + dyno1Speed + dyno2Speed) / 4;
 
     // construct vehicle speed payload struct, serialize, and transmit payload
     VehicleSpeedPayload vehicleSpeedPayload = {
@@ -213,6 +216,12 @@ void loop() {
     
     Serial.print("Wheel_Speed_W2: ");
     Serial.println(wheel2Speed);
+
+    Serial.print("Dyno_Speed_T1: ");
+    Serial.println(dyno1Speed);
+    
+    Serial.print("Dyno_Speed_T2: ");
+    Serial.println(dyno2Speed);
     
     Serial.print("Millis: ");
     Serial.println(millis());
