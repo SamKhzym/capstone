@@ -154,6 +154,13 @@ void loop() {
     while (elapsedTime_ms > 0 && (millis() - elapsedTime_ms) < SAMPLE_TIME_MS) { }
     elapsedTime_ms = millis();
 
+    // Enable if testing outputs of hall effect sensors with sine spin
+#if HALL_EFFECT_TEST
+    int speedCommand = (int)generateSineCommand(millisToSec(elapsedTime_ms), 100, 255, 0.25);
+    if (elapsedTime_ms < 3000 || elapsedTime_ms > 80000) {
+        speedCommand = 0;
+    }
+#else
     if (Serial.available() > 0) {
         // Read the speed value from the UART
         prevSpeedCommand = speedCommand;
@@ -163,12 +170,7 @@ void loop() {
     else {
       speedCommand = prevSpeedCommand;
     }
-
-    // COMMENT OUT IF NOT DOING HALL EFFECT CALIBRATION
-    // int speedCommand = (int)generateSweptSineCommand(millisToSec(elapsedTime_ms), 100, 255, 0.25, 0.15);
-    // if (elapsedTime_ms < 3000 || elapsedTime_ms > 20000) {
-    //     speedCommand = 0;
-    // }
+#endif
     
     // Check if the speed value is valid
     if (speedCommand >= 100 && speedCommand <= 255) {
@@ -178,9 +180,6 @@ void loop() {
         forward(0);
         //Serial.println("Invalid speed value received.");
     }
-
-    // SpeedCommandPayload speedCommand = rxSpeedCommandPayload();
-    // int speed = speedCommand.speedCommand_pwm; // uncomment when receiving from mcu
 
     // get vehicle speed from w1 speedometer
     float wheel1Speed = w1->getSpeed(millisToSec(elapsedTime_ms));
