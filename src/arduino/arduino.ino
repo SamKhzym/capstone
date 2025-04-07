@@ -41,6 +41,10 @@
 
 #define SAMPLE_TIME_MS 5
 
+#define a0 A0
+#define a1 A1
+#define a2 A2
+
 unsigned long elapsedTime_ms = 0;
 
 Speedometer *w1, *w2, *t1, *t2;
@@ -182,14 +186,29 @@ void loop() {
     // SpeedCommandPayload speedCommand = rxSpeedCommandPayload();
     // int speed = speedCommand.speedCommand_pwm; // uncomment when receiving from mcu
 
-    // get vehicle speed from w1 speedometer
-    float wheel1Speed = w1->getSpeed(millisToSec(elapsedTime_ms));
-    float wheel2Speed = w2->getSpeed(millisToSec(elapsedTime_ms));
-    float dyno1Speed = t1->getSpeed(millisToSec(elapsedTime_ms));
-    float dyno2Speed = t2->getSpeed(millisToSec(elapsedTime_ms));
+    float wheel1Speed = 0, wheel2Speed = 0, dyno1Speed = 0, dyno2Speed = 0, vehicleSpeed = 0;
+    bool stupidBlip = (analogRead(a0) * 0.0049f > 1.6) && (analogRead(a1) * 0.0049f > 1.6) && (analogRead(a2) * 0.0049f > 1.6);
+    if (!stupidBlip) {
+      // get vehicle speed from w1 speedometer
+      wheel1Speed = w1->getSpeed(millisToSec(elapsedTime_ms));
+      wheel2Speed = w2->getSpeed(millisToSec(elapsedTime_ms));
+      dyno1Speed = t1->getSpeed(millisToSec(elapsedTime_ms));
+      // dyno2Speed = t2->getSpeed(millisToSec(elapsedTime_ms));
+      vehicleSpeed = (wheel1Speed + wheel2Speed + dyno1Speed) / 3;
+    }
+    else {
+      #if DEBUG
+      Serial.println("STUPID!!!!!!!!");
+      #endif
+      wheel1Speed = w1->getSpeed(millisToSec(elapsedTime_ms));
+      wheel2Speed = w2->getSpeed(millisToSec(elapsedTime_ms));
+      dyno1Speed = t1->getSpeed(millisToSec(elapsedTime_ms));
+      // dyno2Speed = t2->getSpeed(millisToSec(elapsedTime_ms));
+      vehicleSpeed = (wheel1Speed + wheel2Speed + dyno1Speed) / 3;
+    }
 
     // average out wheel speeds
-    float vehicleSpeed = (wheel1Speed + wheel2Speed + dyno1Speed + dyno2Speed) / 4;
+    // float vehicleSpeed = (wheel1Speed + wheel2Speed + dyno1Speed + dyno2Speed) / 4;
 
     // construct vehicle speed payload struct, serialize, and transmit payload
     VehicleSpeedPayload vehicleSpeedPayload = {
@@ -222,6 +241,15 @@ void loop() {
     
     Serial.print("Dyno_Speed_T2: ");
     Serial.println(dyno2Speed);
+
+    Serial.print("A0: ");
+    Serial.println(analogRead(a0) * 0.0049f);
+
+    Serial.print("A1: ");
+    Serial.println(analogRead(a1) * 0.0049f);
+
+    Serial.print("A2: ");
+    Serial.println(analogRead(a2) * 0.0049f);
     
     Serial.print("Millis: ");
     Serial.println(millis());

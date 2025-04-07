@@ -27,7 +27,7 @@ class RealTimeViz:
         
         # window height and length (pixels)
         self.WINDOW_WIDTH: int = 1500
-        self.WINDOW_HEIGHT: int = 1000
+        self.WINDOW_HEIGHT: int = 800
         self.DASHBOARD_WIDTH = 1.5
         self.DASHBOARD_HEIGHT = 0.65
         
@@ -38,7 +38,7 @@ class RealTimeViz:
         # max length, height, depth of visualizer (m)
         self.VIZ_LENGTH_M: float = 0.5
         self.VIZ_HEIGHT_M: float = 0.3
-        self.MAX_DEPTH_M: float = 4.0
+        self.MAX_DEPTH_M: float = 3.0
 
         # horizon params
         self.HORIZON_HEIGHT_PCT = 0.7

@@ -20,6 +20,9 @@ Speedometer::Speedometer(String name, int pinNum, float dutyCycleLowerThreshold_
 
 float Speedometer::pwmToDutyCycle() {
 
+    // unsigned long highTime = pulseIn(this->pinNum, HIGH, 10000); // Measure HIGH pulse width
+    // unsigned long lowTime = pulseIn(this->pinNum, LOW, 10000);  // Measure LOW pulse width
+    
     unsigned long highTime = pulseIn(this->pinNum, HIGH); // Measure HIGH pulse width
     unsigned long lowTime = pulseIn(this->pinNum, LOW);  // Measure LOW pulse width
 

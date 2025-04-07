@@ -17,7 +17,7 @@ elif os.name == 'posix':
     ACC_DLL_PATH = PROJECT_BASE / 'controller' / 'bin' / 'libcontroller_shared.so' 
 
 # simulation parameters
-DRIVE_CYCLE_NAME = 'hwfet.csv'
+DRIVE_CYCLE_NAME = 'us06.csv'
 SET_SPEED_MPS = 0.85
 INIT_LEAD_DIST_M = 1.0
 

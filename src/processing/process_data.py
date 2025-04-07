@@ -28,7 +28,7 @@ class SerialData:
 
             if '====' in lines[i]: continue
 
-            # print(lines[i])
+            print(lines[i])
 
             fields = lines[i].split(":")
             name = fields[0]
@@ -89,7 +89,7 @@ class SerialData:
 
 if __name__ == '__main__':
     # file = PROJECT_BASE / 'src' / 'processing' / 'data' / 'swept_sine_0_9.txt'
-    file = PROJECT_BASE / 'src' / 'processing' / 'data' / 'all_four_tuned.txt'
+    file = PROJECT_BASE / 'src' / 'processing' / 'data' / 'putty.txt'
 
     s = SerialData(str(file))
     s.plotMetrics()

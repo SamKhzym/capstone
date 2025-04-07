@@ -39,18 +39,18 @@ float pidStep(PidParams* params, float err) {
 
 void initAcc() {
 
-    float speedKp = 2.5f;
-    float speedKi = 1.0f;
+    float speedKp = 250.0f;
+    float speedKi = 0.01f;
     float speedKd = 0.04f;
 
-    float distKp = 5.0f;
-    float distKi = 2.0f;
+    float distKp = 5000.0f;
+    float distKi = 0.01f;
     float distKd = 0.08f;
 
     initPidParams(&accParams.speedPid, speedKp, speedKi, speedKd);
     initPidParams(&accParams.distPid, distKp, distKi, distKd);
     accParams.maxLeadDist = 2.5f;
-    accParams.timeGap = 5.0f;
+    accParams.timeGap = 3.0f;
     accParams.constDistGap = 1.0f;
 
 }
@@ -80,25 +80,26 @@ uint8_t stepAcc(float hostVel, float leadVel, float setSpeed, float leadDist){
 
     // Decide between cruise and follow modes
     enum Mode mode = CRUISE; // defaults in cruise state
-    bool lead_exists = leadVehicleExists(leadDist, leadVel, setSpeed);
+    bool leadExists = leadVehicleExists(leadDist, leadVel, setSpeed);
 
-    if (lead_exists) { //Future additions: safety critical mode, failure mode
+    if (leadExists) { //Future additions: safety critical mode, failure mode
         mode = FOLLOW;
         setSpeed = leadVel;
     }
     
     //Calculate PID terms
-    float speed_error = setSpeed - hostVel;
-    float dist_error = leadDist - hostVel * accParams.timeGap + accParams.constDistGap;
-    float speed_req = pidStep(&accParams.speedPid, speed_error);
+    float speedError = setSpeed - hostVel;
+    float distError = leadDist - (hostVel * accParams.timeGap + accParams.constDistGap);
     float actReq;
 
-    if (lead_exists) {
-        float dist_req = pidStep(&accParams.distPid, dist_error);
-        actReq = (speed_req + dist_req) / 2;
+    if (leadExists) {
+        float speedReq = pidStep(&accParams.speedPid, speedError*0.5);
+        float distReq = pidStep(&accParams.distPid, distError*0.5);
+        actReq = (speedReq + distReq) / 2;
     }
     else {
-        actReq = speed_req;
+        float speedReq = pidStep(&accParams.speedPid, speedError);
+        actReq = speedReq;
     }
 
     // pseudo-saturation
