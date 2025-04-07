@@ -43,7 +43,7 @@ void initAcc() {
     float speedKi = 0.01f;
     float speedKd = 0.04f;
 
-    float distKp = 5000.0f;
+    float distKp = 45000.0f;
     float distKi = 0.01f;
     float distKd = 0.08f;
 
