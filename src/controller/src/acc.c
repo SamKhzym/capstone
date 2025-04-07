@@ -14,12 +14,13 @@ bool leadVehicleExists(float leadDist, float leadSpeed, float setSpeed) {
     return leadSpeed < setSpeed && leadDist < accParams.maxLeadDist;
 }
 
-void initPidParams(PidParams* params, float P, float I, float D) {
+void initPidParams(PidParams* params, float P, float I, float D, float integralSat) {
     params->P = P;
     params->I = I;
     params->D = D;
     params->errorSum = 0.0f;
     params->lastError = 0.0f;
+    params->integralSaturation = integralSat;
 }
 
 float pidStep(PidParams* params, float err) {
@@ -27,6 +28,13 @@ float pidStep(PidParams* params, float err) {
     float pTerm = err * params->P;
 
     params->errorSum += err;
+    // if (params->errorSum >= params->integralSaturation) {
+    //     params->errorSum = params->integralSaturation;
+    // }
+    // else if (params->errorSum <= -params->integralSaturation) {
+    //     params->errorSum = -params->integralSaturation;
+    // }
+
     float iTerm = params->errorSum * params->I;
 
     float derivative = (err - params->lastError) / dt;
@@ -39,17 +47,17 @@ float pidStep(PidParams* params, float err) {
 
 void initAcc() {
 
-    float speedKp = 250.0f;
-    float speedKi = 0.01f;
+    float speedKp = 25.0f;
+    float speedKi = 0.1f;
     float speedKd = 0.04f;
 
-    float distKp = 45000.0f;
+    float distKp = 250.0f;
     float distKi = 0.01f;
     float distKd = 0.08f;
 
-    initPidParams(&accParams.speedPid, speedKp, speedKi, speedKd);
-    initPidParams(&accParams.distPid, distKp, distKi, distKd);
-    accParams.maxLeadDist = 2.5f;
+    initPidParams(&accParams.speedPid, speedKp, speedKi, speedKd, 50000000);
+    initPidParams(&accParams.distPid, distKp, distKi, distKd, 50000000);
+    accParams.maxLeadDist = 5.0f;
     accParams.timeGap = 3.0f;
     accParams.constDistGap = 1.0f;
 
@@ -95,7 +103,7 @@ uint8_t stepAcc(float hostVel, float leadVel, float setSpeed, float leadDist){
     if (leadExists) {
         float speedReq = pidStep(&accParams.speedPid, speedError*0.5);
         float distReq = pidStep(&accParams.distPid, distError*0.5);
-        actReq = (speedReq + distReq) / 2;
+        actReq = speedReq + distReq;
     }
     else {
         float speedReq = pidStep(&accParams.speedPid, speedError);
