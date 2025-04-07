@@ -51,8 +51,8 @@ void initAcc() {
     float speedKi = 0.1f;
     float speedKd = 0.04f;
 
-    float distKp = 250.0f;
-    float distKi = 0.01f;
+    float distKp = 500.0f;
+    float distKi = 0.1f;
     float distKd = 0.08f;
 
     initPidParams(&accParams.speedPid, speedKp, speedKi, speedKd, 50000000);
