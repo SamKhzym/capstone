@@ -23,13 +23,15 @@ ASSET_PATH = Path(__file__).parent / 'assets'
 
 class RealTimeViz:
 
-    def __init__(self, dt: float = DT_VIZ):
+    def __init__(self, mode = "SIMULATION", dt: float = DT_VIZ):
         
         # window height and length (pixels)
-        self.WINDOW_WIDTH: int = 1500
-        self.WINDOW_HEIGHT: int = 800
+        self.WINDOW_WIDTH: int = 1400  #1850 for big monitor
+        self.WINDOW_HEIGHT: int = 800  #1050 for big monitor
         self.DASHBOARD_WIDTH = 1.5
         self.DASHBOARD_HEIGHT = 0.65
+
+        self.mode = mode
         
         # parameter that dictates distortion of screen as a function of long distance from ego veh
         # higher parameter has more distortion, 1 has no distortion
@@ -267,6 +269,9 @@ class RealTimeViz:
                 text_x -= 10
             text_surface = self.small_font.render(str(round(speed, 2)), True, BLACK)
             self.screen.blit(text_surface, (text_x, text_y))
+
+        text_surface = self.big_font.render(self.mode, True, BLACK)
+        self.screen.blit(text_surface, (self.WINDOW_WIDTH*0.7, 0))
         
         # Draw needle with a triangular shape
         needle_angle = -180 + (self.moving_avg_speed / MAX_SPEED) * 180  # Map speed to angle range

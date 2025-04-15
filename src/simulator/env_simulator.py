@@ -26,7 +26,7 @@ class EnvironmentalSimulator:
     def scale_drive_cycle(self) -> None:
 
         # conversion: 1mph -> 0.01 m/s
-        SPEED_SCALE_FACTOR = 0.7 * MPS_TO_MPH / 100
+        SPEED_SCALE_FACTOR = 0.5 * MPS_TO_MPH / 100
         self.lead_speeds *= SPEED_SCALE_FACTOR
         
     def get_current_lead_speed(self) -> float:
@@ -55,4 +55,7 @@ class EnvironmentalSimulator:
         
         # update sim time
         self.time += self.dt
+
+        if self.time > self.times[-1]:
+            self.time = 0
 

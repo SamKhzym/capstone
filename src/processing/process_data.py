@@ -27,6 +27,7 @@ class SerialData:
         for i in range(len(lines)):
 
             if '====' in lines[i]: continue
+            if 'STUPID' in lines[i]: continue
 
             print(lines[i])
 
@@ -68,10 +69,10 @@ class SerialData:
         ax[2].axhline(y = 50, color = 'r', linestyle = '-', label='Threshold (%)') 
         ax[2].legend()
 
-        ax[3].plot(s.times, s.dynoPwm2, label="Duty Cycle 2 (%)")
-        ax[3].axhline(y = 49, color = 'r', linestyle = '-', label='Threshold (%)') 
-        ax[3].axhline(y = 46, color = 'r', linestyle = '-', label='Threshold (%)') 
-        ax[3].legend()
+        # ax[3].plot(s.times, s.dynoPwm2, label="Duty Cycle 2 (%)")
+        # ax[3].axhline(y = 49, color = 'r', linestyle = '-', label='Threshold (%)') 
+        # ax[3].axhline(y = 46, color = 'r', linestyle = '-', label='Threshold (%)') 
+        # ax[3].legend()
 
         ax[4].plot(s.times, s.pwmSpeeds, label="PWM Output Commands (0-255)")
         ax[4].legend()
