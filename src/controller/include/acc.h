@@ -30,6 +30,7 @@ typedef struct PidParams {
     float D;
     float errorSum;
     float lastError;
+    float integralSaturation;
 } PidParams;
 
 typedef struct {
@@ -51,7 +52,7 @@ extern AccParams accParams;
 
 // function headers
 bool leadVehicleExists(float leadDist, float leadSpeed, float setSpeed);
-void initPidParams(PidParams* params, float P, float I, float D);
+void initPidParams(PidParams* params, float P, float I, float D, float integralSat);
 float pidStep(PidParams* params, float err);
 uint8_t saturateActReq(float actReq);
 

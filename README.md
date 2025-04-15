@@ -1,4 +1,4 @@
-# Simulated Cruise Loop, by Propulsor (SCL Propulsor)
+# Simulated Cruise Loop, by PropulsorTech (SCL Propulsor)
 
 Developer Names: Alexander Antohe, Daniel Lupas, Nicholas Petrunti, Pesara Amarasekera, Samuel Khzym
 
@@ -6,7 +6,25 @@ Date of project start: September 3rd, 2024
 
 The project aims to develop a comprehensive testing environment for an adaptive cruise control (ACC) algorithm that integrates a Software-in-the-Loop (SIL) environment, a Hardware-in-the-Loop (HIL) environment, and a real-time visualizer, using an RC (radio-controlled) vehicle as the platform.
 
+![](img/setup.png)
+
 ## Project Overview
+
+### Test Environments
+
+#### Software-in-Loop (SIL) Environment
+
+The SIL environment compiles the ACC algorithm for a PC target (as opposed to the normal board target), and runs the environmental simulator, ACC algorithm, plant model, and visualizer in a closed-loop simulation. The module breakdown and data flow diagram is below.
+
+![](img/Subsystem_Diagram_SIL.drawio.png)
+
+#### Hardware-in-Loop (HIL) Environment
+
+The HIL environment compiles the ACC algorithm and the safety monitor software for the microcontroller, the RC vehicle code for the Arduino, and runs the environmental simulator and visualizer in a closed-loop simulation. The RC vehicle is placed on the dyno platform. The simulator and the microcontroller communicate over Ethernet, and the microcontroller and Arduino communicate over UART. The module breakdown and data flow diagram is below.
+
+![](img/Subsystem_Diagram_HIL.drawio.png)
+
+### Subsystems
 
 ### Adaptive Cruise Control (ACC) Algorithm
 
@@ -25,7 +43,7 @@ The environmental simulator allows the user to load a lead vehicle drive cycle a
 
 ![](img/hwfet.png)
 
-The lead vehicle's relative distance, ego speed, and lead speed, are all visualized in a simple visualizer component which displays the lead vehicle as a red rectangle which scales as it gets closer, and a set of dashed lane lines which move along with the ego vehicle.
+The lead vehicle's relative distance, ego speed, and lead speed, are all visualized in a simple visualizer component which displays the lead vehicle which scales as it gets closer, and a set of dashed lane lines which move along with the ego vehicle.
 
 ![](img/viz.png)
 
@@ -37,14 +55,8 @@ $\frac{V_E(s)}{\text{PWM}(s)} = \frac{K\omega_n^2}{s^2 + 2 \zeta \omega_n s + \o
 
 ![](img/freq_res.png)
 
-### Software-in-Loop (SIL) Environment
+### Car Control Code + Speedometer
 
-The SIL environment compiles the ACC algorithm for a PC target (as opposed to the normal board target), and runs the environmental simulator, ACC algorithm, plant model, and visualizer in a closed-loop simulation. The module breakdown and data flow diagram is below.
+An Arduino UNO is used to control the motors on the car and read the vehicle speed. The vehicle does not have any on-board speed sensors, so PWM sensors were added which measure the rotating magnetic field of magnets mounted to the wheels. To determine the wheel speeds, the field pulses are measured within a certain threshold, and the four wheel speeds are averaged to get a less noisy estimate for the overall wheel speed.
 
-![](img/Subsystem_Diagram_SIL.drawio.png)
-
-### Hardware-in-Loop (HIL) Environment
-
-The HIL environment compiles the ACC algorithm and the safety monitor software for the microcontroller, the RC vehicle code for the Arduino, and runs the environmental simulator and visualizer in a closed-loop simulation. The RC vehicle is placed on the dyno platform. The simulator and the microcontroller communicate over Ethernet, and the microcontroller and Arduino communicate over UART. The module breakdown and data flow diagram is below.
-
-![](img/Subsystem_Diagram_HIL.drawio.png)
+![](img/speedometer.png)

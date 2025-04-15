@@ -32,7 +32,7 @@ def main():
     socket = Socket(HOST, PORT)
 
     if VIZ_ENABLE:
-        viz = RealTimeViz()
+        viz = RealTimeViz(mode="HARDWARE")
     doViz = True
     
     try:

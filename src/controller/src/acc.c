@@ -14,12 +14,13 @@ bool leadVehicleExists(float leadDist, float leadSpeed, float setSpeed) {
     return leadSpeed < setSpeed && leadDist < accParams.maxLeadDist;
 }
 
-void initPidParams(PidParams* params, float P, float I, float D) {
+void initPidParams(PidParams* params, float P, float I, float D, float integralSat) {
     params->P = P;
     params->I = I;
     params->D = D;
     params->errorSum = 0.0f;
     params->lastError = 0.0f;
+    params->integralSaturation = integralSat;
 }
 
 float pidStep(PidParams* params, float err) {
@@ -27,6 +28,13 @@ float pidStep(PidParams* params, float err) {
     float pTerm = err * params->P;
 
     params->errorSum += err;
+    // if (params->errorSum >= params->integralSaturation) {
+    //     params->errorSum = params->integralSaturation;
+    // }
+    // else if (params->errorSum <= -params->integralSaturation) {
+    //     params->errorSum = -params->integralSaturation;
+    // }
+
     float iTerm = params->errorSum * params->I;
 
     float derivative = (err - params->lastError) / dt;
@@ -39,18 +47,18 @@ float pidStep(PidParams* params, float err) {
 
 void initAcc() {
 
-    float speedKp = 2.5f;
-    float speedKi = 1.0f;
+    float speedKp = 25.0f;
+    float speedKi = 0.1f;
     float speedKd = 0.04f;
 
-    float distKp = 5.0f;
-    float distKi = 2.0f;
+    float distKp = 200.0f;
+    float distKi = 0.1f;
     float distKd = 0.08f;
 
-    initPidParams(&accParams.speedPid, speedKp, speedKi, speedKd);
-    initPidParams(&accParams.distPid, distKp, distKi, distKd);
-    accParams.maxLeadDist = 2.5f;
-    accParams.timeGap = 5.0f;
+    initPidParams(&accParams.speedPid, speedKp, speedKi, speedKd, 50000000);
+    initPidParams(&accParams.distPid, distKp, distKi, distKd, 50000000);
+    accParams.maxLeadDist = 5.0f;
+    accParams.timeGap = 3.0f;
     accParams.constDistGap = 1.0f;
 
 }
@@ -80,25 +88,26 @@ uint8_t stepAcc(float hostVel, float leadVel, float setSpeed, float leadDist){
 
     // Decide between cruise and follow modes
     enum Mode mode = CRUISE; // defaults in cruise state
-    bool lead_exists = leadVehicleExists(leadDist, leadVel, setSpeed);
+    bool leadExists = leadVehicleExists(leadDist, leadVel, setSpeed);
 
-    if (lead_exists) { //Future additions: safety critical mode, failure mode
+    if (leadExists) { //Future additions: safety critical mode, failure mode
         mode = FOLLOW;
         setSpeed = leadVel;
     }
     
     //Calculate PID terms
-    float speed_error = setSpeed - hostVel;
-    float dist_error = leadDist - hostVel * accParams.timeGap + accParams.constDistGap;
-    float speed_req = pidStep(&accParams.speedPid, speed_error);
+    float speedError = setSpeed - hostVel;
+    float distError = leadDist - (hostVel * accParams.timeGap + accParams.constDistGap);
     float actReq;
 
-    if (lead_exists) {
-        float dist_req = pidStep(&accParams.distPid, dist_error);
-        actReq = (speed_req + dist_req) / 2;
+    if (leadExists) {
+        float speedReq = pidStep(&accParams.speedPid, speedError*0.5);
+        float distReq = pidStep(&accParams.distPid, distError*0.5);
+        actReq = speedReq + distReq;
     }
     else {
-        actReq = speed_req;
+        float speedReq = pidStep(&accParams.speedPid, speedError);
+        actReq = speedReq;
     }
 
     // pseudo-saturation
